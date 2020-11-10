@@ -12,19 +12,19 @@ from django.http import HttpResponse, Http404
 
 class ProfileView(ModelViewSet):
 
-    permission_classes = [IsAuthenticated]
+    #permission_classes = [IsAuthenticated]
     queryset = Profile.objects.all()
     serializer_class = ProfileSerializer
 
 class ExperienceView(ModelViewSet):
     
-    permission_classes = [IsAuthenticated]
+    #permission_classes = [IsAuthenticated]
     queryset = Experience.objects.all()
     serializer_class = ExperienceSerializer
 
 
 class SkillView(ModelViewSet):
     
-    permission_classes = [IsAuthenticated]
+    #permission_classes = [IsAuthenticated]
     queryset = Skill.objects.all()
-    serializer_class = SkillSerializer
+    serializer_class = SkillSerializeru
