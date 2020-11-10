@@ -27,4 +27,4 @@ class SkillView(ModelViewSet):
     
     #permission_classes = [IsAuthenticated]
     queryset = Skill.objects.all()
-    serializer_class = SkillSerializeru
+    serializer_class = SkillSerializer
