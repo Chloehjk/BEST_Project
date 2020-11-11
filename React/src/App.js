@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <MysiteFront/>
-
+      hello i'm jihyun
     </div>
   );
 }
