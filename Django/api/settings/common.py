@@ -42,8 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     #app
     'account',
-    'study',
-    'mysite'
+    'Best'
 ]
 
 MIDDLEWARE = [
