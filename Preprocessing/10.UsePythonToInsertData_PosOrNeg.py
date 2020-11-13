@@ -1,7 +1,7 @@
 import pymysql
 db=pymysql.connect(host='database-1.cnaloacjmwtw.ap-northeast-2.rds.amazonaws.com',port=3306,user='TooHR',passwd='',db='TooHRProject',charset='utf8') 
 
-f = open('C:/Users/ASIA/Desktop/투현란 프로젝트/DB_PosNegLabeling.csv','r',encoding='utf-8')
+f = open('/DB_PosNegLabeling.csv','r',encoding='utf-8')
 PosOrNeg = [list(f.readline().split(',')) for _ in range(51)][1:]
 
 for xx in PosOrNeg:
