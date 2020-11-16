@@ -17,13 +17,11 @@ function App() {
           <Menu.Item key="4">기초 투자방법</Menu.Item>
         </Menu>
       </div>
-      <div id='content_gray'>
-        풀 화면으로 회색박스임. 내용2
+      <div id='content'>
+        <div id='content_gray'></div>
+        <div id='content_white'></div>
+
       </div>
-      <div id='content_white'>
-        흰색 박스 내용2
-      </div>
-    </div>
   );
 }
 export default App;
