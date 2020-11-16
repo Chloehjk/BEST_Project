@@ -22,6 +22,7 @@ function App() {
         <div id='content_white'></div>
 
       </div>
+    </div>
   );
 }
 export default App;
