@@ -17,7 +17,7 @@ function App() {
   return (
     <div id='total_container'>
       <div id='top_container'>
-        <NavLink to="pages/0home">
+        <NavLink to="/0home">
           <img id='logo' src={img1} width='170px'/>
         </NavLink>
         
