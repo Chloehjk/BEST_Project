@@ -3,8 +3,8 @@ import 'App.css';
 import'antd/dist/antd.css';
 import {Menu} from 'antd';
 import img1 from './images/logo1.png';
-import Login from 'account/Login'
-import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom'
+import Login from 'account/Login';
+import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom';
 
 import Home from 'pages/0home';
 import Introduction from 'pages/1introduction';
@@ -52,11 +52,10 @@ function App() {
       </div>
 
 
-      <div id='content'>
+      {/* <div id='content'>
         <div id='content_gray'></div>
         <div id='content_white'></div>
-
-      </div>
+      </div> */}
     </div>
   );
 }
