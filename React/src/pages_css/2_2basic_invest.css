@@ -49,6 +49,7 @@ ul{
     font-size:23px;
     text-align: center;
     background-color: beige;
+    margin-bottom: 40px;
 }
 
 #content_white>.idea{
@@ -59,9 +60,42 @@ ul{
     margin-bottom: 13px;
 }
 
-#content_white > a{
+#content_white> div{
     font-size: 15px;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;;
+}
+
+#content_white> div> a{
     background-color: #820027;
     color:white;
+}
+
+#sentimental{
+    height: 360px;
+    margin-bottom: 30px;
+}
+
+#sentimental > li{
+    font-size:18px;
+    text-align: center;
+    margin-bottom: 40px;
+    list-style:none;
+    margin-top: 50px;
+}
+#sentimental > li:nth-child(1) > a.click, #sentimental > li:nth-child(3) > a.click{
+    font-size: 13px;
+    color: gray;
+}
+
+#sentimental > li> a{
+    width: 100px;
+    color: black;
+    font-weight: 600;
+}
+#sentimental > span{
+    list-style: none;
+    text-align: center;
+    font-size: 14px;
 }
