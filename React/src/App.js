@@ -8,9 +8,10 @@ import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom'
 
 import Home from 'pages/0home';
 import Introduction from 'pages/1introduction';
-import BasicStock from 'pages/2basic_stock';
+import BasicStock from 'pages/2_1basic_stock';
+import BasicInvest from 'pages/2_2basic_invest';
 import Kospi50 from 'pages/3kospi50';
-import BasicInvest from 'pages/4basic_invest';
+import Services from 'pages/4services';
 
 function App() {
   return (
@@ -24,14 +25,17 @@ function App() {
           <Menu.Item key="1">
             <NavLink to="/1introduction">소개</NavLink>
           </Menu.Item>
-          <Menu.Item key="2">
-            <NavLink to="/2basic_stock">주식 기초</NavLink>
+          <Menu.Item key="2_1">
+            <NavLink to="/2_1basic_stock">기초 정보</NavLink>
+          </Menu.Item>
+          <Menu.Item key="2_2">
+            <NavLink to="/2_2basic_invest">투자 방법</NavLink>
           </Menu.Item>
           <Menu.Item key="3">
             <NavLink to="/3kospi50">KOSPI 50</NavLink>
           </Menu.Item>
           <Menu.Item key="4">
-            <NavLink to="/4basic_invest">기초 투자방법</NavLink>
+            <NavLink to="/4services">펀더멘탈 분석 서비스</NavLink>
           </Menu.Item>
         </Menu>
       </div>
@@ -40,9 +44,10 @@ function App() {
             <Switch>
                 <Route exact path="/0home" component = {Home}/>
                 <Route exact path="/1introduction" component = {Introduction}/>
-                <Route exact path="/2basic_stock" component = {BasicStock}/>
+                <Route exact path="/2_1basic_stock" component = {BasicStock}/>
+                <Route exact path="/2_2basic_invest" component = {BasicInvest}/>
                 <Route exact path="/3kospi50" component = {Kospi50}/>
-                <Route exact path="/4basic_invest" component = {BasicInvest}/>
+                <Route exact path="/4services" component = {Services}/>
             </Switch>
       </div>
 
