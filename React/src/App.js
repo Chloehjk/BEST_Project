@@ -17,7 +17,7 @@ function App() {
   return (
     <div id='total_container'>
       <div id='top_container'>
-        <NavLink to="pages/0home">
+        <NavLink to="/0home">
           <img id='logo' src={img1} width='170px'/>
         </NavLink>
         
@@ -42,6 +42,7 @@ function App() {
 
       <div id="category_router">
             <Switch>
+                <Route exact path="/" component = {Home}/>
                 <Route exact path="/0home" component = {Home}/>
                 <Route exact path="/1introduction" component = {Introduction}/>
                 <Route exact path="/2_1basic_stock" component = {BasicStock}/>
