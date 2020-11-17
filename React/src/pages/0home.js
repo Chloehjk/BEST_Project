@@ -5,6 +5,8 @@ import 'pages_css/0home.css';
 import testimg1 from 'images/test1.jpg';
 import testimg2 from 'images/test2.jpg';
 import testimg3 from 'images/workplace.png';
+import testimg4 from 'images/test3.jpg';
+
 
 
 
@@ -26,7 +28,7 @@ export default function Home(){
                     {/* <h1> Single Item</h1> */}
                     <Slider {...settings}>
                     <div>
-                        <img id='test1' src={testimg3}/>
+                        <img id='test1' src={testimg4}/>
                     </div>
                     <div>
                         <img id='test1' src={testimg2}/>
