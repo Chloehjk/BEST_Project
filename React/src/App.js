@@ -17,7 +17,7 @@ function App() {
   return (
     <div id='total_container'>
       <div id='top_container'>
-        <NavLink to="pages/0home">
+        <NavLink to="/0home">
           <img id='logo' src={img1} width='170px'/>
         </NavLink>
         
@@ -52,11 +52,12 @@ function App() {
       </div>
 
 
-      <div id='content'>
+      {/* <div id='content'>
         <div id='content_gray'></div>
         <div id='content_white'></div>
 
-      </div>
+      </div> */}
+      
     </div>
   );
 }
