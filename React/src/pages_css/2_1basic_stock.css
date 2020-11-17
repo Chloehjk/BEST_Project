@@ -1,0 +1,15 @@
+
+#content_gray{
+    /* background-color: #ECE7E7;
+    height: 500px; */
+    margin-top: 5px;
+}
+
+
+#content_white{
+    margin: 0 auto;
+    width: 1200px;
+    height: 800px;
+    margin-top: 50px;
+    text-align: center;
+}
