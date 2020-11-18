@@ -1,9 +1,9 @@
 import React from 'react';
 import 'App.css';
-import'antd/dist/antd.css';
-import {Menu} from 'antd';
+//import'antd/dist/antd.css';
+//import {Menu} from 'antd';
 import img1 from './images/logo1.png';
-import Login from 'account/Login';
+//import Login from 'account/Login';
 import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom';
 
 import Home from 'pages/0home';
@@ -13,7 +13,9 @@ import BasicInvest from 'pages/2_2basic_invest';
 import Kospi50 from 'pages/3kospi50';
 import Services from 'pages/4services';
 
-function App() {
+
+function App() { 
+
   return (
     <div id='total_container'>
       <div id='top_container'>
@@ -21,23 +23,28 @@ function App() {
           <img id='logo' src={img1} width='170px'/>
         </NavLink>
         
-        <Menu id='main_category' theme="dark" mode="horizontal">
-          <Menu.Item key="1">
+        <ul id='main_category'>
+          <li id='menu' key="1">
             <NavLink to="/1introduction">소개</NavLink>
-          </Menu.Item>
-          <Menu.Item key="2_1">
-            <NavLink to="/2_1basic_stock">기초 정보</NavLink>
-          </Menu.Item>
-          <Menu.Item key="2_2">
-            <NavLink to="/2_2basic_invest">투자 방법</NavLink>
-          </Menu.Item>
-          <Menu.Item key="3">
+          </li>
+
+          <li id='menu' class ='twoinone' key="2" >
+            <a>주식 기초백과</a>
+            <ul>
+              <li id='subone' key="2_1"><NavLink to="/2_1basic_stock">주식 기초 정보</NavLink></li>
+              <li id='subtwo'key="2_2"><NavLink to="/2_2basic_invest">투자 방법</NavLink></li>
+            </ul>
+          </li>
+
+          <li id='menu' key="3">
             <NavLink to="/3kospi50">KOSPI 50</NavLink>
-          </Menu.Item>
-          <Menu.Item key="4">
+          </li>
+
+          <li id='menu' key="4">
             <NavLink to="/4services">펀더멘탈 분석 서비스</NavLink>
-          </Menu.Item>
-        </Menu>
+          </li>
+        </ul>
+      
       </div>
 
       <div id="category_router">
