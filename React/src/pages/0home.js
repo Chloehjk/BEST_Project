@@ -6,7 +6,8 @@ import testimg1 from 'images/test1.jpg';
 import testimg2 from 'images/test2.jpg';
 import testimg3 from 'images/workplace.png';
 import testimg4 from 'images/test3.jpg';
-
+import main_banner02 from 'images/real_main_banner01.gif';
+import main_banner01 from 'images/real_main_banner02.jpg';
 
 
 
@@ -28,10 +29,10 @@ export default function Home(){
                     {/* <h1> Single Item</h1> */}
                     <Slider {...settings}>
                     <div>
-                        <img id='test1' src={testimg4}/>
+                        <img id='test1' src={main_banner01}/>
                     </div>
                     <div>
-                        <img id='test1' src={testimg2}/>
+                        <img id='test1' src={main_banner02}/>
                     </div>
                     <div id='test2'>
                         <img  src={testimg1}/>
