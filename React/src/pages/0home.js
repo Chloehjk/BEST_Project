@@ -32,14 +32,9 @@ export default function Home(){
                     <div>
                         <img id='test1' src={main_banner02}/>
                     </div>
-<<<<<<< HEAD
-
-
-=======
                     <div>
                         <img id='test1' src={main_banner03}/>
                     </div>
->>>>>>> 63660933af346415d74b30eaf2e8dc33d2a10337
                     </Slider>     
                 </div>
             </div>

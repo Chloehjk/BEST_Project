@@ -7,7 +7,8 @@ import img1 from './images/logo1.png';
 import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom';
 
 import Home from 'pages/0home';
-import Introduction from 'pages/1introduction';
+import IntroProject from 'pages/1_1int_project';
+import IntroTeam from 'pages/1_2int_team';
 import BasicStock from 'pages/2_1basic_stock';
 import BasicInvest from 'pages/2_2basic_invest';
 import Kospi50 from 'pages/3kospi50';
@@ -24,15 +25,20 @@ function App() {
         </NavLink>
         
         <ul id='main_category'>
-          <li id='menu' key="1">
-            <NavLink to="/1introduction">소개</NavLink>
+          <li id='menu' class = 'twoinone' key="1">
+            <a>소개</a>
+            <ul>
+              <li id='subone' key="1_1"><NavLink to="/1_1int_project">BEST프로젝트 설명</NavLink></li>
+              <li id='subtwo'key="1_2"><NavLink to="/1_2int_team">Members</NavLink></li>
+            </ul>
+            
           </li>
 
           <li id='menu' class ='twoinone' key="2" >
             <a>주식 기초백과</a>
             <ul>
               <li id='subone' key="2_1"><NavLink to="/2_1basic_stock">주식 기초 정보</NavLink></li>
-              <li id='subtwo'key="2_2"><NavLink to="/2_2basic_invest">투자 방법</NavLink></li>
+              <li id='subtwo'key="2_2"><NavLink to="/2_2basic_invest">투자 방법 기초</NavLink></li>
             </ul>
           </li>
 
@@ -51,7 +57,8 @@ function App() {
             <Switch>
                 <Route exact path="/" component = {Home}/>
                 <Route exact path="/0home" component = {Home}/>
-                <Route exact path="/1introduction" component = {Introduction}/>
+                <Route exact path="/1_1int_project" component = {IntroProject}/>
+                <Route exact path="/1_2int_team" component = {IntroTeam}/>
                 <Route exact path="/2_1basic_stock" component = {BasicStock}/>
                 <Route exact path="/2_2basic_invest" component = {BasicInvest}/>
                 <Route exact path="/3kospi50" component = {Kospi50}/>
