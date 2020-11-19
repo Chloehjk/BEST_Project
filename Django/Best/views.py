@@ -1,30 +1,35 @@
 from django.shortcuts import render
-# from .models import Profile, Experience, Skill
-# from .serializer import ProfileSerializer, ExperienceSerializer, SkillSerializer
+from .models import KOSPI50, STOCKVALUES,FINANCESTATE,POSORNEG,MEANOFPER
+from .serializer import KOSPI50Serializer, STOCKVALUESSerializer, FINANCESTATESerializer,POSORNEGSerializer,MEANOFPERSerializer
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet, ReadOnlyModelViewSet
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, Http404
 
-
-
 # Create your views here.
 
-# class ProfileView(ModelViewSet):
+class KOSPI50View(ModelViewSet):
 
-#     #permission_classes = [IsAuthenticated]
-#     queryset = Profile.objects.all()
-#     serializer_class = ProfileSerializer
+    queryset = KOSPI50.objects.all()
+    serializer_class = KOSPI50Serializer
 
-# class ExperienceView(ModelViewSet):
+class STOCKVALUESView(ModelViewSet):
     
-#     #permission_classes = [IsAuthenticated]
-#     queryset = Experience.objects.all()
-#     serializer_class = ExperienceSerializer
+    queryset = STOCKVALUES.objects.all()
+    serializer_class = STOCKVALUESSerializer
 
 
-# class SkillView(ModelViewSet):
+class FINANCESTATEView(ModelViewSet):
     
-#     #permission_classes = [IsAuthenticated]
-#     queryset = Skill.objects.all()
-#     serializer_class = SkillSerializer
+    queryset = FINANCESTATE.objects.all()
+    serializer_class = FINANCESTATESerializer
+
+class POSORNEGView(ModelViewSet):
+    
+    queryset = POSORNEG.objects.all()
+    serializer_class = POSORNEGSerializer
+
+class MEANOFPERView(ModelViewSet):
+    
+    queryset = MEANOFPER.objects.all()
+    serializer_class = MEANOFPERSerializer

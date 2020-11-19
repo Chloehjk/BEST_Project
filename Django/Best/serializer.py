@@ -1,21 +1,32 @@
 from rest_framework.serializers import ModelSerializer
-# from .models import Profile, Experience, Skill
+from .models import KOSPI50, STOCKVALUES,FINANCESTATE,POSORNEG,MEANOFPER
 
-# class ProfileSerializer(ModelSerializer):
+class KOSPI50Serializer(ModelSerializer):
 
-#     class Meta:
-#         model = Profile
-#         fields = '__all__'
+    class Meta:
+        model = KOSPI50
+        fields = '__all__'
         
-# class ExperienceSerializer(ModelSerializer):
+class STOCKVALUESSerializer(ModelSerializer):
     
-#     class Meta:
-#         model = Experience
-#         fields = '__all__'
+    class Meta:
+        model = STOCKVALUES
+        fields = '__all__'
         
-# class SkillSerializer(ModelSerializer):
+class FINANCESTATESerializer(ModelSerializer):
     
-#     class Meta:
-#         model = Skill
-#         fields = '__all__'
-        
+    class Meta:
+        model = FINANCESTATE
+        fields = '__all__'
+
+class POSORNEGSerializer(ModelSerializer):
+    
+    class Meta:
+        model = POSORNEG
+        fields = '__all__'
+
+class MEANOFPERSerializer(ModelSerializer):
+    
+    class Meta:
+        model = MEANOFPER
+        fields = '__all__'   
