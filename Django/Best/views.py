@@ -7,6 +7,9 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse, Http404
 
 # Create your views here.
+# queryset은 얘랑 SQL이랑 연결하는 것(queryset=모델명.objects.all() <= 다 가져온다는 뜻)
+# serializer 이름 동일하게 다 가지고옴
+
 
 class KOSPI50View(ModelViewSet):
 
