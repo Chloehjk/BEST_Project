@@ -33,13 +33,8 @@ export default function Home(){
                     <div>
                         <img id='test1' src={main_banner02}/>
                     </div>
-                    <div id='test2'>
-                        <img  src={testimg1}/>
-                        <h2>사진이랑 글귀 넣어보기~~~</h2>
-                    </div>
-                    <div>
-                        <h3>4</h3>
-                    </div>
+
+
                     </Slider>     
                 </div>
             </div>
