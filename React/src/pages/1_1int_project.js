@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default function Introduction()
+export default function IntroProject()
 {
     return(
         <>
