@@ -2,6 +2,9 @@ import React from 'react';
 import Axios from 'axios';
 import Api from '../Api';
 
+import 'pages_css/4services.css';
+
+
 export default function Services()
 {
 
@@ -24,11 +27,14 @@ export default function Services()
         <>
             <div>
                 <div id='content_gray'>
-                <select>
-                    {industry.map((v)=>{
-                        return <option>{v['industry']}</option>
-                    })}
-                </select>
+                    <div id='select_industry'>
+                        <span>📍업종선택</span>
+                            <select>
+                                {industry.map((v)=>{
+                                    return <option>{v['industry']}</option>
+                                })}
+                            </select>
+                    </div>
                 </div>
             </div>
 

@@ -1,0 +1,12 @@
+#select_industry{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#select_industry > select{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#select_industry {
+    vertical-align: middle;
+}
