@@ -2,10 +2,7 @@ import React,{ Component } from 'react';
 import Slider from "react-slick";
 import 'pages_css/0home.css';
 
-import testimg1 from 'images/test1.jpg';
-import testimg2 from 'images/test2.jpg';
-import testimg3 from 'images/workplace.png';
-import testimg4 from 'images/test3.jpg';
+
 import main_banner02 from 'images/real_main_banner01.gif';
 import main_banner01 from 'images/real_main_banner02.jpg';
 
@@ -16,9 +13,11 @@ export default function Home(){
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 800,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500
     };
     
     return(
