@@ -1,20 +1,34 @@
 import React from 'react';
+import Axios from 'axios';
+import Api from '../Api';
 
 export default function Services()
 {
+
+
+    const [industry,setIndustry] = React.useState([]);
+    const [per,setPer] = React.useState([]);
+
+
+    React.useEffect(()=>{
+        Api.get('MEANOFPER/').then((res)=>{
+            console.log(res);
+            const {data} = res;
+            setIndustry(data)
+        });
+    },[])
+
+
+
     return(
         <>
             <div>
                 <div id='content_gray'>
-                    <li>업종선택 리스트 박스</li>
-                    <li>저평가, 고평가</li>
-                    <li>재무안정도</li>
-                    <select>
-                        <option value="grapefruit">Grapefruit</option>
-                        <option value="lime">Lime</option>
-                        <option selected value="coconut">Coconut</option>
-                        <option value="mango">Mango</option>
-                    </select>
+                <select>
+                    {industry.map((v)=>{
+                        return <option>{v['industry']}</option>
+                    })}
+                </select>
                 </div>
             </div>
 
