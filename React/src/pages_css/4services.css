@@ -4,43 +4,6 @@
     padding-bottom: 15px;
 }
 
-#content_white4{
-    width: 1000px;
-    height: auto;
-    margin: 0 auto;
-    border: 1px solid black;
-}
-
-#select_industry{
-    width: 65%;
-    border: 1px solid black;
-    box-sizing: border-box;
-}
-
-#select_industry > span{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 23px;
-    margin-bottom: 15px;
-}
-
-#select_industry > div > select{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 18px;
-}
-
-#select_industry > div > select > option{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 15px;
-}
-
-#finance_state{
-    width: 30%;
-    background-color: yellow;
-    float: left;
-    box-sizing: border-box;
-}
-
-
 #theme4{
     font-size:20px;
     font-family: 'Noto Sans KR', sans-serif;
@@ -65,4 +28,85 @@
 #content_gray4 > div > div > p:nth-child(4) > a{
     font-weight: 700;
 }
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
 
+#content_white4{
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 60px;
+    /* border: 1px solid black; */
+}
+
+#select_industry{
+    width: 70%;
+    /* border: 1px solid black;
+    border-radius: 30px; */
+    box-sizing: border-box;
+    float: left;
+}
+
+#select_industry,#finance_state > span{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+#select_industry > div > select{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+}
+
+#select_industry > div > select > option{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+}
+
+#finance_state{
+    width: 29%;
+    float: left;
+    /* border-radius: 30px;
+    border: 1px solid black; */
+}
+
+#first, #second{
+    float: left;
+    width: 50%
+
+}
+#second > .estimate1, .estimate2{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#second >.estimate1 > input{
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 150px;
+    margin-left: 10px;
+}
+
+#finance_state > .estimate2 > input {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 150px;
+    margin-left: 10px;
+}
+
+#finance_state > div:nth-child(2) > input{
+    margin-left: 24px;
+}
+
+#finance_state > .estimate2 > input {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 150px;
+    margin-left: 10px;
+}
+
+#finance_state > button{
+    margin-top: 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#second > button{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 10px;
+}
