@@ -3,15 +3,16 @@ import Axios from 'axios';
 import Api from '../Api';
 
 import 'pages_css/4services.css';
-import { Button } from 'antd';
-
+import { Modal, Button } from 'antd';
 
 export default function Services()
 {
-
-
     const [industry,setIndustry] = React.useState([]);
-    const [per,setPer] = React.useState([]);
+    const [per,setPer] = React.useState('');
+    const [pbr,setPbr] = React.useState('');
+    const [selectPer,setSelectPer] = React.useState('');
+    const [state,setState] = React.useState({ visible: false });
+    
 
 
     React.useEffect(()=>{
@@ -22,6 +23,37 @@ export default function Services()
         });
     },[])
 
+    const test = (e) => {
+        setSelectPer(e.target.value)
+    }
+
+    const test2 = (e) => {
+        setPer(e.target.value)
+    }
+    
+    const test3 = (e) => {
+        setPbr(e.target.value)
+    }
+///////////////////////////////////////////////////////////////////
+    const showModal = () => {
+        setState({
+            visible: true,
+        });
+      };
+
+    const handleOk = (e) => {
+        console.log(e);
+        setState({
+            visible:false,
+        });
+    };
+
+    const handleCancel = (e) => {
+        console.log(e);
+        setState({
+            visible:false,
+        });
+    };
 
 
     return(
@@ -47,9 +79,9 @@ export default function Services()
                         <div id='first'>
                             <span>📍업종선택</span>
                             <div>
-                                <select>
+                                <select onChange={test}>
                                     {industry.map((v)=>{
-                                        return <option>{v['industry']}</option>
+                                        return <option value={v['per']}>{v['industry']}</option>
                                     })}
                                 </select>
                             </div>
@@ -58,13 +90,36 @@ export default function Services()
                             <span>📍저/고평가</span>
                             <div class='estimate1'>
                                 PER
-                                <input/>
+                                <input value={per} onChange={test2}/>
                             </div>
                             <div class='estimate1'>
                                 PBR
-                                <input/>
+                                <input value={pbr} onChange={test3}/>
                             </div>
-                            <Button>확인!</Button>
+                            <Button onClick={showModal}>
+                                확인!
+                            </Button>           
+                            <Modal title="고객님의 주식 평가 결과는!"
+                                visible={state.visible}
+                                onOk={handleOk}
+                                onCancel={handleCancel}>
+                                {
+                                    parseInt(per - selectPer) + pbr > 1 && <>
+                                        <div>결과1</div>
+                                    </>
+                                }
+                                {
+                                    per - selectPer && <>
+                                        <div>결과2</div>
+                                    </>
+                                }
+                                {
+                                    per - selectPer && <>
+                                        <div>결과3</div>
+                                    </>
+                                }
+                                <p>Some contents...</p>
+                            </Modal>
                         </div>
                     </div>                    
                     <div id='finance_state'>
@@ -78,10 +133,11 @@ export default function Services()
                             <input/>
                         </div>
                         <Button>확인!</Button>
+                        {selectPer}<br/>
+                        {per}<br/>{pbr}
                     </div>
                 </div>
             </div>
-
         </>
         
     )

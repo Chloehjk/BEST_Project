@@ -27,6 +27,8 @@
 
 #content_gray4 > div > div > p:nth-child(4) > a{
     font-weight: 700;
+    color: black;
+    cursor: auto;
 }
 /*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
 
@@ -52,12 +54,7 @@
     margin-bottom: 15px;
 }
 
-#select_industry > div > select{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 18px;
-}
-
-#select_industry > div > select > option{
+#first > div > select{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 15px;
 }
