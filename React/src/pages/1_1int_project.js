@@ -2,8 +2,8 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import 'pages_css/1_1project.css';
 import project_img from 'images/project.PNG';
-import Texty from 'rc-texty';
-import 'rc-texty/assets/index.css';
+//import Texty from 'rc-texty';
+//import 'rc-texty/assets/index.css';
 
 
 function IntroProject(){
@@ -22,7 +22,7 @@ function IntroProject(){
 
                     </div>
                     <div className="texty-demo" style={{ marginTop: 64 }}>
-                        <Texty>Ant Motion</Texty>
+                        {/* <Texty>Ant Motion</Texty> */}
                     </div>
                     
                 </div>

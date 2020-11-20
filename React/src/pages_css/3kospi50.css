@@ -1,12 +1,12 @@
 #content_gray3{
     background-color: #ECE7E7;
     margin-top: 5px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     box-sizing: border-box;
 }
 
 .box3{
-    padding:10px 150px;
+    padding:30px 150px;
 }
 
 #title{
@@ -15,6 +15,7 @@
     font-weight: 500;
     text-decoration:underline;
     width: 350px;
+    margin-bottom: 25px;
 
 }
 
@@ -35,8 +36,7 @@
     margin: 50px;
     margin-left: 150px;
     width: 200px;
-    
-    background-color: #E0EBEC;
+    background-color: #DFF0F2;
 }
 
 #kospi50_list > tr> td{
@@ -44,16 +44,15 @@
 }
 
 #company{
-    padding:5px 40px;
-    border-bottom: 1px solid gray;
+    width:200px;
+    padding: 7px 0px;
+    border-bottom: 1px solid #A8A9B1;
+    letter-spacing: 2px;
 }
 
 #company:hover{
     font-weight: bold;
 }
-
-
-
 
 
 
@@ -81,7 +80,7 @@
 
 #button{
     margin: 20px 0px;
-    width: 300px;
+    width: 290px;
     height: 40px;
     background-color: white;
 }
