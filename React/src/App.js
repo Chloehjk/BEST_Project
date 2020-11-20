@@ -1,6 +1,6 @@
 import React from 'react';
 import 'App.css';
-//import'antd/dist/antd.css';
+import'antd/dist/antd.css';
 //import {Menu} from 'antd';
 import img1 from './images/logo1.png';
 //import Login from 'account/Login';
@@ -13,6 +13,7 @@ import BasicStock from 'pages/2_1basic_stock';
 import BasicInvest from 'pages/2_2basic_invest';
 import Kospi50 from 'pages/3kospi50';
 import Services from 'pages/4services';
+
 
 
 

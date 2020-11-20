@@ -1,15 +1,13 @@
+import ReactDOM from 'react-dom';
 import React from 'react';
 import 'pages_css/1_1project.css';
-import { useState } from 'react';
-import { Timeline, Radio } from 'antd';
 import project_img from 'images/project.PNG';
+import Texty from 'rc-texty';
+import 'rc-texty/assets/index.css';
 
 
+function IntroProject(){
 
-// export default function IntroProject()
-function IntroProject()
-
-{
     return(
         
             <div id='content'>
@@ -23,7 +21,9 @@ function IntroProject()
                         </ul>  
 
                     </div>
-                    {/* <TimelimeLabelDemo/> */}
+                    <div className="texty-demo" style={{ marginTop: 64 }}>
+                        <Texty>Ant Motion</Texty>
+                    </div>
                     
                 </div>
                 <img id='project1' src={project_img} alt='이런식으로 할거임'/> 
@@ -33,41 +33,26 @@ function IntroProject()
 }
 
 
+// class Demo extends React.Component {
+//     render() {
+//       return (
+//         <div>
+//           <Parallax
+//             animation={{ x: 0, opacity: 1, playScale: [0.5, 0.8] }}
+//             style={{ transform: 'translateX(-100px)', opacity: 0 }}
+//             className="code-box-shape"
+//           />
+//         </div>
+//       );
+//     }
+//   }
 
 
+// ReactDOM.render(
+//     <Demo/>,
+//     mountNode
 
-
-// function TimelimeLabelDemo() {
-//     const [mode, setMode] = useState('left');
-  
-//     const onChange = e => {
-//       setMode(e.target.value);
-//     };
-  
-//     return (
-//       <>
-        
-//         <Radio.Group
-//           onChange={onChange}
-//           value={mode}
-//           style={{
-//             marginBottom: 20,
-//           }}
-//         >
-//           <Radio value="left">Left</Radio>
-//           <Radio value="right">Right</Radio>
-//           <Radio value="alternate">Alternate</Radio>
-//         </Radio.Group>
-//         <Timeline mode={mode}>
-//           <Timeline.Item label="2015-09-01">Create a services</Timeline.Item>
-//           <Timeline.Item label="2015-09-01 09:12:11">Solve initial network problems</Timeline.Item>
-//           <Timeline.Item>Technical testing</Timeline.Item>
-//           <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-//         </Timeline>
-//       </>
-//     );
-// }
-
+// );
 
 export default IntroProject
 

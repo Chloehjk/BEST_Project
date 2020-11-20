@@ -69,12 +69,11 @@ export default function BasicStock()
                             </li>
                         <div id = 'youtube_container'>
                             <p align = 'middle'>
-                            <iframe id='youtube3' src="https://www.youtube.com/embed/92550HuR3Ss" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='true'></iframe>
+                            <iframe id='youtube3' src="https://www.youtube.com/embed/uhqFaT0YI1w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='true'></iframe>
                             <iframe id='youtube4' src="https://www.youtube.com/embed/UDNbcrIrfzc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='true'></iframe>
                             <iframe id='youtube5' src="https://www.youtube.com/embed/ZpSdwgL5K5A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='true'></iframe>
                             </p>
                         </div>
-
                         <ul class='title'>3. 주식차트분석📈</ul>
                             <li class='idea'>
                                 주식이라는 단어를 들었을 때에 빨간색과 파란색의 선들로 이루어진 차트를 떠올리는 분들이 많을텐데요,<br/>
