@@ -104,21 +104,50 @@ export default function Services()
                                 onOk={handleOk}
                                 onCancel={handleCancel}>
                                 {
-                                    parseInt(per - selectPer) + pbr > 1 && <>
-                                        <div>결과1</div>
-                                    </>
+                                    (()=>{
+
+                                        let realper = 0;
+                                        let realpbr = 0;
+
+                                        if (per > selectPer){
+                                            realper -= 1
+                                        }
+                                        else if (per == selectPer){
+                                            realper += 0
+                                        }
+                                        else if (per < selectPer){
+                                            realper += 1
+                                        };
+/////////////////////////////////////////////////////////////////////////////////////////////
+                                        if (pbr < 1){
+                                            realpbr +=1
+                                        }
+                                        else if (pbr>2.5){
+                                            realpbr -=1
+                                        }
+                                        else {
+                                            realpbr += 0
+                                        };
+/////////////////////////////////////////////////////////////////////////////////////////////
+                                        if ((realpbr + realpbr)==2){
+                                            return <>
+                                            <p>아주 좋음</p>
+                                            </>
+                                        }
+                                        else if ((realpbr + realpbr)>=-1 && (realpbr + realpbr)<=1){
+                                            return <>
+                                            <p>보통</p>
+                                            </>
+                                        }
+                                        else if ((realpbr + realpbr)==-2){
+                                            return <>
+                                            <p>아주 안좋음</p>
+                                            </>
+                                        };
+                                    })()
+                                    
                                 }
-                                {
-                                    per - selectPer && <>
-                                        <div>결과2</div>
-                                    </>
-                                }
-                                {
-                                    per - selectPer && <>
-                                        <div>결과3</div>
-                                    </>
-                                }
-                                <p>Some contents...</p>
+                                <p>Some contents.222..</p>
                             </Modal>
                         </div>
                     </div>                    
