@@ -2,6 +2,8 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import 'pages_css/1_1project.css';
 import project_img from 'images/project.PNG';
+//import Texty from 'rc-texty';
+//import 'rc-texty/assets/index.css';
 
 
 function IntroProject(){

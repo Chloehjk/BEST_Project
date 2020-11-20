@@ -1,9 +1,36 @@
 import React from 'react';
 import 'pages_css/3kospi50.css';
+import Axios from 'axios';
+import Api from '../Api';
 
 
 export default function Kospi50()
 {
+    
+    const [kospilist,setKospilist] = React.useState([]);
+    const [code, setCode] = React.useState([]);
+
+    React.useEffect(()=>{
+        Api.get('KOSPI50/').then((res)=>{
+            
+            const {data} = res;
+            // const dataa = res.data;
+            setKospilist(data)
+            console.log(data)
+            
+        });
+    },[])
+
+
+    // const getCode = (e) =>{
+    //     setCode(e.target.value)
+    //     console.log(code);
+    // }
+
+
+
+
+
     return(
         <>
             <div>
@@ -20,14 +47,20 @@ export default function Kospi50()
                 </div>
                 
                 <div id='kospi50_list'>
-                    기업리스트 여기
+                    <tr>
+                        <td>
+                            {kospilist.map((v)=>{
+                            return <div id='company' value={v.code}>{v.name}</div>
+                            })} 
+                        </td>
+                    </tr>
+                    
                 </div>
 
                 <div id='content_white3'>
 
                     <div id='chart'> 
-                        차트는 요기~
-
+                        
                     </div>
                     <div id='buttons'>
                         <button id ='button'>재무제표 🔻</button>
@@ -36,7 +69,9 @@ export default function Kospi50()
                     </div> 
 
                     <div id='show_contents'>
-                        세부내용
+                        {code.map((v)=>{
+                            return <div>{v.code}</div>
+                        })} 
                     </div>
                   
                 
