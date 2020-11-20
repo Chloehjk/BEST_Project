@@ -1,6 +1,6 @@
 import React from 'react';
 import 'App.css';
-//import'antd/dist/antd.css';
+import'antd/dist/antd.css';
 //import {Menu} from 'antd';
 import img1 from './images/logo1.png';
 //import Login from 'account/Login';
