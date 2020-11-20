@@ -8,7 +8,7 @@ export default function Kospi50()
         <>
             <div>
                 <div id='content_gray3'>
-                    <div class='box'>
+                    <div class='box3'>
                         <h4 id='title'>✔ KOSPI50 기업별 특징을 알아보세요</h4>
                         <div id='sub_title'>
                             <p>① 주식기초백과는 공부하셨나요? 그렇다면 이제는 재무제표를 확인해 볼 때!</p>       
@@ -27,14 +27,22 @@ export default function Kospi50()
 
                     <div id='chart'> 
                         차트는 요기~
+
+                    </div>
+                    <div id='buttons'>
+                        <button id ='button'>재무제표 🔻</button>
+                        <button id ='button'>급락 급등 Point 🔻</button>
+                        <button id ='button'>긍정 or 부정 분석 결과 🔻</button>
+                    </div> 
+
+                    <div id='show_contents'>
+                        세부내용
                     </div>
                   
+                
                 </div>
             </div>
-
-
         </>
         
     )
 }
-
