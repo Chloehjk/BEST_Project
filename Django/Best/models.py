@@ -44,5 +44,5 @@ class POSORNEG(models.Model):
 
 class MEANOFPER(models.Model):  #PER평균
     industry = models.CharField(max_length=20)   #업종
-    per = models.IntegerField()  #업종별 평균 PER
+    per = models.FloatField()  #업종별 평균 PER
     company = models.CharField(max_length=50)  #해당회사
