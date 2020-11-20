@@ -7,7 +7,6 @@
 
 .box3{
     padding:10px 150px;
-    text-align: center;
 }
 
 #title{
@@ -34,11 +33,28 @@
 #kospi50_list{
     float:left;
     margin: 50px;
-    margin-left: 80px;
+    margin-left: 150px;
     width: 200px;
-    height: 1000px;
-    border: 1px solid black;
+    
+    background-color: #E0EBEC;
 }
+
+#kospi50_list > tr> td{
+    text-align: center;
+}
+
+#company{
+    padding:5px 40px;
+    border-bottom: 1px solid gray;
+}
+
+#company:hover{
+    font-weight: bold;
+}
+
+
+
+
 
 
 #content_white3{
