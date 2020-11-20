@@ -50,7 +50,7 @@ export default function Kospi50()
                     <tr>
                         <td>
                             {kospilist.map((v)=>{
-                            return <div id='company' value={v.code} onClick>{v.name}</div>
+                            return <div id='company' value={v.code}>{v.name}</div>
                             })} 
                         </td>
                     </tr>
