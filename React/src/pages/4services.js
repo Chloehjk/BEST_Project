@@ -3,6 +3,7 @@ import Axios from 'axios';
 import Api from '../Api';
 
 import 'pages_css/4services.css';
+import { Button } from 'antd';
 
 
 export default function Services()
@@ -42,8 +43,8 @@ export default function Services()
                 </div>
 
                 <div id='content_white4'>
-                    <div>
-                        <div id='select_industry'>
+                    <div id='select_industry'>
+                        <div id='first'>
                             <span>📍업종선택</span>
                             <div>
                                 <select>
@@ -52,10 +53,31 @@ export default function Services()
                                     })}
                                 </select>
                             </div>
-                        </div>                    
-                        <div id='finance_state'>
-                            djWJfn
                         </div>
+                        <div id='second'>
+                            <span>📍저/고평가</span>
+                            <div class='estimate1'>
+                                PER
+                                <input/>
+                            </div>
+                            <div class='estimate1'>
+                                PBR
+                                <input/>
+                            </div>
+                            <Button>확인!</Button>
+                        </div>
+                    </div>                    
+                    <div id='finance_state'>
+                        <span>📍재무 안정도</span>
+                        <div class='estimate2'>
+                            유보율
+                            <input/>
+                        </div>
+                        <div class='estimate2'>
+                            부채비율
+                            <input/>
+                        </div>
+                        <Button>확인!</Button>
                     </div>
                 </div>
             </div>
