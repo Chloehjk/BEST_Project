@@ -20,6 +20,7 @@ body{
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
+    text-align: center;
     /* border: 1px solid black; */
 }
 
@@ -70,8 +71,17 @@ ul{
 }
 
 #girl1 {
-    width:300px;
-    height:200px;
-    padding: 50px;
-    padding-left: 200px;
+    width:250px;
+    height:300px;
+    padding: 30px;
 }
+
+
+#team {
+    width:250px;
+    height:300px;
+    padding: 10px;
+    text-align: center;
+}
+
+

@@ -2,13 +2,8 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import 'pages_css/1_1project.css';
 import project_img from 'images/project.PNG';
-<<<<<<< HEAD
-// import Texty from 'rc-texty';
-// import 'rc-texty/assets/index.css';
-=======
 //import Texty from 'rc-texty';
 //import 'rc-texty/assets/index.css';
->>>>>>> f5721443205266595fce2d146bba4221ddb6fcaf
 
 
 function IntroProject(){
