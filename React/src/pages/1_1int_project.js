@@ -32,7 +32,7 @@ function IntroProject(){
                         프로젝트명
                         </div>
                         <div id = 'introduce_body'>
-                        주린이들을 위한 주식지침서 (Wanna Be <b>BEST</b> Stock Holder)
+                        주린이들을 위한 주식지침서 (Wanna Be <b>BEST</b> Stock Holder📈)
                         </div>
                     </div>
 
@@ -42,8 +42,8 @@ function IntroProject(){
                         주제 선정 배경
                         </div>
                         <div id = 'introduce_body'>
-                        주식을 시작하고 싶지만 입문 방법을 몰라 고민하고 계신 분들과, 
-                        주식을 시작한지얼마 되지 않아 주식에 대해 많은 지식이 없는 주린이들을 위해
+                        주식을 시작하고 싶지만 입문 방법을 몰라 고민하고 계신 분들과, <br/>
+                        주식을 시작한지얼마 되지 않아 주식에 대해 많은 지식이 없는 주린이들을 위해<br/>
                         BEST가 준비한 주식 기초정보를 익히고 투자방법에 대해서도 함께 알아보는 사이트가 있으면 좋겠다고 생각하여 만들게 되었습니다.
                         </div>
                     </div>
@@ -110,7 +110,10 @@ function IntroProject(){
                         기대효과
                         </div>
                         <div id = 'introduce_body'>
-                        저희는 총 세가지의 서비스를 제공하였습니다.
+                        1. 주식투자 시 개인의 손실 최소화<br/> 
+                        2. 주식 기초 지식을 습득할 수 있는 정보제공의 장 마련<br/> 
+                        3. 주가정보 플랫폼과의 연계<br/> 
+                        4. 광고 수익 창출 기대효과<br/> 
                         </div>
                     </div>
                 </div>   
