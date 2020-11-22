@@ -16,15 +16,106 @@ function IntroProject(){
                         <ul id='theme'>✔ BEST 프로젝트 소개</ul>
                         <ul id='description'>
                             
-                        프로젝트 소개를 적어주세요.<br/>
-                        (주제 선정 배경, 데이터 활용방법, 구현기능, 기대효과 등)
+                        BEST 프로젝트의 기획부터 완성까지의 단계를 한번에 보실 수 있습니다.<br/>
+                        어떤 과정을 거쳐 BEST가 여러분께 선보일 수 있게 되었는지 궁금하시지 않으세요?<br/>
+                        팀원들의 많은 노력 끝에 탄생한 BEST 프로젝트의 탄생과정을 소개합니다!👶🏻 
+                        
                         </ul>  
 
                     </div>
                     
                 </div>
-                <img id='project1' src={project_img} alt='이런식으로 할거임'/> 
-            </div>
+            
+                <div id = 'total_container'>
+                    <div id = 'introduce_container'>
+                        <div id = 'introduce_title'>
+                        프로젝트명
+                        </div>
+                        <div id = 'introduce_body'>
+                        주린이들을 위한 주식지침서 (Wanna Be <b>BEST</b> Stock Holder)
+                        </div>
+                    </div>
+
+
+                    <div id = 'introduce_container'>
+                        <div id = 'introduce_title'>
+                        주제 선정 배경
+                        </div>
+                        <div id = 'introduce_body'>
+                        주식을 시작하고 싶지만 입문 방법을 몰라 고민하고 계신 분들과, 
+                        주식을 시작한지얼마 되지 않아 주식에 대해 많은 지식이 없는 주린이들을 위해
+                        BEST가 준비한 주식 기초정보를 익히고 투자방법에 대해서도 함께 알아보는 사이트가 있으면 좋겠다고 생각하여 만들게 되었습니다.
+                        </div>
+                    </div>
+
+                    <div id = 'introduce_container'>
+                        <div id = 'introduce_title'>
+                        제작 기간
+                        </div>
+                        <div id = 'introduce_body'>
+                        2020.10.27~2020.12.01
+                        </div>
+                    </div>
+
+                    <div id = 'introduce_container'>
+                        <div id = 'introduce_title'>
+                        팀원 구성 및 역할
+                        </div>
+                        <div id = 'introduce_body'>
+                        <b><font size = '3'>김현진</font></b> - 역할을 적어주세요.<br/>
+                        <font color = 'gray'>Click ☝🏻</font><br/><br/>
+                        <b><font size = '3'>이지현</font></b> - 역할을 적어주세요.<br/>
+                        <font color = 'gray'>Click ☝🏻</font><br/><br/>
+                        <b><font size = '3'>한수란</font></b> - 워드클라우드 및 프론트엔드 제작<br/>
+                        <font color = 'gray'>Click ☝🏻</font><br/>
+                        (members 페이지로 랜딩되도록!)
+                        </div>
+                    </div>
+
+                    <div id = 'introduce_container'>
+                        <div id = 'introduce_title'>
+                        데이터 수집 및 활용방법
+                        </div>
+                        <div id = 'introduce_body'>
+                        저희가 데이터를 활용한 방법에 대해 알려드리겠습니다.
+                        </div>
+                    </div>
+
+                    <div id = 'introduce_container'>
+                        <div id = 'introduce_title'>
+                        구현기능
+                        </div>
+                        <div id = 'introduce_body'>
+                            <b><font size = '4'>① 주식기초백과</font></b>
+                            <font color = 'gray'> Click 👈🏻</font><br/>
+                            주식에 대한 기초 지식과 투자 방법에 대해 알아 볼 수 있는 페이지 입니다.<br/><br/>
+
+                            <b><font size = '4'>② KOSPI50</font></b>
+                            <font color = 'gray'> Click 👈🏻</font><br/>
+                            기업별 재무제표와 주식의 급락/급등 포인트를 워드클라우드를 통해 한눈에 보실수 있습니다.<br/> 
+                            뉴스기사 데이터를 통한 기업의 주식관련 긍부정 키워드 비율도 알아보세요!<br/><br/>
+                         
+                            <b><font size = '4'>③ 펀더멘탈 분석서비스</font></b>
+                            <font color = 'gray'> Click 👈🏻</font><br/>
+                            재무제표를 지표를 바탕으로 기업의 기초체력을 확인할 수 있는 분석tool을 제공합니다.<br/> 
+                            1. PER, PBR지표를 활용한 주식의 고평가/저평가 여부를 확인 할 수 있습니다.<br/>
+                            2. 유보율과 부채비율을 활용한 기업의 재무안정도를 확인 할 수 있습니다.
+                            
+                        </div>
+                               
+                    </div>
+
+                    <div id = 'introduce_container'>
+                        <div id = 'introduce_title'>
+                        기대효과
+                        </div>
+                        <div id = 'introduce_body'>
+                        저희는 총 세가지의 서비스를 제공하였습니다.
+                        </div>
+                    </div>
+                </div>   
+            </div>     
+            
             
     )
 }
