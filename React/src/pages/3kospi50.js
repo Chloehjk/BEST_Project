@@ -2,6 +2,7 @@ import React from 'react';
 import 'pages_css/3kospi50.css';
 import Axios from 'axios';
 import Api from '../Api';
+import qs from 'qs';
 
 
 export default function Kospi50()
@@ -9,6 +10,8 @@ export default function Kospi50()
     
     const [kospilist,setKospilist] = React.useState([]);
     const [code, setCode] = React.useState([]);
+    const [date, setDate] = React.useState([]);
+    const [closeprice, setCloseprice] = React.useState([]);
 
     React.useEffect(()=>{
         Api.get('KOSPI50/').then((res)=>{
@@ -16,20 +19,25 @@ export default function Kospi50()
             const {data} = res;
             // const dataa = res.data;
             setKospilist(data)
-            console.log(data)
+            //console.log(data)
             
-        });
+        }).then()
     },[])
 
+   
+    const selectCom = (e) =>{
+        Api.get('STOCKVALUES?code=' + e.target.getAttribute("value"))
+        .then((res)=>{
+            const {data} = res;
+            data.map((v)=>{
+                setDate(...date, v.date)
+                
+            })
 
-    // const getCode = (e) =>{
-    //     setCode(e.target.value)
-    //     console.log(code);
-    // }
 
-
-
-
+        })
+        
+    }
 
     return(
         <>
@@ -50,7 +58,7 @@ export default function Kospi50()
                     <tr>
                         <td>
                             {kospilist.map((v)=>{
-                            return <div id='company' value={v.code}>{v.name}</div>
+                            return <div id='company' value={v.code} onClick={selectCom}>{v.name}</div>
                             })} 
                         </td>
                     </tr>
@@ -60,19 +68,15 @@ export default function Kospi50()
                 <div id='content_white3'>
 
                     <div id='chart'> 
-                        
+                        {date}
                     </div>
+
+
                     <div id='buttons'>
                         <button id ='button'>재무제표 🔻</button>
                         <button id ='button'>급락 급등 Point 🔻</button>
                         <button id ='button'>긍정 or 부정 분석 결과 🔻</button>
                     </div> 
-
-                    <div id='show_contents'>
-                        {code.map((v)=>{
-                            return <div>{v.code}</div>
-                        })} 
-                    </div>
                   
                 
                 </div>
