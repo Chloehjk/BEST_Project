@@ -10,8 +10,8 @@ export default function Kospi50()
     
     const [kospilist,setKospilist] = React.useState([]);
     const [code, setCode] = React.useState([]);
-    const [date, setDate] = React.useState([]);
-    const [closeprice, setCloseprice] = React.useState([]);
+    const [graphdata, setGraphdata] = React.useState({'date':[], 'closeprice':[]});
+ 
 
     React.useEffect(()=>{
         Api.get('KOSPI50/').then((res)=>{
@@ -29,10 +29,16 @@ export default function Kospi50()
         Api.get('STOCKVALUES?code=' + e.target.getAttribute("value"))
         .then((res)=>{
             const {data} = res;
-            data.map((v)=>{
-                setDate(...date, v.date)
-                
+            console.log(data);
+            const g_date = data.map((v)=>{
+                return v.date;
             })
+            const g_closeprice = data.map((v)=>{
+                return v.closeprice;
+            })
+            
+            setGraphdata({'date': g_date, 'closeprice': g_closeprice})
+          
 
 
         })
@@ -68,7 +74,7 @@ export default function Kospi50()
                 <div id='content_white3'>
 
                     <div id='chart'> 
-                        {date}
+                        {graphdata.date}
                     </div>
 
 
