@@ -3,13 +3,15 @@ import 'pages_css/3kospi50.css';
 import Axios from 'axios';
 import Api from '../Api';
 import qs from 'qs';
+import Plot from 'react-plotly.js';
+
+
 
 
 export default function Kospi50()
 {
     
     const [kospilist,setKospilist] = React.useState([]);
-    const [code, setCode] = React.useState([]);
     const [graphdata, setGraphdata] = React.useState({'date':[], 'closeprice':[]});
  
 
@@ -38,11 +40,8 @@ export default function Kospi50()
             })
             
             setGraphdata({'date': g_date, 'closeprice': g_closeprice})
-          
 
-
-        })
-        
+        })       
     }
 
     return(
@@ -74,16 +73,30 @@ export default function Kospi50()
                 <div id='content_white3'>
 
                     <div id='chart'> 
-                        {graphdata.date}
+                        <Plot
+                            data={[
+                            {
+                                x: graphdata.date,
+                                y: graphdata.closeprice,
+                                type: 'line',
+                                mode: 'line',
+                                
+                            },
+                            {type: 'line', x: graphdata.date, y: graphdata.closeprice},
+                            ]}
+                            layout={ {width: 800, height: 380, title: '2020 주가데이터 그래프'} }
+                        /> 
+                                                  
                     </div>
-
 
                     <div id='buttons'>
                         <button id ='button'>재무제표 🔻</button>
                         <button id ='button'>급락 급등 Point 🔻</button>
                         <button id ='button'>긍정 or 부정 분석 결과 🔻</button>
                     </div> 
-                  
+
+                   
+                     
                 
                 </div>
             </div>
