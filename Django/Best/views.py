@@ -21,6 +21,13 @@ class STOCKVALUESView(ModelViewSet):
     queryset = STOCKVALUES.objects.all()
     serializer_class = STOCKVALUESSerializer
 
+    def get_queryset(self):
+        qs = super().get_queryset()
+        code = self.request.query_params.get('code')
+        if code:
+            qs = qs.filter(code=code)
+        return qs
+
 
 class FINANCESTATEView(ModelViewSet):
     
