@@ -62,6 +62,8 @@ export default function Kospi50()
                     <div id='chart'> 
                         
                     </div>
+
+
                     <div id='buttons'>
                         <button id ='button'>재무제표 🔻</button>
                         <button id ='button'>급락 급등 Point 🔻</button>
