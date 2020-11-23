@@ -54,6 +54,7 @@ function IntroProject(){
                         </div>
                         <div id = 'introduce_body'>
                         2020.10.27~2020.12.01
+                        (Trello&아날로그 캘린더 참고해서 대략적인 제작과정 쓰기)
                         </div>
                     </div>
 
