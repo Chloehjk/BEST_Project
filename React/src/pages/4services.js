@@ -2,14 +2,25 @@ import React from 'react';
 import Axios from 'axios';
 import Api from '../Api';
 
+import happy from 'images/happy.png';
+import neutral from 'images/neutral.png';
+import sad from 'images/sad.png';
+
 import 'pages_css/4services.css';
-import { Modal, Button } from 'antd';
+import { Modal, Button, message, notification, Space } from 'antd';
+import { QuestionCircleOutlined } from '@ant-design/icons';
+
+notification.config(
+    {duration: 10}
+)
 
 export default function Services()
 {
     const [industry,setIndustry] = React.useState([]);
     const [per,setPer] = React.useState('');
     const [pbr,setPbr] = React.useState('');
+    const [reserve_ratio, setReserve_ratio] = React.useState('');
+    const [debt_ratio, setDebt_ratio] = React.useState('');
     const [selectPer,setSelectPer] = React.useState('');
     const [state,setState] = React.useState({ visible: false });
     
@@ -30,12 +41,34 @@ export default function Services()
     const test2 = (e) => {
         setPer(e.target.value)
     }
-    
+
+       
     const test3 = (e) => {
         setPbr(e.target.value)
     }
+
+    const test4 = (e) => {
+        setReserve_ratio(e.target.value)
+    }
+
+    const test5 = (e) => {
+        setDebt_ratio(e.target.value)
+    }
 ///////////////////////////////////////////////////////////////////
     const showModal = () => {
+        const check = /^[0-9\.]+$/g
+        // console.log(!check.test(per))
+
+        if(! ((/^[0-9\.]+$/g.test(per)) && (/^[0-9\.]+$/g.test(pbr)))) {
+            message.info('숫자를 입력해주세요!');
+            return
+        }
+
+        if(! ((/^[0-9\.]+$/g.test(reserve_ratio)) && (/^[0-9\.]+$/g.test(debt_ratio)))) {
+            message.info('숫자를 입력해주세요!');
+            return
+        }
+
         setState({
             visible: true,
         });
@@ -52,6 +85,14 @@ export default function Services()
         console.log(e);
         setState({
             visible:false,
+        });
+    };
+
+    const openNotificationWithIcon = type => {
+        notification[type]({
+            message: '주의사항',
+            description:
+            '철강, 건설, 항공 등의 장비가 필요한 산업의 경우는 저평가가 나와도 설비나 장비가 부채일 가능성이 높기 때문에, 재무 안정도 분석을 꼭 봐주세요!',
         });
     };
 
@@ -96,9 +137,7 @@ export default function Services()
                                 PBR
                                 <input value={pbr} onChange={test3}/>
                             </div>
-                            <Button onClick={showModal}>
-                                확인!
-                            </Button>           
+                            <Button onClick={showModal}>확인!</Button>           
                             <Modal title="고객님의 주식 평가 결과는!"
                                 visible={state.visible}
                                 onOk={handleOk}
@@ -131,40 +170,112 @@ export default function Services()
 /////////////////////////////////////////////////////////////////////////////////////////////
                                         if ((realpbr + realpbr)==2){
                                             return <>
-                                            <p>아주 좋음</p>
+                                            <div class='face'>
+                                                <p>아주 좋아요:)</p>
+                                                <img id='happy' src={happy} width='50px'/>
+                                            </div>
                                             </>
                                         }
                                         else if ((realpbr + realpbr)>=-1 && (realpbr + realpbr)<=1){
                                             return <>
-                                            <p>보통</p>
+                                            <div class='face'>
+                                                <p>보통이에요:/</p>
+                                                <img id='neutral' src={neutral} width='50px'/>
+                                            </div>
                                             </>
                                         }
                                         else if ((realpbr + realpbr)==-2){
                                             return <>
-                                            <p>아주 안좋음</p>
+                                            <div class='face'>
+                                                <p>아주 안좋아요:(</p>
+                                                <img id='sad' src={sad} width='50px'/>
+                                            </div>
                                             </>
                                         };
                                     })()
                                     
                                 }
-                                <p>Some contents.222..</p>
                             </Modal>
                         </div>
                     </div>                    
                     <div id='finance_state'>
                         <span>📍재무 안정도</span>
+                        <Space><QuestionCircleOutlined onClick={() => openNotificationWithIcon('warning')}/></Space>
                         <div class='estimate2'>
                             유보율
-                            <input/>
+                            <input onChange={test4}/>
                         </div>
                         <div class='estimate2'>
                             부채비율
-                            <input/>
+                            <input onChange={test5}/>
                         </div>
-                        <Button>확인!</Button>
-                        {selectPer}<br/>
-                        {per}<br/>{pbr}
+                        <Button onClick={showModal}>확인!</Button>
+                        <Modal title='고객님이 선택한 기업의 재무안정도 결과는!'
+                        visible={state.visible}
+                                onOk={handleOk}
+                                onCancel={handleCancel}>
+                                {
+                                    (()=>{
+
+                                        let real_reserve = 0;
+                                        let real_debt = 0;
+
+                                        if (reserve_ratio < 100){
+                                            real_reserve -= 1
+                                        }
+                                        else if (reserve_ratio >= 500){
+                                            real_reserve += 1
+                                        }
+                                        else{
+                                            real_reserve += 0
+                                        };
+/////////////////////////////////////////////////////////////////////////////////////////////
+                                        if (debt_ratio <= 100){
+                                            real_debt += 1
+                                        }
+                                        else if (debt_ratio > 200){
+                                            real_debt -= 1
+                                        }
+                                        else {
+                                            real_debt += 0
+                                        };
+/////////////////////////////////////////////////////////////////////////////////////////////
+                                        if ((real_reserve + real_debt)==2){
+                                            return <>
+                                            <div class='face'>
+                                                <p>아주 좋아요:)</p>
+                                                <img id='happy' src={happy} width='50px'/>
+                                            </div>
+                                            </>
+                                        }
+                                        else if ((real_reserve + real_debt)>=-1 && (real_reserve + real_debt)<=1){
+                                            return <>
+                                            <div class='face'>
+                                                <p>보통이에요:/</p>
+                                                <img id='neutral' src={neutral} width='50px'/>
+                                            </div>
+                                            </>
+                                        }
+                                        else if ((real_reserve + real_debt)==-2){
+                                            return <>
+                                            <div class='face'>
+                                                <p>아주 안좋아요:(</p>
+                                                <img id='sad' src={sad} width='50px'/>
+                                            </div>
+                                            </>
+                                        };
+                                    })()
+                                    
+                                }
+                        </Modal>
+                    </div>                    
+                </div>
+                <div id='naverfinance'>
+                    <div id='aboutiframe'>
+                        👇🏻확인하고 싶은 기업을 아래에서 검색해보세요!<br/>
+                        <span>(검색 후에, 스크롤을 내리시면 재무제표 안의 지표들을 활용해 best에서 펀더멘탈 분석을 할 수 있답니다😁)</span>
                     </div>
+                    <div><iframe src='https://finance.naver.com/'></iframe></div>
                 </div>
             </div>
         </>
