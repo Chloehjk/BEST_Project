@@ -1,5 +1,6 @@
 #total_container{
-    margin: 0 auto;    
+    margin: 0 auto;   
+    width: 1500px;    
 }
 
 #logo{
@@ -58,6 +59,10 @@
 
 #subone, #subtwo{
     letter-spacing: 1px;
+}
+
+#subone> a, #subtwo> a{
+    color: black;
 }
 
 #menu > a, #menu a:visited{
