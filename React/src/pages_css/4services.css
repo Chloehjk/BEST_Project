@@ -34,7 +34,7 @@
 
 #content_white4{
     width: 1000px;
-    height: 600px;
+    height: 300px;
     margin: 0 auto;
     margin-top: 60px;
     /* border: 1px solid black; */
@@ -107,3 +107,39 @@
     font-family: 'Noto Sans KR', sans-serif;
     margin-top: 10px;
 }
+
+body > div:nth-child(8) > div > div.ant-modal-wrap > div > div.ant-modal-content > div.ant-modal-body > .face,
+body > div:nth-child(9) > div > div.ant-modal-wrap > div > div.ant-modal-content > div.ant-modal-body > .face{
+    text-align: center;
+    font-weight: 600;
+}
+#rcDialogTitle1, #rcDialogTitle3{
+    text-align: center;
+}
+
+#naverfinance{
+    text-align: center;
+}
+
+#naverfinance > div> iframe {
+    width: 1000px;
+    height: 1000px;
+}
+
+#aboutiframe{
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#aboutiframe > span{
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+}
+
+#finance_state > span:nth-child(2) > span > svg{
+    width: 15px;
+    margin-left: 10px;
+}    
