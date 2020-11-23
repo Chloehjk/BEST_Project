@@ -20,6 +20,7 @@ body{
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
+    text-align: center;
     /* border: 1px solid black; */
 }
 
@@ -69,9 +70,18 @@ ul{
     color:white;
 }
 
-#introduce1 {
-    width:150px;
-    height:200px;
-    padding: 20px;
-    padding-left: 200px;
+#girl1 {
+    width:250px;
+    height:300px;
+    padding: 30px;
 }
+
+
+#team {
+    width:250px;
+    height:300px;
+    padding: 10px;
+    text-align: center;
+}
+
+
