@@ -1,5 +1,4 @@
 import React from 'react';
-import Axios from 'axios';
 import Api from '../Api';
 
 import happy from 'images/happy.png';
@@ -11,7 +10,7 @@ import { Modal, Button, message, notification, Space } from 'antd';
 import { QuestionCircleOutlined } from '@ant-design/icons';
 
 notification.config(
-    {duration: 10}
+    {duration: 30}
 )
 
 export default function Services()
@@ -42,7 +41,6 @@ export default function Services()
     const test2 = (e) => {
         setPer(e.target.value)
     }
-
        
     const test3 = (e) => {
         setPbr(e.target.value)
