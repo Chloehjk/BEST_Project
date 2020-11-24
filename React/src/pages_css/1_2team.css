@@ -71,10 +71,11 @@ ul{
     color:white;
 }
 
-#face {
-    width:200px;
-    height:200px;
+#profile_top1, #profile_top2, #profile_top3{
+    width:250px;
+    height:250px;
     padding: 40px;
+    float: left;
 }
 
 
@@ -98,10 +99,35 @@ ul{
     margin-top: 60px;
 }
 
+#introduce_top {
+    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    border: 1px solid black;
+}
+
+
+#profile_body {
+    width:200px;
+    height:240px;
+    padding: 15px;
+    margin-top: 30px;
+}
 
 
 #members_detail {
     text-align: center;
-    font-size:13px;
+    font-size:15px;
+    margin-top: 30px;
+}
+
+#face{ 
+    margin: 0 auto;
+    width: 750px;
+}
+
+#name > span{
+    margin: 100px;
 }
 
