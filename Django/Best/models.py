@@ -14,22 +14,22 @@ class FINANCESTATE(models.Model):
     code = models.ForeignKey(KOSPI50, on_delete = models.CASCADE)
     annual_year = models.CharField(max_length=5)
     date = models.DateField()
-    sales = models.IntegerField()   # 매출액
-    business_profit = models.IntegerField()  #영업이익
-    net_profit = models.IntegerField()  #당기순이익
-    bp_percent = models.IntegerField()  #영업이익률
-    np_percent = models.IntegerField()  #순이익률
-    roe = models.IntegerField() 
-    debt_ratio = models.IntegerField()  #부채비율
-    quick_ratio = models.IntegerField()  #당좌비율
-    reserve_ratio = models.IntegerField()  #유보율
-    eps = models.IntegerField()
-    per = models.IntegerField()
-    bps = models.IntegerField()
-    pbr = models.IntegerField()
-    per_share = models.IntegerField()  #주당배당금
-    dividend_rate = models.IntegerField()  #시가배당률
-    propensity_rate = models.IntegerField()  #배당성향
+    sales = models.FloatField()   # 매출액
+    business_profit = models.FloatField()  #영업이익
+    net_profit = models.FloatField()  #당기순이익
+    bp_percent = models.FloatField()  #영업이익률
+    np_percent = models.FloatField()  #순이익률
+    roe = models.FloatField() 
+    debt_ratio = models.FloatField()  #부채비율
+    quick_ratio = models.FloatField()  #당좌비율
+    reserve_ratio = models.FloatField()  #유보율
+    eps = models.FloatField()
+    per = models.FloatField()
+    bps = models.FloatField()
+    pbr = models.FloatField()
+    per_share = models.FloatField()  #주당배당금
+    dividend_rate = models.FloatField()  #시가배당률
+    propensity_rate = models.FloatField()  #배당성향
 
 class POSORNEG(models.Model):
     code = models.ForeignKey(KOSPI50, on_delete = models.CASCADE)
