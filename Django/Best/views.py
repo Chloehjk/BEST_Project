@@ -34,6 +34,13 @@ class FINANCESTATEView(ModelViewSet):
     queryset = FINANCESTATE.objects.all()
     serializer_class = FINANCESTATESerializer
 
+    def get_queryset(self):
+        qs = super().get_queryset()
+        code = self.request.query_params.get('code')
+        if code:
+            qs = qs.filter(code=code)
+        return qs
+
 class POSORNEGView(ModelViewSet):
     
     queryset = POSORNEG.objects.all()

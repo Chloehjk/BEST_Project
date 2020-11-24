@@ -26,6 +26,10 @@
     margin-bottom: 20px;
 }
 
+#sub_title p > span{
+    font-weight: 600;
+}
+
 #sub_title p2{
     font-size: 13px;
     
@@ -92,7 +96,6 @@
 }
 
 
-
 #show_contents{
     width:900px;
     height:500px;
@@ -101,4 +104,13 @@
 
 g .legend{
     display:none;
+}
+
+#financestate_title{
+    margin-top: 30px;
+    font-family: 'Noto Sans KR, sans-serif';
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
 }

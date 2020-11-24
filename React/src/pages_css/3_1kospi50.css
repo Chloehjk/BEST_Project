@@ -1,0 +1,22 @@
+.belowChart table{
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: 'Noto Sans KR, sans-serif';
+    font-size: 15px;
+    font-weight: 500;
+    border : 1px solid black;
+}
+
+.belowChart table th, #best_services > div > div:nth-child(2) > table > tr:nth-child(2){
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: 'Noto Sans KR, sans-serif';
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center ;
+    background-color: #ECE7E7;
+}
+
+#best_services > div > div:nth-child(2) > table > tr:nth-child(5),tr:nth-child(8),tr:nth-child(11),tr:nth-child(15){
+    border-bottom: 1.8px solid black;
+}
