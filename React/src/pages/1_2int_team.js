@@ -6,20 +6,25 @@ import face3_img from 'images/face3.png';
 import { Tabs } from 'antd';
 
 const { TabPane } = Tabs;
-const test = e =>{
-    console.log('aaa')
-}
-
-
-function callback(key) {
-    console.log(key);
-  }
 
 
 
 
 export default function IntroTeam()
 {
+    const [now, setNow] = React.useState(1)
+
+    const test = e =>{
+        console.log(e)
+        setNow(e)
+        // console.dir(e.target.getAttribute("value"))
+    }
+    
+    
+    function callback(key) {
+        console.log(key);
+    }
+
     return(
         <>
             <div id='content'>
@@ -28,35 +33,31 @@ export default function IntroTeam()
                         <ul id='theme'>✔ 팀원 프로필 소개</ul>
                         <ul id='description'>(프로필 및 역할적기..)</ul>
 
-                        
-                       
-                            <img id='face' src={face1_img} alt='프로필사진 대체' onClick={test}/> 
+                            <img id='face' src={face1_img} alt='프로필사진 대체' value="1" onClick={()=>test(1)}/> 
        
-                            <img id='face' src={face2_img} alt='프로필사진 대체'/>
+                            <img id='face' src={face2_img} alt='프로필사진 대체' value="2" onClick={()=>test(2)}/>
                               
-                            <img id='face' src={face3_img} alt='프로필사진 대체'/>
+                            <img id='face' src={face3_img} alt='프로필사진 대체' value="3" onClick={()=>test(3)}/>
                                
                     </div>
                 </div>
-                
-
-                <div id = 'Tab'>
-                    <Tabs defaultActiveKey="1" onChange={callback} centered>
-                        <TabPane tab="Tab 1" key="1">
-                            현진's page
-                        </TabPane>
-
-                        <TabPane tab="Tab 2" key="2">
-                            지현's page
-                        </TabPane>
-                        
-                        <TabPane tab="Tab 3" key="3">
-                            수란's page
-                        </TabPane>
-                    </Tabs>
+                <div>
+                    {
+                        now == 1 && <div className="test">
+                            현진
+                        </div>
+                    }
+                    {
+                        now == 2 && <div className="test">
+                            지현
+                        </div>
+                    }
+                    {
+                        now == 3 && <div className="test">
+                            수란
+                        </div>
+                    }
                 </div>
-         
-
             </div>
         </>
         
