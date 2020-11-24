@@ -3,15 +3,17 @@ import 'pages_css/3kospi50.css';
 import Axios from 'axios';
 import Api from '../Api';
 import qs from 'qs';
+import Plot from 'react-plotly.js';
+
+
 
 
 export default function Kospi50()
 {
     
     const [kospilist,setKospilist] = React.useState([]);
-    const [code, setCode] = React.useState([]);
     const [graphdata, setGraphdata] = React.useState({'date':[], 'closeprice':[]});
- 
+    const [company,setCompany] = React.useState('')
 
     React.useEffect(()=>{
         Api.get('KOSPI50/').then((res)=>{
@@ -26,10 +28,11 @@ export default function Kospi50()
 
    
     const selectCom = (e) =>{
+        setCompany(e.target.getAttribute("name"))
         Api.get('STOCKVALUES?code=' + e.target.getAttribute("value"))
         .then((res)=>{
             const {data} = res;
-            console.log(data);
+            //console.log(data);
             const g_date = data.map((v)=>{
                 return v.date;
             })
@@ -38,11 +41,8 @@ export default function Kospi50()
             })
             
             setGraphdata({'date': g_date, 'closeprice': g_closeprice})
-          
 
-
-        })
-        
+        })       
     }
 
     return(
@@ -64,7 +64,7 @@ export default function Kospi50()
                     <tr>
                         <td>
                             {kospilist.map((v)=>{
-                            return <div id='company' value={v.code} onClick={selectCom}>{v.name}</div>
+                            return <div id='company' value={v.code} onClick={selectCom} name={v.name}>{v.name}</div>
                             })} 
                         </td>
                     </tr>
@@ -74,16 +74,36 @@ export default function Kospi50()
                 <div id='content_white3'>
 
                     <div id='chart'> 
-                        {graphdata.date}
+                        <div id='chart_content'>
+                            <Plot
+                            data={[
+                            {
+                                x: graphdata.date,
+                                y: graphdata.closeprice,
+                                type: 'line',
+                                mode: 'line',
+                                
+                            },
+                            {type: 'line', x: graphdata.date, y: graphdata.closeprice},
+                            ]}
+                            layout={ {width: 850, height: 390, title: company +'  2020 주가 그래프'} }
+                            />    
+                        </div>
+                                            
                     </div>
 
-
                     <div id='buttons'>
-                        <button id ='button'>재무제표 🔻</button>
-                        <button id ='button'>급락 급등 Point 🔻</button>
-                        <button id ='button'>긍정 or 부정 분석 결과 🔻</button>
+                        <button id ='button' class='button_fs'>재무제표 🔻</button>
+                        <button id ='button' class='button_wc'>급락 급등 Point 🔻</button>
+                        <button id ='button' class='button_pn'>긍정 or 부정 분석 결과 🔻</button>
                     </div> 
-                  
+
+                    <div id='best_services'>
+                            내용~~~~~~~~~~
+                    </div>
+
+                   
+                     
                 
                 </div>
             </div>
