@@ -1,6 +1,20 @@
 import React from 'react';
 import 'pages_css/1_2team.css';
-import girl_img from 'images/girl.png';
+import face1_img from 'images/face1.png';
+import face2_img from 'images/face2.png';
+import face3_img from 'images/face3.png';
+import { Tabs } from 'antd';
+
+const { TabPane } = Tabs;
+const test = e =>{
+    console.log('aaa')
+}
+
+
+function callback(key) {
+    console.log(key);
+  }
+
 
 
 
@@ -13,28 +27,46 @@ export default function IntroTeam()
                     <div class='team_box'>
                         <ul id='theme'>✔ 팀원 프로필 소개</ul>
                         <ul id='description'>(프로필 및 역할적기..)</ul>
-                   
-                            <img id='girl1' src={girl_img} alt='프로필사진 대체'/>  
-                            <img id='girl1' src={girl_img} alt='프로필사진 대체'/>  
-                            <img id='girl1' src={girl_img} alt='프로필사진 대체'/>  
+
+                        
+                       
+                            <img id='face' src={face1_img} alt='프로필사진 대체' onClick={test}/> 
+       
+                            <img id='face' src={face2_img} alt='프로필사진 대체'/>
+                              
+                            <img id='face' src={face3_img} alt='프로필사진 대체'/>
+                               
                     </div>
                 </div>
+                
 
-                <div id='content_white'>
-                    <ul class='title'>현진</ul>
-                    <li class='idea'></li>
-                    
+                <div id = 'Tab'>
+                    <Tabs defaultActiveKey="1" onChange={callback} centered>
+                        <TabPane tab="Tab 1" key="1">
+                            현진's page
+                        </TabPane>
 
-                    <ul class='title'>지현</ul>
-                    <li class='idea'></li>
-                    
-
-                    <ul class='title'>수란</ul>
-                    <li class='idea'></li>
+                        <TabPane tab="Tab 2" key="2">
+                            지현's page
+                        </TabPane>
+                        
+                        <TabPane tab="Tab 3" key="3">
+                            수란's page
+                        </TabPane>
+                    </Tabs>
                 </div>
-            </div>
+         
 
+            </div>
         </>
         
+    
+
+
+
+
     )
+
+
+    
 }

@@ -1,14 +1,14 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import 'pages_css/1_1project.css';
-import project_img from 'images/project.PNG';
-//import Texty from 'rc-texty';
-//import 'rc-texty/assets/index.css';
+import { Row, Col } from 'antd';
 
 
 function IntroProject(){
-
+   
     return(
+     
+  
         
             <div id='content'>
                 <div id='content_top'>
@@ -54,7 +54,29 @@ function IntroProject(){
                         </div>
                         <div id = 'introduce_body'>
                         2020.10.27~2020.12.01
-                        (Trello&아날로그 캘린더 참고해서 대략적인 제작과정 쓰기)
+                            <div>
+                       
+                                <Row>
+                                    <Col span={24}>1week</Col>
+                                </Row>
+                                <Row>
+                                    
+                                    <Col span={12}>안녕하세요?</Col>
+                                    <Col span={12}>안녕하세요?</Col>
+                                </Row>
+                                <Row>
+                                    <Col span={8}>col-8</Col>
+                                    <Col span={8}>col-8</Col>
+                                    <Col span={8}>col-8</Col>
+                                </Row>
+                                <Row>
+                                    <Col span={6}>col-6</Col>
+                                    <Col span={6}>col-6</Col>
+                                    <Col span={6}>col-6</Col>
+                                    <Col span={6}>col-6</Col>
+                                </Row>                          
+                            </div>
+                
                         </div>
                     </div>
 
@@ -78,7 +100,11 @@ function IntroProject(){
                         데이터 수집 및 활용방법
                         </div>
                         <div id = 'introduce_body'>
-                        저희가 데이터를 활용한 방법에 대해 알려드리겠습니다.
+                            <div id = 'data'>
+                                뉴스기사 크롤링 (워드클라우드, 긍부정 단어)<br/>
+                                재무제표<br/>
+                                주식차트
+                            </div>
                         </div>
                     </div>
 
@@ -119,10 +145,14 @@ function IntroProject(){
                     </div>
                 </div>   
             </div>     
-            
+  
             
     )
+
+
 }
 
+
 export default IntroProject
+
 

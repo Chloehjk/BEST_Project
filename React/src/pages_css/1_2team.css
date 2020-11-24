@@ -70,10 +70,10 @@ ul{
     color:white;
 }
 
-#girl1 {
-    width:250px;
-    height:300px;
-    padding: 30px;
+#face {
+    width:200px;
+    height:200px;
+    padding: 40px;
 }
 
 
@@ -82,6 +82,13 @@ ul{
     height:300px;
     padding: 10px;
     text-align: center;
+}
+
+#Tab {
+
+    text-align: center;
+    font-size:18px;
+
 }
 
 
