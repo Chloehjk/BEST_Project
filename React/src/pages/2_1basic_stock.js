@@ -124,9 +124,6 @@ export default function BasicStock()
                         <iframe id='youtube10' src="https://www.youtube.com/embed/D7v9thA97tI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='true'></iframe>
                         </p>
 
-                    <div>
-                        <a>Fundamental Tool</a>
-                    </div>
                 </div>
             </div>
     </>

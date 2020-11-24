@@ -45,6 +45,13 @@ class POSORNEGView(ModelViewSet):
     
     queryset = POSORNEG.objects.all()
     serializer_class = POSORNEGSerializer
+    
+    def get_queryset(self):
+        qs = super().get_queryset()
+        code = self.request.query_params.get('code')
+        if code:
+            qs = qs.filter(code=code)
+        return qs
 
 class MEANOFPERView(ModelViewSet):
     

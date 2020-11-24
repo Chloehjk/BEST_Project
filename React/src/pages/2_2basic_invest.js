@@ -26,10 +26,10 @@ export default function BasicInvest()
                         기업의 재무제표에 명시되어 있는 지표들을 활용하여 기업의 기초 체력을 확인합니다.<br/>
                         재무적으로 안정적인지, 미래 성장 가능성이 있는지 등을 볼 수 있습니다.
                         또한 이를 활용해 기업이 가진 가치가 주가에 반영이 잘 되었는지 아닌지를 판단할 수 있습니다.</li>
-                    <li class='idea'>저희는 저평가 되었을 때 해당 기업의 주식을 매수하여 고평가 되었을 때 매도하는 가치투자를 선호합니다.<br/>
+                    <li class='idea'><a>저희는 저평가 되었을 때 해당 기업의 주식을 매수하여 고평가 되었을 때 매도하는 가치투자를 선호합니다.</a><br/>
                         Best의 분석 Tool을 활용해 본인이 관심 있는 주식이 저평가되었는지 고평가 되었는지 확인하시고, 재무적으로 안정이 되었는지 확인해보세요!</li>
                     <div>
-                        <a>Fundamental Tool 👈🏻</a>
+                        <a href='/4services'>Fundamental Tool 👈🏻</a>
                     </div>
                     <ul class='title'>2. 투자자들의 감정 요인</ul>
                     <li class='idea'>: ‘센티멘탈(sentimental)’이라고 불리는 주가에 영향을 미치는 요인 중 하나인 감정을 확인하려 합니다.
@@ -39,15 +39,15 @@ export default function BasicInvest()
                         이러한 현상을 되돌아보고 확인하기 위해 다음과 같은 2가지의 분석 Tool을 제공하려합니다.</li>
                     <div id='sentimental'>
                         <li class='subtitle'>
-                            <a>① 워드클라우드</a>
-                            <a class='click'>👈🏻 Click</a>
+                            <a href='3kospi50'>① 워드클라우드</a>
+                            <a href='3kospi50' class='click'>👈🏻 Click</a>
                         </li>
                         <span>2020년 1월 2일부터 시작된 주식 시장을 보며, 급등 또는 급락한 지점을 선정해<br/>
                             그 이후 일주일 간의 뉴스 데이터들을 모아 많이 활용된 언어를 워드 클라우드로 만들었습니다.<br/>
                             이를 확인하며 급등이나 급락에 영향을 미치는 뉴스 토픽을 미리 감지할 수 있습니다.</span>
                         <li class='subtitle'>
-                            <a>② 긍정, 부정 단어 확률</a>
-                            <a class='click'>👈🏻 Click</a>
+                            <a href='3kospi50'>② 긍정, 부정 단어 확률</a>
+                            <a href='3kospi50' class='click'>👈🏻 Click</a>
                         </li>
                         <span>해당 기업의 최근 300개의 뉴스 데이터를 모아, 긍정적 단어가 많은지 부정적 단어가 많은지를 알려줍니다.<br/>
                             긍정적인 단어의 확률이 높다고 무조건 좋은 것은 아닙니다. 고평가된 주식일 수도 있으니까요!<br/>

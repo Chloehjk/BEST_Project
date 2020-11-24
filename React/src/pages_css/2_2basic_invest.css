@@ -69,6 +69,12 @@ ul{
     margin-bottom: 50px;;
 }
 
+#content_white > li:nth-child(3) > a{
+    width: 100px;
+    color: black;
+    text-decoration: underline;
+}
+
 #content_white> div> a{
     background-color: #820027;
     color:white;

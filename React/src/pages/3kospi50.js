@@ -115,12 +115,12 @@ export default function Kospi50()
                         }
                         {
                             kospiclick == 2 && <div className='belowChart'>
-                                <Kospi50_2/>
+                                <Kospi50_2 code={code}/>
                             </div>    
                         }
                         {
                             kospiclick == 3 && <div className='belowChart'>
-                                <Kospi50_3/>
+                                <Kospi50_3 code={code} company={company}/>
                             </div>    
                         }
                     
