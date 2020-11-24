@@ -139,7 +139,7 @@ body > div:nth-child(9) > div > div.ant-modal-wrap > div > div.ant-modal-content
     color: gray;
 }
 
-#finance_state > span:nth-child(2) > span > svg{
+#second > div.ant-space.ant-space-horizontal.ant-space-align-center > div > span > svg{
     width: 15px;
-    margin-left: 10px;
+    margin-left: 5px;
 }    

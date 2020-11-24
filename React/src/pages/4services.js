@@ -22,7 +22,8 @@ export default function Services()
     const [reserve_ratio, setReserve_ratio] = React.useState('');
     const [debt_ratio, setDebt_ratio] = React.useState('');
     const [selectPer,setSelectPer] = React.useState('');
-    const [state,setState] = React.useState({ visible: false });
+    const [state1,setState1] = React.useState({ visible: false });    
+    const [state2,setState2] = React.useState({ visible: false });
     
 
 
@@ -55,39 +56,53 @@ export default function Services()
         setDebt_ratio(e.target.value)
     }
 ///////////////////////////////////////////////////////////////////
-    const showModal = () => {
-        const check = /^[0-9\.]+$/g
-        // console.log(!check.test(per))
-
+    const showModal_1 = () => {
         if(! ((/^[0-9\.]+$/g.test(per)) && (/^[0-9\.]+$/g.test(pbr)))) {
             message.info('숫자를 입력해주세요!');
             return
         }
-
-        if(! ((/^[0-9\.]+$/g.test(reserve_ratio)) && (/^[0-9\.]+$/g.test(debt_ratio)))) {
-            message.info('숫자를 입력해주세요!');
-            return
-        }
-
-        setState({
+        setState1({
             visible: true,
         });
       };
-
-    const handleOk = (e) => {
+///////////////////////////////////////////////////////////////////      
+    const showModal_2 = () => {
+    if(! ((/^[0-9\.]+$/g.test(reserve_ratio)) && (/^[0-9\.]+$/g.test(debt_ratio)))) {
+        message.info('숫자를 입력해주세요!');
+        return
+    }
+    setState2({
+        visible: true,
+        });
+    };
+/////////////////////////////////////////////////////////////////////
+    const handleOk1 = (e) => {
         console.log(e);
-        setState({
-            visible:false,
+        setState1({
+            visible: false,
         });
     };
 
-    const handleCancel = (e) => {
+    const handleCancel1 = (e) => {
         console.log(e);
-        setState({
-            visible:false,
+        setState1({
+            visible: false,
+        });
+    };
+////////////////////////////////////////////////////////   
+    const handleOk2 = (e) => {
+        console.log(e);
+        setState2({
+            visible: false,
         });
     };
 
+    const handleCancel2 = (e) => {
+        console.log(e);
+        setState2({
+            visible: false,
+        });
+    };
     const openNotificationWithIcon = type => {
         notification[type]({
             message: '주의사항',
@@ -128,7 +143,8 @@ export default function Services()
                             </div>
                         </div>
                         <div id='second'>
-                            <span>📍저/고평가</span>
+                            <span>📍저/고평가</span>                           
+                                <Space><QuestionCircleOutlined onClick={() => openNotificationWithIcon('warning')}/></Space>
                             <div class='estimate1'>
                                 PER
                                 <input value={per} onChange={test2}/>
@@ -137,11 +153,11 @@ export default function Services()
                                 PBR
                                 <input value={pbr} onChange={test3}/>
                             </div>
-                            <Button onClick={showModal}>확인!</Button>           
+                            <Button onClick={showModal_1}>확인!</Button>           
                             <Modal title="고객님의 주식 평가 결과는!"
-                                visible={state.visible}
-                                onOk={handleOk}
-                                onCancel={handleCancel}>
+                                visible={state1.visible}
+                                onOk={handleOk1}
+                                onCancel={handleCancel1}>
                                 {
                                     (()=>{
 
@@ -200,7 +216,6 @@ export default function Services()
                     </div>                    
                     <div id='finance_state'>
                         <span>📍재무 안정도</span>
-                        <Space><QuestionCircleOutlined onClick={() => openNotificationWithIcon('warning')}/></Space>
                         <div class='estimate2'>
                             유보율
                             <input onChange={test4}/>
@@ -209,11 +224,11 @@ export default function Services()
                             부채비율
                             <input onChange={test5}/>
                         </div>
-                        <Button onClick={showModal}>확인!</Button>
+                        <Button onClick={showModal_2}>확인!</Button>
                         <Modal title='고객님이 선택한 기업의 재무안정도 결과는!'
-                        visible={state.visible}
-                                onOk={handleOk}
-                                onCancel={handleCancel}>
+                        visible={state2.visible}
+                                onOk={handleOk2}
+                                onCancel={handleCancel2}>
                                 {
                                     (()=>{
 
