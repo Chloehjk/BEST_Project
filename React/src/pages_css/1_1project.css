@@ -98,7 +98,7 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: azure;
+ 
    
   }
 
@@ -127,7 +127,7 @@ ul{
     margin-bottom: 100px;
     margin-top: 80px;
     width: 600px;
-    height: 200px;
+    height: 500px;
 
 
    
@@ -137,4 +137,17 @@ ul{
 
     text-decoration: underline;
     font-size:17px;
+}
+
+
+#up{
+    height: 40px;
+    width: 50px;
+   line-height: 40px;
+   border-radius: 4px;
+   color: beige;
+   background-color:  #820027;
+   text-align: center;
+   font-size: 16px;
+
 }
