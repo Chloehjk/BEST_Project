@@ -71,12 +71,35 @@ ul{
     color:white;
 }
 
+
+#imgThree{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+
 #profile_top1, #profile_top2, #profile_top3{
-    width:250px;
+    width:170px;
+    height:170px;
+    padding: 0px;
+    justify-content: center;
+}
+
+
+#imgfix{
+    flex-direction: column;
+    display: flex;
     height:250px;
-    padding: 40px;
+    width:250px;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    padding: 5px;
 
 }
+
+
 
 
 #team {
@@ -127,22 +150,28 @@ ul{
 #members_container{
     flex-direction: row;
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
+    background-color: #fff2e6;
+
+    /* align-items: center; (높이까지 중앙으로 정렬) */
+
 
 }
 
-#left {
+#left {  
+
 
     width: 400px;
+    height: 450px;
     background-color: beige;
-    /* margin-left: 300px; */
- 
+
 }
 
 #profile {
     text-align: center;
     font-size: 16px;
-    padding: 20px;
+    /* margin-top: 10px; */
+    padding: 10px;
 }
 
 #mickey {
@@ -153,22 +182,41 @@ ul{
 
 #profile_detail {
     text-align: left;
-    font-size: 13px;
-    margin: 50px auto;
-    /* margin-left: 50px; */
+    line-height: 50px;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 75px;
 }
 
 
 
 #right {
+
+
     text-align: center;
+    height: 1500px;
     width: 700px;
-    background-color : #F3FCED
+    background-color : #F3FCED;
+ 
 }
 
 
 #profile_contents {
     text-align: left;
     font-size: 15px;
-    padding: 20px;
+    padding: 30px;
+    margin-top: 40px;
+    line-height: 25px;
+}
+
+
+.invisible{
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+.visible{
+    opacity: 1;
+    transition: opacity 1s ease;
 }
