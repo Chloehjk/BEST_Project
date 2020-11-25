@@ -9,3 +9,45 @@
     font-size: 18px;
     margin-top: 15px;
 }
+
+#com_name > div > div > span > svg{
+    width: 15px;
+    margin-left: 5px;
+}
+
+#chart_things{
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+}
+
+#chart1{
+    border-right: 1px solid gray;
+    float: left;
+    width: 36%;
+    padding: 10px;
+}
+
+#chart2{
+    float: left;
+    width: 36%;
+    padding: 10px;
+}
+
+#chart_description{
+    border-right: 1px solid gray;
+    float: left;
+    text-align: left;
+    width: 28%;
+    height: 400px;
+    padding-right: 10px;
+}
+
+#des{
+    margin-bottom: 30px;
+}
+
+#chart_description > p {
+    font-size : 18px;
+    font-weight: 600;
+}

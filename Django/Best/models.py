@@ -38,9 +38,10 @@ class POSORNEG(models.Model):
     neg = models.IntegerField()
     neu = models.IntegerField()
     total = models.IntegerField()
-    pos_pn = models.IntegerField()  #긍정/긍정+부정
-    pos_pnn = models.IntegerField()  #긍정/긍정+부정+중립
-
+    pos_pn = models.FloatField()  #긍정/긍정+부정
+    neg_pn = models.FloatField()
+    pos_pnn = models.FloatField()  #긍정/긍정+부정+중립
+    neg_pnn = models.FloatField()
 
 class MEANOFPER(models.Model):  #PER평균
     industry = models.CharField(max_length=20)   #업종
