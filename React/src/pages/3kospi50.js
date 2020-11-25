@@ -112,7 +112,7 @@ export default function Kospi50()
 
                     <div id='best_services'>
                         {
-                            kospiclick == 1 && company != '' && <div className='belowChart'>
+                            kospiclick == 1 && company != ''&& <div className='belowChart'>
                                 <div id='financestate_title'>{company}의 재무제표</div>
                                 <Kospi50_1 code={code}/>
                             </div>    

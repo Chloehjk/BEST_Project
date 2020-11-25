@@ -31,7 +31,10 @@ export default function Kospi50_3({code, company})
             categories : [company]
         },
         yAxis : {
-            title : ['']
+            title : {text : '개수'}
+        },
+        tooltip : {
+            valueSuffix: '개'
         },
         series : [
             {   name : '긍정',
@@ -61,7 +64,10 @@ export default function Kospi50_3({code, company})
             categories : [company]
         },
         yAxis : {
-            title : ['']
+            title : {text : '퍼센트(%)'}
+        },
+        tooltip : {
+            valueSuffix: '%'
         },
         series : [
             {   name : '긍정/긍정+부정',
