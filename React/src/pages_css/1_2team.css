@@ -75,7 +75,7 @@ ul{
     width:250px;
     height:250px;
     padding: 40px;
-    float: left;
+
 }
 
 
@@ -122,12 +122,52 @@ ul{
     margin-top: 30px;
 }
 
-#face{ 
+/* --------------------------------11 24 수정한거----------------------------------- */
+
+#members_container{
+    flex-direction: row;
+    display: flex;
     margin: 0 auto;
-    width: 750px;
+
 }
 
-#name > span{
-    margin: 100px;
+#left {
+
+    width: 400px;
+    background-color: beige;
+    /* margin-left: 300px; */
+ 
 }
 
+#profile {
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+}
+
+#mickey {
+    width: 150px;
+    height: 150px;
+    
+}
+
+#profile_detail {
+    text-align: left;
+    font-size: 13px;
+    /* margin-left: 50px; */
+}
+
+
+
+#right {
+    text-align: center;
+    width: 700px;
+    background-color : #F3FCED
+}
+
+
+#profile_contents {
+    text-align: left;
+    font-size: 15px;
+    padding: 20px;
+}
