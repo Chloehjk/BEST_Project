@@ -50,13 +50,14 @@ function App() {
 
       <div id="category_router">
             <Switch>
-                <Route exact path="/0home" component = {Home}/>
-                <Route exact path="/1_1int_project" component = {IntroProject}/>
-                <Route exact path="/1_2int_team" component = {IntroTeam}/>
-                <Route exact path="/2_1basic_stock" component = {BasicStock}/>
-                <Route exact path="/2_2basic_invest" component = {BasicInvest}/>
-                <Route exact path="/3kospi50" component = {Kospi50}/>
-                <Route exact path="/4services" component = {Services}/>
+              <Route exact path="/" component = {Home}/>
+              <Route exact path="/0home" component = {Home}/>
+              <Route exact path="/1_1int_project" component = {IntroProject}/>
+              <Route exact path="/1_2int_team" component = {IntroTeam}/>
+              <Route exact path="/2_1basic_stock" component = {BasicStock}/>
+              <Route exact path="/2_2basic_invest" component = {BasicInvest}/>
+              <Route exact path="/3kospi50" component = {Kospi50}/>
+              <Route exact path="/4services" component = {Services}/>
             </Switch>
       </div>
 

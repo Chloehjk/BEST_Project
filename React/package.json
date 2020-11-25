@@ -8,6 +8,8 @@
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.6.4",
     "axios": "^0.21.0",
+    "highcharts": "^8.2.2",
+    "highcharts-react-official": "^3.0.0",
     "plotly.js": "^1.57.1",
     "query-string": "^6.13.2",
     "react": "^16.13.1",
