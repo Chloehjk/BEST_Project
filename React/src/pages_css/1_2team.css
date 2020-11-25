@@ -71,12 +71,35 @@ ul{
     color:white;
 }
 
+
+#imgThree{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+
 #profile_top1, #profile_top2, #profile_top3{
-    width:250px;
+    width:170px;
+    height:170px;
+    padding: 0px;
+    justify-content: center;
+}
+
+
+#imgfix{
+    flex-direction: column;
+    display: flex;
     height:250px;
-    padding: 40px;
+    width:250px;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    padding: 5px;
 
 }
+
+
 
 
 #team {
@@ -147,7 +170,8 @@ ul{
 #profile {
     text-align: center;
     font-size: 16px;
-    padding: 20px;
+    /* margin-top: 10px; */
+    padding: 10px;
 }
 
 #mickey {
@@ -158,6 +182,7 @@ ul{
 
 #profile_detail {
     text-align: left;
+    line-height: 50px;
     font-size: 15px;
     margin-top: 30px;
     margin-left: 75px;
@@ -181,4 +206,17 @@ ul{
     font-size: 15px;
     padding: 30px;
     margin-top: 40px;
+    line-height: 25px;
+}
+
+
+.invisible{
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+.visible{
+    opacity: 1;
+    transition: opacity 1s ease;
 }
