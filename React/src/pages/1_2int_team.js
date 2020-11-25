@@ -90,11 +90,9 @@ export default function IntroTeam()
                                 <div id = 'right'>
                                     <div id = 'profile_contents'>  
                                         <p><font size = '5'>Best 프로젝트 내 역할</font><br/></p>
-                                        Python기반 워드클라우드 제작 <br/>
-                                        워드클라우드 제작과정
-                                        konlpy 설치 <br/>
-                                        내용을입력하세요.The immune system’s memory <br/>
-                                        of the new coronavirus lingers for at least six months in most people. <br/>
+                                        dddd <br/>  
+                                        dddddd <br/>
+                                        내용을입력하세요.<br/>
                                     </div>    
 
                                     <div id = 'profile_contents'>  

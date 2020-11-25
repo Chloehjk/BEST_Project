@@ -19,6 +19,9 @@ export default function Kospi50()
     const [kospiclick, setKospiclick] = React.useState(0)
 
     React.useEffect(()=>{
+
+        
+
         Api.get('KOSPI50/').then((res)=>{     
 
             const {data} = res;
