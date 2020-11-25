@@ -3,6 +3,7 @@ import React from 'react';
 import 'pages_css/1_1project.css';
 import { Timeline } from 'antd';
 import { CarryOutOutlined } from '@ant-design/icons';
+import { BackTop } from 'antd';
 
 
 function IntroProject(){
@@ -172,6 +173,11 @@ function IntroProject(){
                         4. 광고 수익 창출 기대효과<br/> 
                         </div>
                     </div>
+
+                    <BackTop>
+                        <div id= 'up'>up</div>
+                        {/* <div style={style}>UP</div> */}
+                    </BackTop>
                 </div>   
             </div>     
   
