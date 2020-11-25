@@ -54,6 +54,7 @@ export default function Kospi50()
         setKospiclick(e)
     }
 
+
     return(
         <>
             <div>
@@ -108,18 +109,18 @@ export default function Kospi50()
 
                     <div id='best_services'>
                         {
-                            kospiclick == 1 && <div className='belowChart'>
+                            kospiclick == 1 && company != '' && <div className='belowChart'>
                                 <div id='financestate_title'>{company}의 재무제표</div>
                                 <Kospi50_1 code={code}/>
                             </div>    
                         }
                         {
-                            kospiclick == 2 && <div className='belowChart'>
+                            kospiclick == 2 && company != '' && <div className='belowChart'>
                                 <Kospi50_2 code={code}/>
                             </div>    
                         }
                         {
-                            kospiclick == 3 && <div className='belowChart'>
+                            kospiclick == 3 && company != '' && <div className='belowChart'>
                                 <Kospi50_3 code={code} company={company}/>
                             </div>    
                         }

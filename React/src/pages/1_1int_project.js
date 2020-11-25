@@ -1,11 +1,12 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import 'pages_css/1_1project.css';
-import { Row, Col } from 'antd';
+import { Timeline } from 'antd';
+import { CarryOutOutlined } from '@ant-design/icons';
 
 
 function IntroProject(){
-   
+
     return(
      
   
@@ -53,30 +54,58 @@ function IntroProject(){
                         제작 기간
                         </div>
                         <div id = 'introduce_body'>
-                        2020.10.27~2020.12.01
-                            <div>
+                        <p>2020.10.28~2020.12.01</p>
+                        
+                        <Timeline>
+                            <Timeline.Item dot={<CarryOutOutlined className="timeline-clock-icon" />} color="blue" style={{ fontSize: '16px' }}>
+                                2020-10-28
+                            </Timeline.Item>
+                            <Timeline.Item color="gray">
+                                웹기획 디자인 구성<br/> 뉴스 크롤링, 워드클라우드 코드 제작 및 코드 실행<br/>
+                                KOSPI50 긍/부정 키워드 데이터 생성  
+                            </Timeline.Item>
+
+                            <Timeline.Item dot={<CarryOutOutlined className="timeline-clock-icon" />} color="blue" style={{ fontSize: '16px' }}>
+                                2020-11-02
+                            </Timeline.Item>
+                            <Timeline.Item color="gray">
+                                KOSPI50기업별 주식 차트 데이터 수집
+                            </Timeline.Item>
+
+                            <Timeline.Item dot={<CarryOutOutlined className="timeline-clock-icon" />} color="blue" style={{ fontSize: '16px' }}>
+                                2020-11-11
+                            </Timeline.Item>
+                            <Timeline.Item color="green">
+                                BEST배너제작<br/>
+                                주식기초백과 페이지 레이아웃 및 내용 구성<br/>
+                                데디터베이스 폴더 생성 및 연동<br/>
+                                메인페이지 디자인 구성<br/>
+                            </Timeline.Item>
+
+                            <Timeline.Item dot={<CarryOutOutlined className="timeline-clock-icon" />} color="blue" style={{ fontSize: '16px' }}>
+                                2020-11-16
+                            </Timeline.Item>
+                            <Timeline.Item color="green">
+                                프론트엔드 제작<br/>
+                                DDDD<br/>
+                                AWS연동<br/>
+                            </Timeline.Item>
+
+                            <Timeline.Item dot={<CarryOutOutlined className="timeline-clock-icon" />} color="blue" style={{ fontSize: '16px' }}>
+                                2020-12-01
+                            </Timeline.Item>
+                            <Timeline.Item color="green">
+                                프론트엔드 제작 마무리<br/>
+                                최종점검 및 발표준비<br/>
+                              
+                            </Timeline.Item>
+                        </Timeline>
+
+                      
+
+
                        
-                                <Row>
-                                    <Col span={24}>1week</Col>
-                                </Row>
-                                <Row>
-                                    
-                                    <Col span={12}>안녕하세요?</Col>
-                                    <Col span={12}>안녕하세요?</Col>
-                                </Row>
-                                <Row>
-                                    <Col span={8}>col-8</Col>
-                                    <Col span={8}>col-8</Col>
-                                    <Col span={8}>col-8</Col>
-                                </Row>
-                                <Row>
-                                    <Col span={6}>col-6</Col>
-                                    <Col span={6}>col-6</Col>
-                                    <Col span={6}>col-6</Col>
-                                    <Col span={6}>col-6</Col>
-                                </Row>                          
-                            </div>
-                
+
                         </div>
                     </div>
 
