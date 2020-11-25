@@ -127,16 +127,21 @@ ul{
 #members_container{
     flex-direction: row;
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
+    background-color: #fff2e6;
+
+    /* align-items: center; (높이까지 중앙으로 정렬) */
+
 
 }
 
-#left {
+#left {  
+
 
     width: 400px;
+    height: 450px;
     background-color: beige;
-    /* margin-left: 300px; */
- 
+
 }
 
 #profile {
@@ -153,22 +158,27 @@ ul{
 
 #profile_detail {
     text-align: left;
-    font-size: 13px;
-    margin: 50px auto;
-    /* margin-left: 50px; */
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 75px;
 }
 
 
 
 #right {
+
+
     text-align: center;
+    height: 1500px;
     width: 700px;
-    background-color : #F3FCED
+    background-color : #F3FCED;
+ 
 }
 
 
 #profile_contents {
     text-align: left;
     font-size: 15px;
-    padding: 20px;
+    padding: 30px;
+    margin-top: 40px;
 }
