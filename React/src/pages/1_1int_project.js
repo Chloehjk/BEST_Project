@@ -1,10 +1,10 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import 'pages_css/1_1project.css';
-import { BackTop } from 'antd';
-import { Affix, Button } from 'antd';
+import { BackTop, Anchor } from 'antd';
 import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom'
 
+const { Link } = Anchor;
 
 function IntroProject()
 
@@ -33,6 +33,12 @@ function IntroProject()
                 <div id = 'total_container'>
 
                     <div id = 'introduce_container'>
+                    <Anchor>
+                        <Link href="#components-anchor-demo-basic" title="프로젝트 명" />
+                        <Link href="#components-anchor-demo-static" title="주제 선정 배경" />
+                        <Link href="#components-anchor-demo-static" title="데이터 수집 및 활용방법" />
+                        <Link href="/4services" title="주제 선정 배경" />
+                    </Anchor>
                         <div id = 'introduce_title'>
                         프로젝트명
                         </div>
