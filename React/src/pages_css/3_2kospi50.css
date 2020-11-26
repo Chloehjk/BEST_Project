@@ -3,9 +3,33 @@
     height: 250px;
 }
 
-#point_chart, #points{
+#point_chart{
     float:left;
-    margin: 30px 5px;
+    margin: 30px 20px;
+}
+
+#point_dates{
+    float:left;
+    margin-top: 35px;
+    margin-left: 5px;
+    width: 200px;
+ 
+}
+#point_dates > tr{
+    text-align: center;
+}
+
+#pointintro{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: ;
+    color: #020940;
+}
+
+#point{
+    border-top: 1px solid gray;
+    font-size: 20px;
+    padding: 10px 35px;
 }
 
 #wordcloud{
