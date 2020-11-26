@@ -5,7 +5,8 @@ import face2_img from 'images/face2.png';
 import face3_img from 'images/face3.png';
 import mickey_img from 'images/mickey.jpg';
 import { GithubOutlined, MailOutlined, LinkOutlined, CheckOutlined } from '@ant-design/icons';
-import { Affix, Button } from 'antd';
+import { Affix, BackTop } from 'antd';
+
 
 
 export default function IntroTeam()
@@ -271,6 +272,9 @@ export default function IntroTeam()
 
 
                 </div>
+                <BackTop>
+                    <div id= 'up'>up</div>            
+                </BackTop>
             </div>
         </>
         
