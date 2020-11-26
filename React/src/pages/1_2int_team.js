@@ -43,17 +43,17 @@ export default function IntroTeam()
                         <div id = 'imgThree'>
                             <div id = 'imgfix'>
                                 <img id='profile_top1' src={face1_img} alt='현진' value="1" onClick={()=>test(1)}/>
-                                <font size = '3'>KIM HYUN JIN</font>
+                                <font size = '3'>KIM HYUN JIN ☝🏻</font>
                             </div>
 
                             <div id = 'imgfix'>
                                 <img id='profile_top2' src={face2_img} alt='지현' value="2" onClick={()=>test(2)}/>
-                                <font size = '3'>LEE JI HYUN</font>
+                                <font size = '3'>LEE JI HYUN ☝🏻</font>
                             </div>
 
                             <div id = 'imgfix'>
                                 <img id='profile_top3' src={face3_img} alt='수란' value="3" onClick={()=>test(3)}/>
-                                <font size = '3'>HAN SURAN</font>
+                                <font size = '3'>HAN SURAN ☝🏻</font>
                             </div>
                         </div>
                                                              
@@ -89,39 +89,39 @@ export default function IntroTeam()
                          
                                 <div id = 'right'>
                                     <div id = 'profile_contents'>  
-                                        <p><font size = '5'>Best 프로젝트 내 역할</font><br/></p>
+                                        <div id = 'profile_contents_title'>
+                                            Best 프로젝트 내 역할
+                                        </div>
+
                                         dddd <br/>  
                                         dddddd <br/>
-                                        내용을입력하세요.<br/>
+                                        내용을입력하세요.
                                     </div>    
 
                                     <div id = 'profile_contents'>  
-                                        <p><font size = '5'>프로그램 제작 과정</font><br/></p>
-                                        내용을입력하세요. <br/>
-                                        내용을입력하세요. <br/>
-                                        내용을입력하세요. <br/>
+                                        <div id = 'profile_contents_title'>
+                                            프로그램 제작 과정 
+                                        </div>
+                                            내용을입력하세요. <br/>
+                                            내용을입력하세요. <br/>
+                                            내용을입력하세요. 
                                     </div>    
 
                                     <div id = 'profile_contents'>  
-                                        <font size = '5'>6. 프로그램 개발 경험</font><br/>
+                                        <div id = 'profile_contents_title'>
+                                            6. 프로그램 개발 경험
+                                        </div>
                                         A Correspondence published in The Lancet Infectious Diseases presents <br/>
                                         the first confirmed case of SARS-CoV-2 reinfection in South America. A 46-year-old male in <br/>
                                         Ecuador initially tested positive for COVID-19 in May 2020 before receiving a negative result by June 3rd. <br/>
                                         One month later, the patient once again presented symptoms suggestive of COVID-19, this time more severely, <br/>
                                         and tested positive for COVID-19. Phylogenetic analysis <br/>
                                         suggests the two infection variants resulted from distinct evolutionary trajectories. <br/>
-                                        Authors note surprise that the patient showed a more severe disease in the second infection and state that these <br/>
+                                        Authors note surprise that the patient showed a more severe disease in the second infection and state that these 
                                         findings add to the COVID-19 reinfection evidence.
                                   
                                     </div>    
 
-
-                                    <div id = 'profile_contents'>  
-                                        <font size = '5'>6. 프로그램 개발 경험</font><br/>
-                                        내용을입력하세요. <br/>
-                                        내용을입력하세요. <br/>
-                                        내용을입력하세요. <br/>
-                                    </div>    
 
                                  
                                 </div>
@@ -158,42 +158,39 @@ export default function IntroTeam()
 
                                 <div id = 'right'>
                                     <div id = 'profile_contents'>  
-                                        <p><font size = '5'>Best 프로젝트 내 역할</font><br/></p>
-                                        Python기반 워드클라우드 제작 <br/>
-                                        워드클라우드 제작과정
-                                        konlpy 설치 <br/>
-                                        내용을입력하세요.The immune system’s memory <br/>
-                                        of the new coronavirus lingers for at least six months in most people. <br/>
+                                        <div id = 'profile_contents_title'>
+                                            Best 프로젝트 내 역할
+                                        </div>
+
+                                            dddd <br/>  
+                                            dddddd <br/>
+                                            내용을입력하세요.
+                                    </div>    
+
+
+                                    <div id = 'profile_contents'>  
+                                        <div id = 'profile_contents_title'>
+                                            프로그램 제작 과정 
+                                        </div>
+                                            내용을입력하세요. <br/>
+                                            내용을입력하세요. <br/>
+                                            내용을입력하세요. 
                                     </div>    
 
                                     <div id = 'profile_contents'>  
-                                        <p><font size = '5'>프로그램 제작 과정</font><br/></p>
-                                        내용을입력하세요. <br/>
-                                        내용을입력하세요. <br/>
-                                        내용을입력하세요. <br/>
-                                    </div>    
-
-                                    <div id = 'profile_contents'>  
-                                        <font size = '5'>6. 프로그램 개발 경험</font><br/>
+                                        <div id = 'profile_contents_title'>
+                                            6. 프로그램 개발 경험
+                                        </div>
                                         A Correspondence published in The Lancet Infectious Diseases presents <br/>
                                         the first confirmed case of SARS-CoV-2 reinfection in South America. A 46-year-old male in <br/>
                                         Ecuador initially tested positive for COVID-19 in May 2020 before receiving a negative result by June 3rd. <br/>
                                         One month later, the patient once again presented symptoms suggestive of COVID-19, this time more severely, <br/>
                                         and tested positive for COVID-19. Phylogenetic analysis <br/>
                                         suggests the two infection variants resulted from distinct evolutionary trajectories. <br/>
-                                        Authors note surprise that the patient showed a more severe disease in the second infection and state that these <br/>
+                                        Authors note surprise that the patient showed a more severe disease in the second infection and state that these 
                                         findings add to the COVID-19 reinfection evidence.
                                   
                                     </div>    
-
-
-                                    <div id = 'profile_contents'>  
-                                        <font size = '5'>6. 프로그램 개발 경험</font><br/>
-                                        내용을입력하세요. <br/>
-                                        내용을입력하세요. <br/>
-                                        내용을입력하세요. <br/>
-                                    </div>    
-
                                  
                                 </div>
 
@@ -214,9 +211,9 @@ export default function IntroTeam()
                                         {/* <Button>120px to affix top</Button> */}
                                         <div id = 'profile'>
                                             <img id='mickey' src={mickey_img} alt='미키'/>
-                                            HAN SURAN
+                                            <b>HAN SURAN</b>                                        
                                         </div>      
-
+  
                                         <div id = 'profile_detail'>  
                                             <MailOutlined /> e-mail : soi2524@hanmail.net  <br/>
                                             <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
@@ -228,44 +225,41 @@ export default function IntroTeam()
 
 
                                 <div id = 'right'>
+                                <div id = 'profile_contents'>  
+                                        <div id = 'profile_contents_title'>
+                                            Best 프로젝트 내 역할
+                                        </div>
+
+                                            Python기반 워드클라우드 제작 및 프론트엔드 제작<br/>  
+                                          
+                                    </div>    
+
+
                                     <div id = 'profile_contents'>  
-                                        <p><font size = '5'>Best 프로젝트 내 역할</font><br/></p>
-                                        Python기반 워드클라우드 제작 <br/>
-                                        워드클라우드 제작과정
-                                        konlpy 설치 <br/>
-                                        내용을입력하세요.The immune system’s memory <br/>
-                                        of the new coronavirus lingers for at least six months in most people. <br/>
+                                        <div id = 'profile_contents_title'>
+                                            프로그램 제작 과정 
+                                        </div>
+                                            내용을입력하세요. <br/>
+                                            내용을입력하세요. <br/>
+                                            내용을입력하세요. 
                                     </div>    
 
                                     <div id = 'profile_contents'>  
-                                        <p><font size = '5'>프로그램 제작 과정</font><br/></p>
-                                        내용을입력하세요. <br/>
-                                        내용을입력하세요. <br/>
-                                        내용을입력하세요. <br/>
-                                    </div>    
-
-                                    <div id = 'profile_contents'>  
-                                        <font size = '5'>6. 프로그램 개발 경험</font><br/>
+                                        <div id = 'profile_contents_title'>
+                                            6. 프로그램 개발 경험
+                                        </div>
                                         A Correspondence published in The Lancet Infectious Diseases presents <br/>
                                         the first confirmed case of SARS-CoV-2 reinfection in South America. A 46-year-old male in <br/>
                                         Ecuador initially tested positive for COVID-19 in May 2020 before receiving a negative result by June 3rd. <br/>
                                         One month later, the patient once again presented symptoms suggestive of COVID-19, this time more severely, <br/>
                                         and tested positive for COVID-19. Phylogenetic analysis <br/>
                                         suggests the two infection variants resulted from distinct evolutionary trajectories. <br/>
-                                        Authors note surprise that the patient showed a more severe disease in the second infection and state that these <br/>
+                                        Authors note surprise that the patient showed a more severe disease in the second infection and state that these 
                                         findings add to the COVID-19 reinfection evidence.
                                   
                                     </div>    
 
 
-                                    <div id = 'profile_contents'>  
-                                        <font size = '5'>6. 프로그램 개발 경험</font><br/>
-                                        내용을입력하세요. <br/>
-                                        내용을입력하세요. <br/>
-                                        내용을입력하세요. <br/>
-                                    </div>    
-
-                                 
                                 </div>
 
                             </div>

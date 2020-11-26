@@ -4,8 +4,11 @@ import 'pages_css/1_1project.css';
 import { Timeline } from 'antd';
 import { CarryOutOutlined } from '@ant-design/icons';
 import { BackTop } from 'antd';
+import { Anchor } from 'antd';
+
 import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom'
 
+const { Link } = Anchor;
 
 function IntroProject(){
 
@@ -30,15 +33,35 @@ function IntroProject(){
                 </div>
             
                 <div id = 'total_container'>
+
+                {/* <Anchor>
+                    <Link href="#components-anchor-demo-basic" title="Basic demo" />
+                    <Link href="#components-anchor-demo-static" title="Static demo" />
+                    <Link href="#API" title="API">
+                    <Link href="#Anchor-Props" title="Anchor Props" />
+                    <Link href="#Link-Props" title="Link Props" />
+                    </Link>
+                </Anchor> */}
+
                     <div id = 'introduce_container'>
-                        <div id = 'introduce_title'>
-                        프로젝트명
+
+                        {/* <Anchor> */}
+                            {/* <Link href="#components-anchor-demo-basic" title="프로젝트명" /> */}
+                            <div id = 'introduce_title'>
+                            프로젝트명
+                            </div>
+                            {/* </Link>
+                        </Anchor> */}
+
+                        <div id = 'linetest'>
+                            ddd
                         </div>
+
                         <div id = 'introduce_body0'>
                         주린이들을 위한 주식지침서 (Wanna Be <b>BEST</b> Stock Holder📈)
                         </div>
                     </div>
-
+                  
 
                     <div id = 'introduce_container'>
                         <div id = 'introduce_title'>
@@ -51,76 +74,8 @@ function IntroProject(){
                         </div>
                     </div>
 
-                    <div id = 'introduce_container'>
-                        <div id = 'introduce_title'>
-                        제작 기간
-                        </div>
-                        <div id = 'introduce_body2'>
-                        <p>2020.10.28~2020.12.01</p>
-                        
-                        <Timeline>
-                            <Timeline.Item dot={<CarryOutOutlined className="timeline-clock-icon" />} color="blue" style={{ fontSize: '16px' }}>
-                                2020-10-28
-                            </Timeline.Item>
-                            <Timeline.Item color="gray">
-                                웹기획 디자인 구성<br/> 뉴스 크롤링, 워드클라우드 코드 제작 및 코드 실행<br/>
-                                KOSPI50 긍/부정 키워드 데이터 생성  
-                            </Timeline.Item>
-
-                            <Timeline.Item dot={<CarryOutOutlined className="timeline-clock-icon" />} color="blue" style={{ fontSize: '16px' }}>
-                                2020-11-02
-                            </Timeline.Item>
-                            <Timeline.Item color="gray">
-                                KOSPI50기업별 주식 차트 데이터 수집
-                            </Timeline.Item>
-
-                            <Timeline.Item dot={<CarryOutOutlined className="timeline-clock-icon" />} color="blue" style={{ fontSize: '16px' }}>
-                                2020-11-11
-                            </Timeline.Item>
-                            <Timeline.Item color="green">
-                                BEST배너제작<br/>
-                                주식기초백과 페이지 레이아웃 및 내용 구성<br/>
-                                데디터베이스 폴더 생성 및 연동<br/>
-                                메인페이지 디자인 구성<br/>
-                            </Timeline.Item>
-
-                            <Timeline.Item dot={<CarryOutOutlined className="timeline-clock-icon" />} color="blue" style={{ fontSize: '16px' }}>
-                                2020-11-16
-                            </Timeline.Item>
-                            <Timeline.Item color="green">
-                                프론트엔드 제작<br/>
-                                DDDD<br/>
-                                AWS연동<br/>
-                            </Timeline.Item>
-
-                            <Timeline.Item dot={<CarryOutOutlined className="timeline-clock-icon" />} color="blue" style={{ fontSize: '16px' }}>
-                                2020-12-01
-                            </Timeline.Item>
-                            <Timeline.Item color="green">
-                                프론트엔드 제작 마무리<br/>
-                                최종점검 및 발표준비<br/>
-                              
-                            </Timeline.Item>
-                        </Timeline>
-
                     
-                        </div>
-                    </div>
-
-                    <div id = 'introduce_container'>
-                        <div id = 'introduce_title'>
-                        팀원 구성 및 역할
-                        </div>
-                        <div id = 'introduce_body3'>
-                        <b><font size = '3'>김현진</font></b> - 역할을 적어주세요.<br/>
-                        <font color = 'gray'>Click ☝🏻</font><br/><br/>
-                        <b><font size = '3'>이지현</font></b> - 역할을 적어주세요.<br/>
-                        <font color = 'gray'>Click ☝🏻</font><br/><br/>
-                        <b><font size = '3'>한수란</font></b> - 워드클라우드 및 프론트엔드 제작<br/>
-                        <font color = 'gray'>Click ☝🏻</font><br/>
-                        (members 페이지로 랜딩되도록!)
-                        </div>
-                    </div>
+                    
 
                     <div id = 'introduce_container'>
                         <div id = 'introduce_title'>
@@ -141,20 +96,20 @@ function IntroProject(){
                         </div>
                         <div id = 'introduce_body5'>
                             <a href = '/2_1basic_stock'>
-                                <b><font size = '4'>① 주식기초백과</font></b>
+                                ① 주식기초백과
                             </a>
                             <font color = 'gray'> Click 👈🏻</font><br/>
                             주식에 대한 기초 지식과 투자 방법에 대해 알아 볼 수 있는 페이지 입니다.<br/><br/>
 
                             <a href = '/3kospi50'>
-                                <b><font size = '4'>② KOSPI50</font></b>
+                                ② KOSPI50
                             </a>
                             <font color = 'gray'> Click 👈🏻</font><br/>
                             기업별 재무제표와 주식의 급락/급등 포인트를 워드클라우드를 통해 한눈에 보실수 있습니다.<br/> 
                             뉴스기사 데이터를 통한 기업의 주식관련 긍부정 키워드 비율도 알아보세요!<br/><br/>
 
                             <a href = '/4services'>
-                                <b><font size = '4'>③ 펀더멘탈 분석서비스</font></b>
+                                ③ 펀더멘탈 분석서비스
                             </a>
                             {/* <NavLink to="/4services">
                                 <b><font size = '4'>③ 펀더멘탈 분석서비스</font></b>
@@ -185,9 +140,10 @@ function IntroProject(){
                         <div id= 'up'>up</div>
                         {/* <div style={style}>UP</div> */}
                     </BackTop>
+                    
                 </div>   
-            </div>     
-  
+             
+            </div>
             
     )
 

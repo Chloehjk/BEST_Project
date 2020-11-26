@@ -198,11 +198,11 @@ ul{
 
 #right {
 
-
     text-align: center;
     height: 1500px;
     width: 700px;
-    background-color : #F3FCED;
+    border-left: 2px solid #F3FCED;
+    /* background-color : #F3FCED; */
  
 }
 
@@ -210,9 +210,22 @@ ul{
 #profile_contents {
     text-align: left;
     font-size: 15px;
-    padding: 30px;
-    margin-top: 40px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
     line-height: 25px;
+    /* border-top: 2px solid gray; */
+}
+
+#profile_contents_title {
+    color: rgb(14, 85, 41);
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 30px;
+    line-height: 25px;
+    border-bottom: 2px solid gray;
 }
 
 
