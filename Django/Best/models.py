@@ -54,3 +54,8 @@ class POINTDATE(models.Model): #급등/급락 주가데이터
     point2 = models.CharField(max_length=30)
     point3 = models.CharField(max_length=30)
     point4 = models.CharField(max_length=30, null=True)
+
+class MAKEWORDCLOUD(models.Model): #워드클라우드 만들기 위한 말뭉치 어쩌구
+    code = models.ForeignKey(KOSPI50, on_delete = models.CASCADE)
+    date = models.CharField(max_length=30, null=True)
+    words = models.CharField(max_length=400)

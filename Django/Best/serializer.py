@@ -1,5 +1,5 @@
 from rest_framework.serializers import ModelSerializer
-from .models import KOSPI50, STOCKVALUES,FINANCESTATE,POSORNEG,MEANOFPER,POINTDATE
+from .models import KOSPI50, STOCKVALUES,FINANCESTATE,POSORNEG,MEANOFPER,POINTDATE,MAKEWORDCLOUD
 
 class KOSPI50Serializer(ModelSerializer):
 
@@ -36,3 +36,9 @@ class POINTDATESerializer(ModelSerializer):
     class Meta:
         model = POINTDATE
         fields = '__all__'   
+
+class MAKEWORDCLOUDSerializer(ModelSerializer):
+        
+    class Meta:
+        model = POINTDATE
+        fields = '__all__' 
