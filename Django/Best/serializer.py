@@ -40,5 +40,5 @@ class POINTDATESerializer(ModelSerializer):
 class MAKEWORDCLOUDSerializer(ModelSerializer):
         
     class Meta:
-        model = POINTDATE
+        model = MAKEWORDCLOUD
         fields = '__all__' 
