@@ -1,6 +1,6 @@
 import React from 'react';
 import 'pages_css/1_2team.css';
-import face1_img from 'images/face1.png';
+import face1_img from 'images/hj.png';
 import face2_img from 'images/face2.png';
 import face3_img from 'images/face3.png';
 import mickey_img from 'images/mickey.jpg';
@@ -73,7 +73,7 @@ export default function IntroTeam()
 
                                         {/* <Button>120px to affix top</Button> */}
                                         <div id = 'profile'>
-                                            <img id='mickey' src={mickey_img} alt='미키'/>
+                                            <img id='mickey' src={face1_img} alt='미키'/>
                                             KIM HYUN JIN
                                         </div>      
 
