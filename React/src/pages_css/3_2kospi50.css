@@ -1,3 +1,18 @@
 #best_services > div > div > img{
-    width: 700px;
+    width: 650px;
+    height: 250px;
 }
+
+#point_chart, #points{
+    float:left;
+    margin: 30px 5px;
+}
+
+#wordcloud{
+    float: left;
+    width: 800px;
+    height: 400px;
+    margin-left: 50px;
+    border: 1px solid black;
+}
+
