@@ -3,7 +3,6 @@ import 'pages_css/3kospi50.css';
 import Api from '../Api';
 import 'pages_css/3_1kospi50.css';
 
-
 export default function Kospi50_1({code})
 {
     const [financestate, setFinancestate] = React.useState({'annual_year':[], 'date':[], 'sales':[], 'business_profit':[], 'net_profit':[],'bp_percent':[], 'np_percent':[], 'roe':[], 'debt_ratio':[], 'quick_ratio':[],'reserve_ratio':[], 'eps':[], 'per':[], 'bps':[], 'pbr':[], 'per_share':[],'dividend_rate':[], 'propensity_rate':[]})
@@ -73,7 +72,7 @@ export default function Kospi50_1({code})
     return(
         <>
         <div>
-            <table border = "1">
+            <table id ="stocktable" border = "1">
                 <tr>
                     <th rowSpan='2'>주요 재무 정보</th>
                     <th colSpan='4'>연간 실적</th> 
@@ -190,8 +189,6 @@ export default function Kospi50_1({code})
                             })}
                 </tr>
             </table>
-
-           
         </div>
         </>
     )    

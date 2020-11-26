@@ -19,7 +19,8 @@
     "react-plotly.js": "^2.5.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "react-slick": "^0.27.13"
+    "react-slick": "^0.27.13",
+    "react-wordcloud": "^1.2.7"
   },
   "scripts": {
     "start": "react-scripts --max_old_space_size=8096 start",

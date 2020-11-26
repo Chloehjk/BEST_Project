@@ -3,7 +3,7 @@ import 'pages_css/3kospi50.css';
 import 'pages_css/3_2kospi50.css';
 import pp from 'images/g.png';
 import Api from '../Api';
-
+import ReactWordcloud from 'react-wordcloud';
 
 
 export default function Kospi50_2({code})
@@ -11,6 +11,7 @@ export default function Kospi50_2({code})
 
     const [url, setUrl] = React.useState("")
     const [pointdate,setPointdate] = React.useState([])
+    const [words, setWords] = React.useState()
     const [wc, setWc] = React.useState("")
 
 
@@ -23,8 +24,10 @@ export default function Kospi50_2({code})
             setPointdate([data[0]['point1'], data[0]['point2'], data[0]['point3'], data[0]['point4']])
         })
 
+        Api.get("POINTDATE?code=" + code)
        
     },[code])
+
 
     return(
         <>
@@ -38,16 +41,15 @@ export default function Kospi50_2({code})
                     <tr>
                         <td>
                             {pointdate.map((v)=>{
-                            return <div id='point'>{v}</div>
+                                return <div id='point' onClick={select_wc} value={v}>{v}</div>
                             })} 
                         </td>
                     </tr>                    
                 </div>
-
             </div>
 
             <div id="wordcloud">
-              
+                <img src={wc}/>
             </div>
             
 
