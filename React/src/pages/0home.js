@@ -27,13 +27,19 @@ export default function Home(){
                     {/* <h1> Single Item</h1> */}
                     <Slider {...settings}>
                     <div>
-                        <img id='test1' src={main_banner01}/>
+                        <a href='/2_1basic_stock'>
+                            <img id='test1' src={main_banner01}/>
+                        </a>
                     </div>
                     <div>
-                        <img id='test1' src={main_banner02}/>
+                        <a href='/3kospi50'>
+                            <img id='test1' src={main_banner02}/>
+                        </a>
                     </div>
                     <div>
-                        <img id='test1' src={main_banner03}/>
+                        <a href='/4services'>
+                            <img id='test1' src={main_banner03}/>
+                        </a>
                     </div>
                     </Slider>     
                 </div>

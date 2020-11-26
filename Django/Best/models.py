@@ -50,7 +50,7 @@ class MEANOFPER(models.Model):  #PER평균
 
 class POINTDATE(models.Model): #급등/급락 주가데이터
     code = models.ForeignKey(KOSPI50, on_delete = models.CASCADE)
-    point1 = models.DateField()
-    point2 = models.DateField()
-    point3 = models.DateField()
-    point4 = models.DateField(null=True)
+    point1 = models.CharField(max_length=30)
+    point2 = models.CharField(max_length=30)
+    point3 = models.CharField(max_length=30)
+    point4 = models.CharField(max_length=30, null=True)
