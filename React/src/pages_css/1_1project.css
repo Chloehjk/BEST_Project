@@ -102,14 +102,14 @@ ul{
     justify-content: center;
    
   }
-
+/* 
 #linetest{
 
-    background-color: blueviolet;
-    border-left: 10px solid black;
-    width: 350px;
+    background-color: white;
+    border-left: 2px solid gray;
+    width: 5px;
     height: 2500px;
-}
+} */
 
 
 #introduce_title {
@@ -154,7 +154,7 @@ ul{
     margin-left: 50px;
     width: 600px;
     height: 50px;
-    border-left: 2px solid gray;
+    
 
   }
 
@@ -171,7 +171,7 @@ ul{
     margin-left: 50px;
     width: 600px;
     height: 70px;
-    border-left: 2px solid gray;
+   
 
   }
 

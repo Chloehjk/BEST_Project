@@ -4,11 +4,8 @@ import 'pages_css/1_1project.css';
 import { Timeline } from 'antd';
 import { CarryOutOutlined } from '@ant-design/icons';
 import { BackTop } from 'antd';
-import { Anchor } from 'antd';
-
 import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom'
 
-const { Link } = Anchor;
 
 function IntroProject(){
 
@@ -34,29 +31,12 @@ function IntroProject(){
             
                 <div id = 'total_container'>
 
-                {/* <Anchor>
-                    <Link href="#components-anchor-demo-basic" title="Basic demo" />
-                    <Link href="#components-anchor-demo-static" title="Static demo" />
-                    <Link href="#API" title="API">
-                    <Link href="#Anchor-Props" title="Anchor Props" />
-                    <Link href="#Link-Props" title="Link Props" />
-                    </Link>
-                </Anchor> */}
-
                     <div id = 'introduce_container'>
-
-                        {/* <Anchor> */}
-                            {/* <Link href="#components-anchor-demo-basic" title="프로젝트명" /> */}
-                            <div id = 'introduce_title'>
-                            프로젝트명
-                            </div>
-                            {/* </Link>
-                        </Anchor> */}
-
-                        <div id = 'linetest'>
-                            ddd
+                   
+                        <div id = 'introduce_title'>
+                        프로젝트명
                         </div>
-
+                       
                         <div id = 'introduce_body0'>
                         주린이들을 위한 주식지침서 (Wanna Be <b>BEST</b> Stock Holder📈)
                         </div>
