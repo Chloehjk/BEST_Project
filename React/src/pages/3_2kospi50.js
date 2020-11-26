@@ -5,43 +5,49 @@ import pp from 'images/g.png';
 import Api from '../Api';
 
 
+
 export default function Kospi50_2({code})
 {
 
-
-
-
-
-    React.useEffect(()=>{
-        Api.get('')
-
-    },[])
-
     const [url, setUrl] = React.useState("")
+    const [pointdate,setPointdate] = React.useState([])
+    const [wc, setWc] = React.useState("")
+
 
     React.useEffect(()=>{
         setUrl("https://udgraphimages.s3.ap-northeast-2.amazonaws.com/"+ code +".png")
+
+        Api.get("POINTDATE?code=" + code)
+        .then((res)=>{
+            const {data} = res;
+            setPointdate([data[0]['point1'], data[0]['point2'], data[0]['point3'], data[0]['point4']])
+        })
+
+       
     },[code])
 
     return(
         <>
             <div id="point_part">           
                 <img id="point_chart" src={url}/>
-
-                {/* <div id='kospi50_list'> 여기다 포인트 날짜 리스트 넣기!!
+               
+                <div id='point_dates'>
+                    <tr>
+                        <p id= 'pointintro'>급락/급등 포인트 날짜</p>
+                    </tr>
                     <tr>
                         <td>
-                            {kospilist.map((v)=>{
-                            return <div id='company' value={v.code} onClick={selectCom} name={v.name}>{v.name}</div>
+                            {pointdate.map((v)=>{
+                            return <div id='point'>{v}</div>
                             })} 
                         </td>
                     </tr>                    
-                </div> */}
+                </div>
 
             </div>
 
             <div id="wordcloud">
-
+              
             </div>
             
 

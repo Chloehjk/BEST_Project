@@ -1,7 +1,7 @@
 import React from 'react';
 import 'pages_css/1_2team.css';
 import face1_img from 'images/hj.png';
-import face2_img from 'images/face2.png';
+import face2_img from 'images/jh.jpg';
 import face3_img from 'images/face3.png';
 import mickey_img from 'images/mickey.jpg';
 import { GithubOutlined, MailOutlined, LinkOutlined, CheckOutlined } from '@ant-design/icons';
@@ -143,7 +143,7 @@ export default function IntroTeam()
 
                                         {/* <Button>120px to affix top</Button> */}
                                         <div id = 'profile'>
-                                            <img id='mickey' src={mickey_img} alt='미키'/>
+                                            <img id='mickey' src={face2_img} alt='지현'/>
                                             LEE JI HYUN
                                         </div>      
 
