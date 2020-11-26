@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import KOSPI50, STOCKVALUES,FINANCESTATE,POSORNEG,MEANOFPER
-from .serializer import KOSPI50Serializer, STOCKVALUESSerializer, FINANCESTATESerializer,POSORNEGSerializer,MEANOFPERSerializer
+from .models import KOSPI50, STOCKVALUES,FINANCESTATE,POSORNEG,MEANOFPER, POINTDATE
+from .serializer import KOSPI50Serializer, STOCKVALUESSerializer, FINANCESTATESerializer,POSORNEGSerializer,MEANOFPERSerializer, POINTDATESerializer
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet, ReadOnlyModelViewSet
 from django.shortcuts import render, redirect
@@ -57,3 +57,16 @@ class MEANOFPERView(ModelViewSet):
     
     queryset = MEANOFPER.objects.all()
     serializer_class = MEANOFPERSerializer
+
+
+class POINTDATEView(ModelViewSet):
+    
+    queryset = POINTDATE.objects.all()
+    serializer_class = POINTDATESerializer
+    
+    def get_queryset(self):
+        qs = super().get_queryset()
+        code = self.request.query_params.get('code')
+        if code:
+            qs = qs.filter(code=code)
+        return qs
