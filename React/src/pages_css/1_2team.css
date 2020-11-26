@@ -163,16 +163,20 @@ ul{
 
     width: 400px;
     height: 450px;
-    background: linear-gradient(#ffffff, #f0f0f5);
+    /* background: linear-gradient(#ffffff, #f0f0f5); */
     border-radius: 15px;
-    /* background-color: beige; */
+    border: 2.3px solid #f0f0f5;
+
+    /* border-width: 3px 1px 2px;
+    border-style: none;
+    border-color: #820027; */
 
 }
 
 #profile {
     text-align: center;
     font-size: 16px;
-    /* margin-top: 10px; */
+    margin-top: 15px;
     padding: 10px;
 }
 
