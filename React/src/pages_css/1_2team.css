@@ -84,6 +84,8 @@ ul{
     height:170px;
     padding: 0px;
     justify-content: center;
+    border-radius: 150px;
+    border: 5px solid gray;
 }
 
 
@@ -160,12 +162,15 @@ ul{
 
 #left {  
 
-
+    margin-top: 50px;
+    margin-right: 10px;
     width: 400px;
     height: 450px;
     /* background: linear-gradient(#ffffff, #f0f0f5); */
     border-radius: 15px;
-    border: 2.3px solid #f0f0f5;
+    border: 2.3px solid #e9e9ff;
+    
+   
 
     /* border-width: 3px 1px 2px;
     border-style: none;
@@ -183,7 +188,8 @@ ul{
 #mickey {
     width: 150px;
     height: 150px;
-    
+    border-radius: 150px;
+    border: 3px solid gray;
 }
 
 #profile_detail {
@@ -198,11 +204,13 @@ ul{
 
 #right {
 
-
+    margin-top: 50px;
     text-align: center;
     height: 1500px;
     width: 700px;
-    background-color : #F3FCED;
+    border-left: 2px solid rgb(221, 221, 221);
+
+    /* background-color : #F3FCED; */
  
 }
 
@@ -210,9 +218,22 @@ ul{
 #profile_contents {
     text-align: left;
     font-size: 15px;
-    padding: 30px;
-    margin-top: 40px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
     line-height: 25px;
+    /* border-top: 2px solid gray; */
+}
+
+#profile_contents_title {
+    color: rgb(14, 85, 41);
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 30px;
+    line-height: 25px;
+    border-bottom: 2px solid gray;
 }
 
 

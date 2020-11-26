@@ -6,6 +6,7 @@ import blogimage4 from 'images/blog4.PNG';
 import ReactDOM from 'react-dom';
 import 'pages_css/2_1basic_stock.css';
 import 'pages_css/2_2basic_invest.css';
+import { BackTop } from 'antd';
 
 
 
@@ -125,6 +126,9 @@ export default function BasicStock()
                         </p>
 
                 </div>
+                    <BackTop>
+                        <div id= 'up'>up</div>
+                    </BackTop>
             </div>
     </>
         
