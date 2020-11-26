@@ -47,3 +47,10 @@ class MEANOFPER(models.Model):  #PER평균
     industry = models.CharField(max_length=20)   #업종
     per = models.FloatField()  #업종별 평균 PER
     company = models.CharField(max_length=50)  #해당회사
+
+class POINTDATE(models.Model): #급등/급락 주가데이터
+    code = models.ForeignKey(KOSPI50, on_delete = models.CASCADE)
+    point1 = models.DateField()
+    point2 = models.DateField()
+    point3 = models.DateField()
+    point4 = models.DateField(null=True)

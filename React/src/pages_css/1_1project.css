@@ -98,7 +98,7 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: azure;
+ 
    
   }
 
@@ -112,7 +112,8 @@ ul{
     margin-bottom: 5px;
     margin-top: 80px;
     width: 280px;
-    height: 50px;
+    height: 40px;
+    background-color: beige;
 
 }
 
@@ -127,14 +128,129 @@ ul{
     margin-bottom: 100px;
     margin-top: 80px;
     width: 600px;
+    height: 500px;
+  }
+
+#introduce_body0 { 
+    /* 프로젝트명 */
+    padding: 15px;
+    font-size:15px;
+    list-style:none;
+    line-height:25px;
+    text-align: left;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 600px;
+    height: 50px;
+
+  }
+
+
+#introduce_body1 {
+    /* 주제 선정 배경 */
+    padding: 15px;
+    font-size:15px;
+    list-style:none;
+    line-height:25px;
+    text-align: left;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 600px;
+    height: 70px;
+
+  }
+
+#introduce_body2 {
+    /* 제작기간 */
+    padding: 15px;
+    font-size:15px;
+    list-style:none;
+    line-height:25px;
+    text-align: left;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 600px;
+    height: 600px;
+
+  }
+
+#introduce_body3 {
+    /* 팀원구성 및 역할 */
+    padding: 15px;
+    font-size:15px;
+    list-style:none;
+    line-height:25px;
+    text-align: left;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 600px;
     height: 200px;
 
+  }
 
-   
+#introduce_body4 {
+    /* 데이터수집 및 활용방법 */
+    padding: 15px;
+    font-size:15px;
+    list-style:none;
+    line-height:25px;
+    text-align: left;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 600px;
+    height: 200px;
+  }
+
+#introduce_body5 {
+    /* 구현기능 */
+    padding: 15px;
+    font-size:15px;
+    list-style:none;
+    line-height:25px;
+    text-align: left;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 600px;
+    height: 250px;
+  }
+
+#introduce_body6 {
+    /* 기대효과 */
+    padding: 15px;
+    font-size:15px;
+    list-style:none;
+    line-height:25px;
+    text-align: left;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 600px;
+    height: 200px;
+    
+
   }
 
 #data{
 
     text-decoration: underline;
     font-size:17px;
+}
+
+
+#up{
+    height: 40px;
+    width: 50px;
+   line-height: 40px;
+   border-radius: 4px;
+   color: beige;
+   background-color:  #820027;
+   text-align: center;
+   font-size: 16px;
+
 }

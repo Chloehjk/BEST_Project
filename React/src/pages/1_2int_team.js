@@ -3,10 +3,9 @@ import 'pages_css/1_2team.css';
 import face1_img from 'images/face1.png';
 import face2_img from 'images/face2.png';
 import face3_img from 'images/face3.png';
-import profile_img from 'images/profile.jpeg';
 import mickey_img from 'images/mickey.jpg';
 import { GithubOutlined, MailOutlined, LinkOutlined, CheckOutlined } from '@ant-design/icons';
-// import ScrollTrigger from '@terwanerik/scrolltrigger'
+import { Affix, Button } from 'antd';
 
 
 export default function IntroTeam()
@@ -44,12 +43,12 @@ export default function IntroTeam()
                         <div id = 'imgThree'>
                             <div id = 'imgfix'>
                                 <img id='profile_top1' src={face1_img} alt='현진' value="1" onClick={()=>test(1)}/>
-                                <font size = '3'>KIM HYEON JIN</font>
+                                <font size = '3'>KIM HYUN JIN</font>
                             </div>
 
                             <div id = 'imgfix'>
                                 <img id='profile_top2' src={face2_img} alt='지현' value="2" onClick={()=>test(2)}/>
-                                <font size = '3'>LEE JI HYEON</font>
+                                <font size = '3'>LEE JI HYUN</font>
                             </div>
 
                             <div id = 'imgfix'>
@@ -69,30 +68,31 @@ export default function IntroTeam()
                             
                             <div id = 'members_container'>
 
-                                <div id = 'left'>
+                                <Affix offsetTop={120} onChange={affixed => console.log(affixed)}>
+                                    <div id = 'left'>
 
-                                    <div id = 'profile'>
-                                        <img id='mickey' src={mickey_img} alt='미키'/>
-                                        KIM HYEON JIN
-                                    </div>      
+                                        {/* <Button>120px to affix top</Button> */}
+                                        <div id = 'profile'>
+                                            <img id='mickey' src={mickey_img} alt='미키'/>
+                                            KIM HYUN JIN
+                                        </div>      
 
-                                    <div id = 'profile_detail'>  
-                                        <MailOutlined /> e-mail :  <br/>
-                                        <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
-                                        <LinkOutlined /> Blog : 블로그주소 입력 <br/>
-                                        <CheckOutlined /> programing language : Python <br/>
-                                    </div>                   
-                                </div>
+                                        <div id = 'profile_detail'>  
+                                            <MailOutlined /> e-mail :  <br/>
+                                            <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
+                                            <LinkOutlined /> Blog : 블로그주소 입력 <br/>
+                                            <CheckOutlined /> programing language : Python <br/>
+                                        </div>   
+                                    </div>               
+                                </Affix>
 
-
+                         
                                 <div id = 'right'>
                                     <div id = 'profile_contents'>  
                                         <p><font size = '5'>Best 프로젝트 내 역할</font><br/></p>
-                                        Python기반 워드클라우드 제작 <br/>
-                                        워드클라우드 제작과정
-                                        konlpy 설치 <br/>
-                                        내용을입력하세요.The immune system’s memory <br/>
-                                        of the new coronavirus lingers for at least six months in most people. <br/>
+                                        dddd <br/>  
+                                        dddddd <br/>
+                                        내용을입력하세요.<br/>
                                     </div>    
 
                                     <div id = 'profile_contents'>  
@@ -137,20 +137,23 @@ export default function IntroTeam()
               
                             <div id = 'members_container'>
 
-                                <div id = 'left'>
+                                <Affix offsetTop={120} onChange={affixed => console.log(affixed)}>
+                                    <div id = 'left'>
 
-                                    <div id = 'profile'>
-                                        <img id='mickey' src={mickey_img} alt='미키'/>
-                                        LEE JIHYEON
-                                    </div>      
+                                        {/* <Button>120px to affix top</Button> */}
+                                        <div id = 'profile'>
+                                            <img id='mickey' src={mickey_img} alt='미키'/>
+                                            LEE JI HYUN
+                                        </div>      
 
-                                    <div id = 'profile_detail'>  
-                                        <MailOutlined /> e-mail :  <br/>
-                                        <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
-                                        <LinkOutlined /> Blog : 블로그주소 입력 <br/>
-                                        <CheckOutlined /> programing language : Python <br/>
-                                    </div>                   
-                                </div>
+                                        <div id = 'profile_detail'>  
+                                            <MailOutlined /> e-mail :  <br/>
+                                            <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
+                                            <LinkOutlined /> Blog : 블로그주소 입력 <br/>
+                                            <CheckOutlined /> programing language : Python <br/>
+                                        </div>   
+                                    </div>               
+                                </Affix>
 
 
                                 <div id = 'right'>
@@ -205,20 +208,23 @@ export default function IntroTeam()
 
                         <div id = 'members_container'>
 
-                                <div id = 'left'>
+                                <Affix offsetTop={120} onChange={affixed => console.log(affixed)}>
+                                    <div id = 'left'>
 
-                                    <div id = 'profile'>
-                                        <img id='mickey' src={mickey_img} alt='미키'/>
-                                        HAN SURAN
-                                    </div>      
+                                        {/* <Button>120px to affix top</Button> */}
+                                        <div id = 'profile'>
+                                            <img id='mickey' src={mickey_img} alt='미키'/>
+                                            HAN SURAN
+                                        </div>      
 
-                                    <div id = 'profile_detail'>  
-                                        <MailOutlined /> e-mail : soi2524@hanmail.net <br/>
-                                        <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
-                                        <LinkOutlined /> Blog : 블로그주소 입력 <br/>
-                                        <CheckOutlined /> programing language : Python 상중하하하<br/>
-                                    </div>                   
-                                </div>
+                                        <div id = 'profile_detail'>  
+                                            <MailOutlined /> e-mail : soi2524@hanmail.net  <br/>
+                                            <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
+                                            <LinkOutlined /> Blog : 블로그주소 입력 <br/>
+                                            <CheckOutlined /> programing language : Python <br/>
+                                        </div>   
+                                    </div>               
+                                </Affix>
 
 
                                 <div id = 'right'>
