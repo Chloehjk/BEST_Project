@@ -1,5 +1,6 @@
 import React from 'react';
 import 'pages_css/2_2basic_invest.css';
+import { BackTop } from 'antd';
 
 
 export default function BasicInvest()
@@ -60,6 +61,9 @@ export default function BasicInvest()
                     물론 단타를 아주 잘하시는 분도 있습니다. 그렇지만 저희는 주린이니까 운이 좋아서 한 번 정도 성공하는 걸꺼에요!(그렇게 믿습니다..)<br/>
                     따라서 단타는 추천드리지 않지만 이러한 방법으로 돈을 버는 사람도 있으니까 소개드립니다</li>
                 </div>
+                <BackTop>
+                    <div id= 'up'>up</div>
+                </BackTop>
             </div>
         </>
         

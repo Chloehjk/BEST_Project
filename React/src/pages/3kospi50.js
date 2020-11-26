@@ -6,6 +6,7 @@ import Plot from 'react-plotly.js';
 import Kospi50_1 from 'pages/3_1kospi50';
 import Kospi50_2 from 'pages/3_2kospi50';
 import Kospi50_3 from'pages/3_3kospi50';
+import { BackTop } from 'antd';
 
 
 
@@ -20,7 +21,7 @@ export default function Kospi50()
 
     React.useEffect(()=>{
 
-        
+
 
         Api.get('KOSPI50/').then((res)=>{     
 
@@ -130,6 +131,9 @@ export default function Kospi50()
                     
                     </div>                
                 </div>
+                <BackTop>
+                    <div id= 'up'>up</div>
+                </BackTop>
             </div>
         </>
         

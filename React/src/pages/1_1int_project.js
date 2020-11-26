@@ -1,14 +1,15 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import 'pages_css/1_1project.css';
-import { Timeline } from 'antd';
-import { CarryOutOutlined } from '@ant-design/icons';
 import { BackTop } from 'antd';
+import { Affix, Button } from 'antd';
 import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom'
 
 
-function IntroProject(){
+function IntroProject()
 
+{
+   
     return(
      
   
@@ -32,11 +33,10 @@ function IntroProject(){
                 <div id = 'total_container'>
 
                     <div id = 'introduce_container'>
-                   
                         <div id = 'introduce_title'>
                         프로젝트명
                         </div>
-                       
+
                         <div id = 'introduce_body0'>
                         주린이들을 위한 주식지침서 (Wanna Be <b>BEST</b> Stock Holder📈)
                         </div>
@@ -65,7 +65,13 @@ function IntroProject(){
                             <div id = 'data'>
                                 뉴스기사 크롤링 (워드클라우드, 긍부정 단어)<br/>
                                 재무제표<br/>
-                                주식차트
+                                주식차트<br/>
+                                A Correspondence published in The Lancet Infectious Diseases presents <br/>
+                                the first confirmed case of SARS-CoV-2 reinfection in South America. A 46-year-old male in <br/>
+                                Ecuador initially tested positive for COVID-19 in May 2020 before receiving a negative result by June 3rd. <br/>
+                                One month later, the patient once again presented symptoms suggestive of COVID-19, this time more severely, <br/>
+                                and tested positive for COVID-19. Phylogenetic analysis <br/>
+                               
                             </div>
                         </div>
                     </div>
@@ -105,9 +111,11 @@ function IntroProject(){
                     </div>
 
                     <div id = 'introduce_container'>
+                        
                         <div id = 'introduce_title'>
-                        기대효과
+                            기대효과
                         </div>
+                        
                         <div id = 'introduce_body6'>
                         <p>- 주식투자 시 개인의 손실 최소화</p>
                         <p>- 주식 기초 지식을 습득할 수 있는 정보제공의 장 마련</p>

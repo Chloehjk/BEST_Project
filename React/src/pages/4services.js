@@ -6,8 +6,9 @@ import neutral from 'images/neutral.png';
 import sad from 'images/sad.png';
 
 import 'pages_css/4services.css';
-import { Modal, Button, message, notification, Space } from 'antd';
+import { Modal, Button, message, notification, Space, BackTop } from 'antd';
 import { QuestionCircleOutlined } from '@ant-design/icons';
+
 
 notification.config(
     {duration: 30}
@@ -290,6 +291,9 @@ export default function Services()
                     </div>
                     <div><iframe src='https://finance.naver.com/'></iframe></div>
                 </div>
+                <BackTop>
+                    <div id= 'up'>up</div>
+                </BackTop>
             </div>
         </>
         

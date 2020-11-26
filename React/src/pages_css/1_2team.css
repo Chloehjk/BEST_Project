@@ -160,12 +160,15 @@ ul{
 
 #left {  
 
-
+    margin-top: 50px;
+    margin-right: 10px;
     width: 400px;
     height: 450px;
     /* background: linear-gradient(#ffffff, #f0f0f5); */
     border-radius: 15px;
-    border: 2.3px solid #f0f0f5;
+    border: 2.3px solid #e9e9ff;
+    
+   
 
     /* border-width: 3px 1px 2px;
     border-style: none;
@@ -198,10 +201,12 @@ ul{
 
 #right {
 
+    margin-top: 50px;
     text-align: center;
     height: 1500px;
     width: 700px;
-    border-left: 2px solid #F3FCED;
+    border-left: 2px solid rgb(221, 221, 221);
+
     /* background-color : #F3FCED; */
  
 }
