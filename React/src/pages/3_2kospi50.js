@@ -3,7 +3,7 @@ import 'pages_css/3kospi50.css';
 import 'pages_css/3_2kospi50.css';
 import pp from 'images/g.png';
 import Api from '../Api';
-
+import ReactWordcloud from 'react-wordcloud'
 
 
 export default function Kospi50_2({code})
@@ -13,7 +13,7 @@ export default function Kospi50_2({code})
     const [pointdate,setPointdate] = React.useState([])
     const [wc_data, setWc_data] = React.useState([])
 
-    
+
     React.useEffect(()=>{
         setUrl("https://udgraphimages.s3.ap-northeast-2.amazonaws.com/"+ code +".png")
 
@@ -28,14 +28,32 @@ export default function Kospi50_2({code})
 
     const select_wc = (e) =>{
         
-        Api.get("MAKEWORDCLOUD?code=" + code + "&date="+ e.target.value)
+        Api.get("MAKEWORDCLOUD?code=" + code + "&date="+ e.target.getAttribute("value"))
         .then((res)=>{
             const {data} = res;
-            console.log(data.words)
-            setWc_data(data.words)
+            //console.log(data[0]);
+            setWc_data(data[0].words.split(','))
+            
+            console.log('jbjbjb')
+            console.log(data[0].words.split(','))
+           
+            var count = {};
+            data[0].words.split(',').forEach(function(i) { count[i] = (count[i]||0) + 1;});
+            var result = Object.keys(count).map((key) => { return {text:key, value:count[key]}});
+            setWc_data(result);
         })
-    }
 
+        
+        //console.log(count);
+        
+        // const word_cloud = {
+        //     return <ReactWordcloud words={count} />
+        // }
+       
+
+    }
+    
+    
 
     return(
         <>
@@ -56,8 +74,8 @@ export default function Kospi50_2({code})
                 </div>
             </div>
 
-            <div id="wordcloud">
-                {wc_data}
+            <div id="wc_box">
+               <ReactWordcloud id="wordcloud" words={wc_data} />
             </div>
             
 

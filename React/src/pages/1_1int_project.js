@@ -33,12 +33,7 @@ function IntroProject()
                 <div id = 'total_container'>
 
                     <div id = 'introduce_container'>
-                    <Anchor>
-                        <Link href="#components-anchor-demo-basic" title="프로젝트 명" />
-                        <Link href="#components-anchor-demo-static" title="주제 선정 배경" />
-                        <Link href="#components-anchor-demo-static" title="데이터 수집 및 활용방법" />
-                        <Link href="/4services" title="주제 선정 배경" />
-                    </Anchor>
+                    
                         <div id = 'introduce_title'>
                         프로젝트명
                         </div>
