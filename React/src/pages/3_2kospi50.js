@@ -96,7 +96,11 @@ export default function Kospi50_2({code, graphdata, company})
             colors : ['#76B88A']    
         })
         
-    
+    const options = {
+        rotations: 3,
+        rotationAngles: [-65, 0, 65],
+       
+    };
     
 
     return(
@@ -122,11 +126,7 @@ export default function Kospi50_2({code, graphdata, company})
             </div>
 
             <div id="wc_box">
-               <ReactWordcloud id="wordcloud" options={options} 
-                    words={wc_data} 
-                    
-                    
-                />
+               <ReactWordcloud id="wordcloud" options={options} words={wc_data} />
             </div>
             
 
