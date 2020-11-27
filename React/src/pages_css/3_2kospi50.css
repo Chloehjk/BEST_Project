@@ -22,7 +22,6 @@
 #pointintro{
     font-size: 15px;
     font-weight: bold;
-    background-color: ;
     color: #020940;
 }
 
@@ -42,8 +41,12 @@
     border: 1px solid gray;
 }
 
-#wordcloud > svg{
-    width: 700px;
-    height: 400px;
-    padding: 0;
+/* #best_services .belowChart .highcharts-container{
+    width : 100px;
+}*/
+
+#point_part{
+    flex-direction: row;
+    display: flex;
 }
+

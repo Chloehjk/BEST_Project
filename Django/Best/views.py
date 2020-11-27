@@ -18,7 +18,7 @@ class KOSPI50View(ModelViewSet):
 
 class STOCKVALUESView(ModelViewSet):
     
-    queryset = STOCKVALUES.objects.all()
+    queryset = STOCKVALUES.objects.all().order_by('-date') 
     serializer_class = STOCKVALUESSerializer
 
     def get_queryset(self):

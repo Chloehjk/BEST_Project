@@ -16,7 +16,7 @@ function IntroProject()
         
             <div id='content'>
                 <div id='content_top'>
-                    <div class='box'>
+                    <div class='box1_1'>
                         <ul id='theme'>✔ BEST 프로젝트 소개</ul>
                         <ul id='description'>
                             
@@ -30,7 +30,7 @@ function IntroProject()
                     
                 </div>
             
-                <div id = 'total_container'>
+                <div id = 'total_container1_1'>
 
                     <div id = 'introduce_container'>
                     
@@ -38,7 +38,7 @@ function IntroProject()
                         프로젝트명
                         </div>
 
-                        <div id = 'introduce_body0'>
+                        <div id = 'introduce_body'>
                         주린이들을 위한 주식지침서 (Wanna Be <b>BEST</b> Stock Holder📈)
                         </div>
                     </div>
@@ -48,7 +48,7 @@ function IntroProject()
                         <div id = 'introduce_title'>
                         주제 선정 배경
                         </div>
-                        <div id = 'introduce_body1'>
+                        <div id = 'introduce_body'>
                         주식을 시작하고 싶지만 입문 방법을 몰라 고민하고 계신 분들과, <br/>
                         주식을 시작한지얼마 되지 않아 주식에 대해 많은 지식이 없는 주린이들을 위해<br/>
                         BEST가 준비한 주식 기초정보를 익히고 투자방법에 대해서도 함께 알아보는 사이트가 있으면 좋겠다고 생각하여 만들게 되었습니다.😊
@@ -62,7 +62,7 @@ function IntroProject()
                         <div id = 'introduce_title'>
                         데이터 수집 및 활용방법
                         </div>
-                        <div id = 'introduce_body4'>
+                        <div id = 'introduce_body'>
                             <div id = 'data'>
                                 뉴스기사 크롤링 (워드클라우드, 긍부정 단어)<br/>
                                 재무제표<br/>
@@ -81,7 +81,7 @@ function IntroProject()
                         <div id = 'introduce_title'>
                         구현기능
                         </div>
-                        <div id = 'introduce_body5'>
+                        <div id = 'introduce_body'>
                             <a href = '/2_1basic_stock'>
                                 ① 주식기초백과
                             </a>
@@ -117,7 +117,7 @@ function IntroProject()
                             기대효과
                         </div>
                         
-                        <div id = 'introduce_body6'>
+                        <div id = 'introduce_body'>
                         <p>- 주식투자 시 개인의 손실 최소화</p>
                         <p>- 주식 기초 지식을 습득할 수 있는 정보제공의 장 마련</p>
                         <p>- 주가정보 플랫폼과의 연계</p>
