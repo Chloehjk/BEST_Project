@@ -79,6 +79,10 @@ class MAKEWORDCLOUDView(ModelViewSet):
     def get_queryset(self):
         qs = super().get_queryset()
         code = self.request.query_params.get('code')
+        date = self.request.query_params.get('date')
+
         if code:
             qs = qs.filter(code=code)
+        if date:
+            qs = qs.filter(date=date)
         return qs

@@ -11,8 +11,9 @@ export default function Kospi50_2({code})
 
     const [url, setUrl] = React.useState("")
     const [pointdate,setPointdate] = React.useState([])
+    const [wc_data, setWc_data] = React.useState([])
 
-
+    
     React.useEffect(()=>{
         setUrl("https://udgraphimages.s3.ap-northeast-2.amazonaws.com/"+ code +".png")
 
@@ -27,14 +28,13 @@ export default function Kospi50_2({code})
 
     const select_wc = (e) =>{
         
-          Api.get("MAKEWORDCLOUD?code=" + code + "날짜") //이거 코드 어케쓰는지 까먹음!!!!!!!!!!!!!!11해결해야 함.
+        Api.get("MAKEWORDCLOUD?code=" + code + "&date="+ e.target.value)
         .then((res)=>{
             const {data} = res;
+            console.log(data.words)
             setWc_data(data.words)
         })
     }
-
-    ?code=015560&date=2020.01.20
 
 
     return(
@@ -57,7 +57,7 @@ export default function Kospi50_2({code})
             </div>
 
             <div id="wordcloud">
-                {s}
+                {wc_data}
             </div>
             
 
