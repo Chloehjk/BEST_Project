@@ -3,7 +3,7 @@ import 'pages_css/3kospi50.css';
 import 'pages_css/3_2kospi50.css';
 import pp from 'images/g.png';
 import Api from '../Api';
-import ReactWordcloud from 'react-wordcloud';
+
 
 
 export default function Kospi50_2({code})
@@ -11,8 +11,6 @@ export default function Kospi50_2({code})
 
     const [url, setUrl] = React.useState("")
     const [pointdate,setPointdate] = React.useState([])
-    const [words, setWords] = React.useState()
-    const [wc, setWc] = React.useState("")
 
 
     React.useEffect(()=>{
@@ -24,9 +22,19 @@ export default function Kospi50_2({code})
             setPointdate([data[0]['point1'], data[0]['point2'], data[0]['point3'], data[0]['point4']])
         })
 
-        Api.get("POINTDATE?code=" + code)
        
     },[code])
+
+    const select_wc = (e) =>{
+        
+          Api.get("MAKEWORDCLOUD?code=" + code + "날짜") //이거 코드 어케쓰는지 까먹음!!!!!!!!!!!!!!11해결해야 함.
+        .then((res)=>{
+            const {data} = res;
+            setWc_data(data.words)
+        })
+    }
+
+    ?code=015560&date=2020.01.20
 
 
     return(
@@ -49,7 +57,7 @@ export default function Kospi50_2({code})
             </div>
 
             <div id="wordcloud">
-                <img src={wc}/>
+                {s}
             </div>
             
 
