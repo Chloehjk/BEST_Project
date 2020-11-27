@@ -9,7 +9,7 @@ export default function BasicInvest()
         <>
             <div id='content'>
                 <div id='content_gray'>
-                    <div class='box'>
+                    <div class='box2_2'>
                         <ul id='theme'>✔ 투자 방법 간단 정리</ul>
                         <ul id='description'>투자 방법을 크게 3가지로 나누어 설명하겠습니다. 
                             실제로 많이 쓰이는 방법이기도 하지만, 주관적 요소가 가미되었다는 점 참고해주세요!<br/>

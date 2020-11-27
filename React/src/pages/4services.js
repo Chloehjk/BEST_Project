@@ -115,7 +115,7 @@ export default function Services()
         <>
             <div>
                 <div id='content_gray4'>
-                    <div class='box'>
+                    <div class='box4'>
                         <p id='theme4'>✔ BEST에서 제공하는 펀더멘탈 분석</p>
                         <div>
                             BEST의 펀더멘탈 분석은 기업의 재무제표에 명시되어 있는 지표들을 활용하여 기업의 기초 체력을 확인하는 작업입니다.<br/>

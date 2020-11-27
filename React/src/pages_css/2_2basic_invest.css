@@ -6,13 +6,13 @@ body{
     text-align:'left';
 }
 
-.box{
+.box2_2{
     width: 1200px;
     margin: 0 auto;
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
-    /* border: 1px solid black; */
+   
 }
 
 #theme{
