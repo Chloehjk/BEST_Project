@@ -20,13 +20,10 @@ export default function Kospi50()
     const [kospiclick, setKospiclick] = React.useState(0)
 
     React.useEffect(()=>{
-
-
-
         Api.get('KOSPI50/').then((res)=>{     
 
             const {data} = res;
-            // const data = res.data;
+            // const data = res.data;/
             setKospilist(data)
             // console.log(data)
             
@@ -42,14 +39,14 @@ export default function Kospi50()
         Api.get('STOCKVALUES?code=' + e.target.getAttribute("value"))
         .then((res)=>{
             const {data} = res;
-            //console.log(data);
+            // console.log(data);
             const g_date = data.map((v)=>{
                 return v.date;
             })
             const g_closeprice = data.map((v)=>{
                 return v.closeprice;
             })
-            setGraphdata({'date': g_date, 'closeprice': g_closeprice})
+            setGraphdata({'date': g_date, 'closeprice': g_closeprice })
 
         })       
     }
@@ -116,11 +113,11 @@ export default function Kospi50()
                             kospiclick == 1 && company != ''&& <div className='belowChart'>
                                 <div id='financestate_title'>{company}의 재무제표</div>
                                 <Kospi50_1 code={code}/>
-                            </div>    
+                            </div>      
                         }
                         {
                             kospiclick == 2 && company != '' && <div className='belowChart'>
-                                <Kospi50_2 code={code}/>
+                            <Kospi50_2 code={code} graphdata={graphdata} company={company}/>
                             </div>    
                         }
                         {
