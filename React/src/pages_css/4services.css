@@ -4,6 +4,15 @@
     padding-bottom: 15px;
 }
 
+.box4{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+}
+
 #theme4{
     font-size:20px;
     font-family: 'Noto Sans KR', sans-serif;

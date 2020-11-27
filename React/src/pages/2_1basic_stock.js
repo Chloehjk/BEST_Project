@@ -17,7 +17,7 @@ export default function BasicStock()
             
             <div id='content'>
                 <div id='content_gray'>
-                    <div class='box'>
+                    <div class='box2_1'>
                         <ul id='theme'>✔ 주식 시장이란?</ul>
                         <ul id='description'>주식이란 뭘까요?! <br/>
                         주식을 시작하기로 마음을 먹었어도 어디서부터 뭘 해야될지 막막하기만 할텐데요,
