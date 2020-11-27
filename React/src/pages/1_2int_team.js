@@ -2,7 +2,7 @@ import React from 'react';
 import 'pages_css/1_2team.css';
 import face1_img from 'images/hj.png';
 import face2_img from 'images/jh.jpg';
-import face3_img from 'images/face3.png';
+import face3_img from 'images/sr.jpg';
 import mickey_img from 'images/mickey.jpg';
 import { GithubOutlined, MailOutlined, LinkOutlined, CheckOutlined } from '@ant-design/icons';
 import { Affix, BackTop } from 'antd';
@@ -74,8 +74,8 @@ export default function IntroTeam()
 
                                         {/* <Button>120px to affix top</Button> */}
                                         <div id = 'profile'>
-                                            <img id='mickey' src={face1_img} alt='미키'/>
-                                            KIM HYUN JIN
+                                            <img id='mickey' src={face1_img} alt='미키'/><br/>
+                                            <b>KIM HYUN JIN</b>
                                         </div>      
 
                                         <div id = 'profile_detail'>  
@@ -94,9 +94,11 @@ export default function IntroTeam()
                                             Best 프로젝트 내 역할
                                         </div>
 
-                                        dddd <br/>  
-                                        dddddd <br/>
-                                        내용을입력하세요.
+                                        ✔ DB 구축, 크롤링 코드 개발<br/>
+                                        웹 디자인 : 배너 제작, 로고제작<br/>
+                                        프론트앤드 : 펀더멘탈, 재무제표, 뉴스 확률 분석, 투자 기초 페이지<br/>
+                                        백앤드 : Django Model 관리
+
                                     </div>    
 
                                     <div id = 'profile_contents'>  
@@ -143,8 +145,8 @@ export default function IntroTeam()
 
                                         {/* <Button>120px to affix top</Button> */}
                                         <div id = 'profile'>
-                                            <img id='mickey' src={face2_img} alt='지현'/>
-                                            LEE JI HYUN
+                                            <img id='mickey' src={face2_img} alt='지현'/><br/>
+                                            <b>LEE JI HYUN</b>
                                         </div>      
 
                                         <div id = 'profile_detail'>  
@@ -163,9 +165,11 @@ export default function IntroTeam()
                                             Best 프로젝트 내 역할
                                         </div>
 
-                                            dddd <br/>  
-                                            dddddd <br/>
-                                            내용을입력하세요.
+                                        ✔ DB 구축, 크롤링 코드 개발 <br/>
+                                        웹 디자인 : 웹페이지 틀 구축 <br/>
+                                        프론트앤드 : Kospi50 그래프, Point 워드크라우드 페이지, 배너 슬라이딩 <br/>
+                                        백앤드 : Django View 관리
+
                                     </div>    
 
 
@@ -211,7 +215,7 @@ export default function IntroTeam()
 
                                         {/* <Button>120px to affix top</Button> */}
                                         <div id = 'profile'>
-                                            <img id='mickey' src={mickey_img} alt='미키'/>
+                                            <img id='mickey' src={face3_img} alt='미키'/><br/>
                                             <b>HAN SURAN</b>                                        
                                         </div>      
   
@@ -231,9 +235,13 @@ export default function IntroTeam()
                                             Best 프로젝트 내 역할
                                         </div>
 
-                                            Python기반 워드클라우드 제작 및 프론트엔드 제작<br/>  
+                                            Python기반 워드클라우드 코드 제작<br/>
+                                            웹 디자인 : 소개페이지 틀 구축<br/>
+                                            프론트앤드 : 주식 기초 페이지, 프로젝트 소개 & 팀원 소개 페이지, 워드크라우드 생성<br/>
+                                            백엔드 : 공부중🧡
+  
                                           
-                                    </div>    
+                                            </div>    
 
 
                                     <div id = 'profile_contents'>  
