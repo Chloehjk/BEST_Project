@@ -3,9 +3,9 @@ import 'pages_css/3kospi50.css';
 import 'pages_css/3_3kospi50.css';
 import Api from '../Api';
 
-import { render } from 'react-dom'
-import Highcharts from 'highcharts'
-import HighchartsReact from 'highcharts-react-official'
+import { render } from 'react-dom';
+import Highcharts from 'highcharts';
+import HighchartsReact from 'highcharts-react-official';
 
 import { Space, notification } from 'antd';
 import { QuestionCircleOutlined } from '@ant-design/icons';
