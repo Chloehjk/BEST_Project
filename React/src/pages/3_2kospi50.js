@@ -40,19 +40,22 @@ export default function Kospi50_2({code})
             var count = {};
             data[0].words.split(',').forEach(function(i) { count[i] = (count[i]||0) + 1;});
             var result = Object.keys(count).map((key) => { return {text:key, value:count[key]}});
+            console.log(result);
             setWc_data(result);
+
         })
 
-        
-        //console.log(count);
-        
-        // const word_cloud = {
-        //     return <ReactWordcloud words={count} />
-        // }
-       
-
     }
-    
+
+    //워드클라우드 데이터 말고 나머지 옵션들 선언.
+    const options = {
+        rotations: 2,
+        rotationAngles: [-90, 0],
+        //fontSizes=[20, 29, 32, 38, 49, 60]
+        //scale:(5, .1)
+    };
+              
+    //const size = [800, 450];
     
 
     return(
@@ -75,7 +78,11 @@ export default function Kospi50_2({code})
             </div>
 
             <div id="wc_box">
-               <ReactWordcloud id="wordcloud" words={wc_data} />
+               <ReactWordcloud id="wordcloud" options={options} 
+                    words={wc_data} 
+                    
+                    
+                />
             </div>
             
 

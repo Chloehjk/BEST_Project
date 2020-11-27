@@ -39,8 +39,11 @@
 }
 
 #wordcloud{
-    width: 700px;
-    height:350px;
     border: 1px solid gray;
 }
 
+#wordcloud > svg{
+    width: 700px;
+    height: 400px;
+    padding: 0;
+}
