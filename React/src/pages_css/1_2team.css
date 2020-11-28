@@ -197,21 +197,19 @@ ul{
     line-height: 50px;
     font-size: 15px;
     margin-top: 30px;
-    margin-left: 75px;
+    margin-left: 50px;
 }
 
-
+#profile_detail > span:nth-child(2),:nth-child(5),:nth-child(8),:nth-child(11){
+    font-weight: 600;
+}
 
 #right {
-
     margin-top: 50px;
     text-align: center;
     height: 1500px;
     width: 700px;
     border-left: 2px solid rgb(221, 221, 221);
-
-    /* background-color : #F3FCED; */
- 
 }
 
 
@@ -231,6 +229,7 @@ ul{
     color: rgb(14, 85, 41);
     text-align: left;
     font-size: 24px;
+    font-weight: 500;
     margin-bottom: 30px;
     line-height: 25px;
     border-bottom: 2px solid gray;
