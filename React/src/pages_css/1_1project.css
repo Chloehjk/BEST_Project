@@ -162,8 +162,18 @@ ul{
 
 }
 
-#introduce_body5 > a:nth-child(1), #introduce_body5 > a:nth-child(6), #introduce_body5 > a:nth-child(12){
+#introduce_body > a:nth-child(1), #introduce_body > a:nth-child(6), #introduce_body > a:nth-child(12){
     font-weight: 500;
     font-size: 20px;
     color: black
 }
+
+
+#introduce_body > a:nth-child(1):hover, #introduce_body > a:nth-child(6):hover, #introduce_body > a:nth-child(12):hover{
+
+    
+    background-color:rgb(252, 223, 170);
+    border-radius: 5px;
+}
+
+
