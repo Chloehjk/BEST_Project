@@ -113,7 +113,7 @@ export default function Kospi50_2({code, graphdata, company})
 
                 <div id='point_dates'>
                     <tr>
-                        <p id= 'pointintro'>급락/급등 포인트 날짜</p>
+                        <p id= 'pointintro'>궁금한 날짜를 눌러보세요👇🏻</p>
                     </tr>
                     <tr>
                         <td>
