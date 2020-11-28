@@ -31,7 +31,7 @@ export default function IntroTeam()
 
     return(
         <>
-            <div id='content'>
+            <div id='content1_2'>
                 <div id='content_gray2'>
                     <div class='team_box'>
                         <ul id='theme'>✔ 팀원 프로필 소개</ul>

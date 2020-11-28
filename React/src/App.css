@@ -27,12 +27,17 @@
     text-align: center;
     box-sizing: border-box;
     letter-spacing: 2px;
+    
 }
+
+
 
 #menu a:hover{
     font-weight: bold;
+    text-decoration:underline; 
+   
 }
-
+    
 .twoinone{
     box-sizing: border-box;
 }
