@@ -9,7 +9,7 @@ body{
 
 #content_top{
 
-    background-color: #fae0e0;
+    background-color: #ECE7E7;
     margin-top: 5px;
     padding-bottom: 15px;
  
@@ -137,15 +137,18 @@ ul{
     text-align: left;
     margin-bottom: 100px;
     margin-left: 50px;
-    width: 600px;
-   
+    width: 600px;   
   }
 
 
-#data{
-
-    text-decoration: underline;
+.introducing{
     font-size:17px;
+    font-weight: 600;   
+}
+
+#data p{
+    font-size : 15px;
+    margin-bottom: 20px;
 }
 
 
@@ -162,9 +165,9 @@ ul{
 
 }
 
-#introduce_body > a:nth-child(1), #introduce_body > a:nth-child(6), #introduce_body > a:nth-child(12){
+#introduce_body > a{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     color: black
 }
 
