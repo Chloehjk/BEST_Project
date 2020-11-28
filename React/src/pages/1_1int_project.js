@@ -39,7 +39,7 @@ function IntroProject()
                         </div>
 
                         <div id = 'introduce_body'>
-                        주린이들을 위한 주식지침서 (Wanna Be <b>BEST</b> Stock Holder📈)
+                            Wanna Be <b>BEST</b> Stock Holder📈(주린이들을 위한 주식지침서)
                         </div>
                     </div>
                   
@@ -50,8 +50,9 @@ function IntroProject()
                         </div>
                         <div id = 'introduce_body'>
                         주식을 시작하고 싶지만 입문 방법을 몰라 고민하고 계신 분들과, <br/>
-                        주식을 시작한지얼마 되지 않아 주식에 대해 많은 지식이 없는 주린이들을 위해<br/>
-                        BEST가 준비한 주식 기초정보를 익히고 투자방법에 대해서도 함께 알아보는 사이트가 있으면 좋겠다고 생각하여 만들게 되었습니다.😊
+                        주식을 시작한지 얼마 되지 않아 주식에 대해 많은 지식이 없는 주린이들을 위해<br/>
+                        BEST가 준비한 기초 주식 정보와 투자에 대해서 함께 알아보는 사이트가 <br/>
+                         있으면 좋겠다고 생각하여 만들게 되었습니다.😊
                         </div>
                     </div>
 
@@ -60,19 +61,30 @@ function IntroProject()
 
                     <div id = 'introduce_container'>
                         <div id = 'introduce_title'>
-                        데이터 수집 및 활용방법
+                        데이터 수집
                         </div>
                         <div id = 'introduce_body'>
                             <div id = 'data'>
-                                뉴스기사 크롤링 (워드클라우드, 긍부정 단어)<br/>
-                                재무제표<br/>
-                                주식차트<br/>
-                                A Correspondence published in The Lancet Infectious Diseases presents <br/>
-                                the first confirmed case of SARS-CoV-2 reinfection in South America. A 46-year-old male in <br/>
-                                Ecuador initially tested positive for COVID-19 in May 2020 before receiving a negative result by June 3rd. <br/>
-                                One month later, the patient once again presented symptoms suggestive of COVID-19, this time more severely, <br/>
-                                and tested positive for COVID-19. Phylogenetic analysis <br/>
-                               
+                                <div className='introducing'>✔ 주가 데이터</div>
+                                <p>
+                                    - 출처 : investing.com<br/>
+                                    - 수집 방법 : 사이트 내 자료 제공
+                                </p>
+                                <div className='introducing'>✔ 재무제표 데이터</div>
+                                <p>
+                                    - 출처 : naver<br/>
+                                    - 수집 방법 : BS4를 활용한 Crawling
+                                </p>                               
+                                <div className='introducing'>✔ 뉴스 데이터</div>
+                                <p> 
+                                    - 출처 : naver<br/>
+                                    - 수집 방법 : Selenium, BS4를 활용한 Crawling
+                                </p>                               
+                                <div className='introducing'>✔ 긍정부정 dataset</div>
+                                <p>
+                                    - 출처 : 국립국어원, kaggle<br/>
+                                    - 수집 방법 : 사이트 내 자료 제공
+                                </p>                                                              
                             </div>
                         </div>
                     </div>
