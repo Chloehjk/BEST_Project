@@ -1,26 +1,6 @@
 body{
     font-family: 'Noto Sans KR', sans-serif;
 }
-/* 
-#total_container{
-    text-align:'left';
-} */
-
-@media screen and (min-width: 767px) {
-    /* PC */
-    #total_container {
-        width: 100%;
-    }
-    
-}
-
-@media screen and (max-width: 767px) {
-    /* 스마트폰 */
-    #total_container {
-        width: 100%;
-    }
-
-}
 
 
 
@@ -39,6 +19,17 @@ body{
 }
 
 
+@media screen and (max-width: 767px) {
+    /* 스마트폰 */
+    #content_gray2 {
+        width: 100%;
+        height: 1000px;
+        margin-top: 130px;
+    }
+
+}
+
+
 
 .team_box{
     width: 1200px;
@@ -47,7 +38,16 @@ body{
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-    /* border: 1px solid black; */
+}
+
+
+@media screen and (max-width: 767px) {
+    /* 스마트폰 */
+    .team_box {
+        width: 100%;
+        
+    }
+
 }
 
 #theme{
@@ -84,24 +84,22 @@ ul{
     margin-bottom: 40px;
 }
 
-#content_white>.idea{
-    font-size:15px;
-    list-style:none;
-    line-height:25px;
-    text-align: center;
-    margin-bottom: 13px;
-}
-
-#content_white> div> a{
-    background-color: #820027;
-    color:white;
-}
-
 
 #imgThree{
     flex-direction: row;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    /* 스마트폰 */
+    #imgThree {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
 }
 
 
@@ -152,6 +150,19 @@ ul{
     margin-top: 60px;
 }
 
+
+@media screen and (max-width: 767px) {
+    /* 스마트폰 */
+    .members {
+        width: 100%;
+        margin-left: 3px;
+        margin-right: 3px;
+        width: 100%;
+
+        }
+
+}
+
 #introduce_top {
     margin: 0 auto;
     width: 500px;
@@ -184,17 +195,59 @@ ul{
     /* align-items: center; (높이까지 중앙으로 정렬) */
 }
 
+
+@media screen and (max-width: 767px) {
+    /* 스마트폰 */
+    #members_container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+}
+
 #left {  
 
     margin-top: 50px;
     margin-right: 10px;
     width: 400px;
+    height: 440px;
+    border-radius: 15px;
+    border: 2.3px solid #e9e9ff;
+
+}
+
+
+#left_phone {  
+
+    margin-top: 50px;
+    width: 400px;
     height: 450px;
     border-radius: 15px;
     border: 2.3px solid #e9e9ff;
 
+}
+
+
+@media screen and (max-width: 767px) {
+    /* 스마트폰 */
+    #left {
+        display: none;
+       
+          }
 
 }
+
+@media screen and (min-width: 767px) {
+    /* PC */
+    #left_phone {
+        display: none;
+        width: 100%;
+          
+    }
+    
+}
+
+
 
 #profile {
     text-align: center;
@@ -203,6 +256,9 @@ ul{
     padding: 10px;
 }
 
+
+
+
 #mickey {
     width: 150px;
     height: 150px;
@@ -210,11 +266,13 @@ ul{
     border: 3px solid gray;
 }
 
+
+
 #profile_detail {
     text-align: left;
     line-height: 50px;
     font-size: 15px;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-left: 50px;
 }
 
@@ -231,6 +289,15 @@ ul{
 }
 
 
+@media screen and (max-width: 767px) {
+    /* 스마트폰 */
+    #right {
+        width: 100%;
+    }
+
+}
+
+
 #profile_contents {
     text-align: left;
     font-size: 15px;
@@ -238,8 +305,8 @@ ul{
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 40px;
-    line-height: 25px;
+    margin-bottom: 70px;
+    line-height: 35px;
 
 }
 

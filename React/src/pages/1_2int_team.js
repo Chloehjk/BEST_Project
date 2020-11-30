@@ -84,6 +84,22 @@ export default function IntroTeam()
                                     </div>               
                                 </Affix>
 
+                                    <div id = 'left_phone'>
+
+                                        {/* <Button>120px to affix top</Button> */}
+                                        <div id = 'profile'>
+                                            <img id='mickey' src={face1_img} alt='미키'/><br/>
+                                            <b>KIM HYUN JIN</b>
+                                        </div>      
+
+                                        <div id = 'profile_detail'>  
+                                            <MailOutlined /> e-mail :  <br/>
+                                            <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
+                                            <LinkOutlined /> Blog : 블로그주소 입력 <br/>
+                                            <CheckOutlined /> programing language : Python <br/>
+                                        </div>   
+                                    </div>               
+
                          
                                 <div id = 'right'>
                                     <div id = 'profile_contents'>  
@@ -140,6 +156,22 @@ export default function IntroTeam()
                                     </div>               
                                 </Affix>
 
+                                <div id = 'left_phone'>
+
+                                        {/* <Button>120px to affix top</Button> */}
+                                        <div id = 'profile'>
+                                            <img id='mickey' src={face2_img} alt='미키'/><br/>
+                                            <b>LEE JI HYUN</b>
+                                        </div>      
+
+                                        <div id = 'profile_detail'>  
+                                            <MailOutlined /> e-mail :  <br/>
+                                            <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
+                                            <LinkOutlined /> Blog : 블로그주소 입력 <br/>
+                                            <CheckOutlined /> programing language : Python <br/>
+                                        </div>   
+                                    </div>               
+
 
                                 <div id = 'right'>
                                     <div id = 'profile_contents'>  
@@ -194,6 +226,21 @@ export default function IntroTeam()
                                         </div>   
                                     </div>               
                                 </Affix>
+
+                                <div id = 'left_phone'>
+
+                                        {/* <Button>120px to affix top</Button> */}
+                                        <div id = 'profile'>
+                                            <img id='mickey' src={face3_img} alt='미키'/><br/>
+                                            <b>HAN SURAN</b>
+                                        </div>      
+
+                                        <div id = 'profile_detail'>  
+                                            <MailOutlined /> e-mail : soi2524@hanmail.net  <br/>
+                                            <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
+                                            <CheckOutlined /> programing language : Python <br/>
+                                        </div>   
+                                    </div>             
 
 
                                 <div id = 'right'>
