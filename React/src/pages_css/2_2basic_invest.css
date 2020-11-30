@@ -15,6 +15,14 @@ body{
    
 }
 
+@media screen and (max-width: 767px) {
+    /* 스마트폰 */
+    .box2_2 {
+        width: 100%;
+          }
+
+}
+
 #theme{
     font-size:20px;
     font-family: 'Noto Sans KR', sans-serif;
@@ -54,6 +62,14 @@ ul{
     margin-bottom: 40px;
 }
 
+@media screen and (max-width: 767px) {
+    /* 스마트폰 */
+    #content_white>.title {
+        width: 100%;
+          }
+
+}
+
 #content_white>.idea{
     font-size:15px;
     list-style:none;
@@ -62,12 +78,25 @@ ul{
     margin-bottom: 13px;
 }
 
+
+@media screen and (max-width: 767px) {
+    /* 스마트폰 */
+    #content_white>.idea {
+        width: 100%;
+        margin-right: 13px;
+        margin-left: 13px;
+        }
+
+}
+
 #content_white> div{
     font-size: 15px;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;;
 }
+
+
 
 #content_white > li:nth-child(3) > a{
     width: 100px;
@@ -84,6 +113,9 @@ ul{
     height: 360px;
     margin-bottom: 30px;
 }
+
+
+
 
 #sentimental > li{
     font-size:18px;

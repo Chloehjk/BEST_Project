@@ -9,20 +9,23 @@ body{
 
 #content_top{
 
-    background-color: #ECE7E7;
+    /* background-color: #ECE7E7; */
+    background-color: pink;
     margin-top: 5px;
     padding-bottom: 15px;
- 
-    
 }
 
 
-#content_body{
-    background-color: white;
-    margin-top: 5px;
-    padding-bottom: 15px;
+@media screen and (max-width: 767px) {
+    /* 스마트폰 */
+    #content_top {
+        width: 100%;
+        margin-top: 150px;
+    }
 
 }
+
+
 
 .box1_1{
     width: 1200px;
@@ -30,6 +33,15 @@ body{
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
+
+}
+
+
+@media screen and (max-width: 767px) {
+    /* 스마트폰 */
+    .box1_1 {
+        width: 100%;
+    }
 
 }
 
@@ -59,49 +71,11 @@ ul{
     padding: 0 ;    
 }
 
-#content_body>.title{
-    font-size:23px;
-    text-align: center;
-    background-color: #E7F5E3;
-    margin-top: 80px;
-    margin-bottom: 40px;
-}
-
-#content_body>.idea{
-    font-size:15px;
-    list-style:none;
-    line-height:25px;
-    text-align: center;
-    margin-bottom: 13px;
-}
-
-#content_body> div> a{
-    background-color: #820027;
-    color:white;
-}
 
 #total_container1_1{
     margin-bottom: 100px;
    
   }
-
-@media screen and (min-width: 767px) {
-    /* PC */
-    #total_container1_1 {
-        width: 1200px;
-    }
-    
-}
-
-@media screen and (max-width: 767px) {
-    /* 스마트폰 */
-    #total_container1_1 {
-        width: 100%;
-    }
-
-}
-
-
 
 
 #introduce_container {
@@ -113,6 +87,16 @@ ul{
   }
 
 
+@media screen and (max-width: 767px) {
+    /* 스마트폰 */
+    #introduce_container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+}
+
+
 #introduce_title {
     padding-right:13px;
     font-size:25px;
@@ -122,9 +106,21 @@ ul{
     margin-bottom: 5px;
     width: 350px;
     height: 35px;
-    
     align-items: center;
     border-right: 2px solid gray;
+
+}
+
+
+@media screen and (max-width: 767px) {
+    /* 스마트폰 */
+    #introduce_title {
+        width: 100%;
+        text-align: center;
+        padding-right:0px;
+        padding-bottom: 60px;
+        
+    }
 
 }
 
@@ -139,6 +135,19 @@ ul{
     margin-left: 50px;
     width: 600px;   
   }
+
+
+@media screen and (max-width: 767px) {
+    /* 스마트폰 */
+    #introduce_body {
+        width: 100%;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+       
+    }
+
+}
 
 
 .introducing{
