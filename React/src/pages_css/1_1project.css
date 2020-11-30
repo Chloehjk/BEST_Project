@@ -10,7 +10,7 @@ body{
 #content_top{
 
     /* background-color: #ECE7E7; */
-    background-color: pink;
+    background-color: #ECE7E7;
     margin-top: 5px;
     padding-bottom: 15px;
 }
@@ -140,7 +140,7 @@ ul{
 @media screen and (max-width: 767px) {
     /* 스마트폰 */
     #introduce_body {
-        width: 100%;
+        width: calc(100% - 20px);
         text-align: center;
         margin-left: 10px;
         margin-right: 10px;

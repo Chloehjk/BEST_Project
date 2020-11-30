@@ -83,8 +83,10 @@ ul{
     /* 스마트폰 */
     #content_white>.idea {
         width: 100%;
-        margin-right: 13px;
-        margin-left: 13px;
+        margin-right: 15px;
+        margin-left: 15px;
+        width: calc(100% - 30px);
+        text-align: justify;
         }
 
 }

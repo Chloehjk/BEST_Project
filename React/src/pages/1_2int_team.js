@@ -236,9 +236,8 @@ export default function IntroTeam()
                                         </div>      
 
                                         <div id = 'profile_detail'>  
-                                            <MailOutlined /> e-mail :  <br/>
+                                            <MailOutlined /> e-mail : soi2524@hanmail.net  <br/>
                                             <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
-                                            <LinkOutlined /> Blog : 블로그주소 입력 <br/>
                                             <CheckOutlined /> programing language : Python <br/>
                                         </div>   
                                     </div>             
