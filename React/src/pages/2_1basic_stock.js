@@ -16,7 +16,7 @@ export default function BasicStock()
         <>
             
             <div id='content'>
-                <div id='content_gray'>
+                <div id='basic_gray'>
                     <div class='box2_1'>
                         <ul id='theme'>✔ 주식 시장이란?</ul>
                         <ul id='description'>주식이란 뭘까요?! <br/>

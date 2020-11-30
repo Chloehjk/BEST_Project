@@ -8,7 +8,7 @@ export default function BasicInvest()
     return(
         <>
             <div id='content'>
-                <div id='content_gray'>
+                <div id='basic_gray'>
                     <div class='box2_2'>
                         <ul id='theme'>✔ 투자 방법 간단 정리</ul>
                         <ul id='description'>투자 방법을 크게 3가지로 나누어 설명하겠습니다. 

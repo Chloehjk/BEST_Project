@@ -7,6 +7,7 @@ import main_banner02 from 'images/real_main_banner01.gif';
 import main_banner01 from 'images/real_main_banner02.jpg';
 import main_banner03 from 'images/real_main_banner03.jpg';
 
+import m_main from 'images/m_real_banner.png';
 
 export default function Home(){
     const settings = {
