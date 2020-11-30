@@ -31,7 +31,6 @@
 }
 
 
-
 #menu a:hover{
     font-weight: bold;
     text-decoration:underline; 
@@ -76,10 +75,8 @@
 
 
 #content_gray{
-    background-color: #ECE7E7;
-    /* height: 500px; */
+    background-color: #ECE7E7;   
     margin-top: 5px;
-    padding-bottom: 15px;
 }
 
 #content_white{

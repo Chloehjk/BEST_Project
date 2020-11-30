@@ -14,9 +14,9 @@
 #bottom{
     text-align: center;
     font-size: 10px;
-    position: fixed;  
+    position: bottom;  
     bottom: 10;
     right:47%;
-    padding-top: 10px;
+    padding-top: 60px;
     
 }
