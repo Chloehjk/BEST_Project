@@ -56,12 +56,9 @@ export default function IntroTeam()
                                 <img id='profile_top3' src={face3_img} alt='수란' value="3" onClick={()=>test(3)}/>
                                 <font size = '3'>HAN SURAN ☝🏻</font>
                             </div>
-                        </div>
-                                                             
-                        
+                        </div>                                                         
                     </div>
                 </div>
-
 
                 <div>
                     {
@@ -74,15 +71,15 @@ export default function IntroTeam()
 
                                         {/* <Button>120px to affix top</Button> */}
                                         <div id = 'profile'>
-                                            <img id='mickey' src={face1_img} alt='미키'/><br/>
+                                            <img id='mickey' src={face1_img}/><br/>
                                             <b>KIM HYUN JIN</b>
                                         </div>      
 
                                         <div id = 'profile_detail'>  
-                                            <MailOutlined /> e-mail :  <br/>
-                                            <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
-                                            <LinkOutlined /> Blog : 블로그주소 입력 <br/>
-                                            <CheckOutlined /> programing language : Python <br/>
+                                            <MailOutlined /> <span>E-mail</span> : 1605hjk@gmail.com<br/>
+                                            <GithubOutlined /> <span>GitHub</span> : https://github.com/Chloehjk<br/>
+                                            <LinkOutlined /> <span>Blog</span> : https://blog.naver.com/1605hjk <br/>
+                                            <CheckOutlined /> <span>Programing Language</span> : Python, Javascript <br/>
                                         </div>   
                                     </div>               
                                 </Affix>
@@ -111,34 +108,20 @@ export default function IntroTeam()
                                         </div>
 
                                         ✔ DB 구축, 크롤링 코드 개발<br/>
-                                        웹 디자인 : 배너 제작, 로고제작<br/>
-                                        프론트앤드 : 펀더멘탈, 재무제표, 뉴스 확률 분석, 투자 기초 페이지<br/>
-                                        백앤드 : Django Model 관리
+                                        ✔ 웹 디자인 : 배너 제작, 로고제작<br/>
+                                        ✔ 프론트앤드 : 펀더멘탈, 재무제표, 뉴스 확률 분석, 투자 기초 페이지, 급등/급락 페이지<br/>
+                                        ✔ 백앤드 : Django Model 관리
 
-                                    </div>    
-
-                                    <div id = 'profile_contents'>  
-                                        <div id = 'profile_contents_title'>
-                                            프로그램 제작 과정 
-                                        </div>
-                                            내용을입력하세요. <br/>
-                                            내용을입력하세요. <br/>
-                                            내용을입력하세요. 
-                                    </div>    
+                                    </div>      
 
                                     <div id = 'profile_contents'>  
                                         <div id = 'profile_contents_title'>
-                                            6. 프로그램 개발 경험
+                                            프로그램 개발 경험
                                         </div>
-                                        A Correspondence published in The Lancet Infectious Diseases presents <br/>
-                                        the first confirmed case of SARS-CoV-2 reinfection in South America. A 46-year-old male in <br/>
-                                        Ecuador initially tested positive for COVID-19 in May 2020 before receiving a negative result by June 3rd. <br/>
-                                        One month later, the patient once again presented symptoms suggestive of COVID-19, this time more severely, <br/>
-                                        and tested positive for COVID-19. Phylogenetic analysis <br/>
-                                        suggests the two infection variants resulted from distinct evolutionary trajectories. <br/>
-                                        Authors note surprise that the patient showed a more severe disease in the second infection and state that these 
-                                        findings add to the COVID-19 reinfection evidence.
-                                  
+                                        <p>- Todo project</p>
+                                        <p>- 중고차 가격 예측 project</p>
+                                        <p>- 이력서 웹페이지</p>
+                                        <p>- Best project</p>                                  
                                     </div>    
 
 
@@ -161,15 +144,14 @@ export default function IntroTeam()
 
                                         {/* <Button>120px to affix top</Button> */}
                                         <div id = 'profile'>
-                                            <img id='mickey' src={face2_img} alt='지현'/><br/>
+                                            <img id='mickey' src={face2_img}/><br/>
                                             <b>LEE JI HYUN</b>
                                         </div>      
 
                                         <div id = 'profile_detail'>  
-                                            <MailOutlined /> e-mail :  <br/>
-                                            <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
-                                            <LinkOutlined /> Blog : 블로그주소 입력 <br/>
-                                            <CheckOutlined /> programing language : Python <br/>
+                                            <MailOutlined /> <span>E-mail</span> :  dlwlgus299@naver.com<br/>
+                                            <GithubOutlined /> <span>GitHub</span> : https://github.com/jyuny1003<br/>
+                                            <CheckOutlined /> <span>Language</span> : Python, Javascript, MySQL <br/>
                                         </div>   
                                     </div>               
                                 </Affix>
@@ -204,28 +186,13 @@ export default function IntroTeam()
 
                                     </div>    
 
-
                                     <div id = 'profile_contents'>  
                                         <div id = 'profile_contents_title'>
-                                            프로그램 제작 과정 
+                                            프로그램 개발 경험
                                         </div>
-                                            내용을입력하세요. <br/>
-                                            내용을입력하세요. <br/>
-                                            내용을입력하세요. 
-                                    </div>    
-
-                                    <div id = 'profile_contents'>  
-                                        <div id = 'profile_contents_title'>
-                                            6. 프로그램 개발 경험
-                                        </div>
-                                        A Correspondence published in The Lancet Infectious Diseases presents <br/>
-                                        the first confirmed case of SARS-CoV-2 reinfection in South America. A 46-year-old male in <br/>
-                                        Ecuador initially tested positive for COVID-19 in May 2020 before receiving a negative result by June 3rd. <br/>
-                                        One month later, the patient once again presented symptoms suggestive of COVID-19, this time more severely, <br/>
-                                        and tested positive for COVID-19. Phylogenetic analysis <br/>
-                                        suggests the two infection variants resulted from distinct evolutionary trajectories. <br/>
-                                        Authors note surprise that the patient showed a more severe disease in the second infection and state that these 
-                                        findings add to the COVID-19 reinfection evidence.
+                                        <p>- 나만의 페이지 만들기(Todo project)</p>
+                                        <p>- 중고차 시세 예측 서비스(Show Me The Price)</p>
+                                        <p>- 주식 초보자를 위한 지침서(Best project)</p> 
                                   
                                     </div>    
                                  
@@ -247,15 +214,15 @@ export default function IntroTeam()
 
                                         {/* <Button>120px to affix top</Button> */}
                                         <div id = 'profile'>
-                                            <img id='mickey' src={face3_img} alt='미키'/><br/>
+                                            <img id='mickey' src={face3_img}/><br/>
                                             <b>HAN SURAN</b>                                        
                                         </div>      
   
                                         <div id = 'profile_detail'>  
-                                            <MailOutlined /> e-mail : soi2524@hanmail.net  <br/>
-                                            <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
-                                            <LinkOutlined /> Blog : 블로그주소 입력 <br/>
-                                            <CheckOutlined /> programing language : Python <br/>
+                                            <MailOutlined /> <span>E-mail</span> :  <br/>
+                                            <GithubOutlined /> <span>GitHub</span> : 깃터브주소 입력 <br/>
+                                            <LinkOutlined /> <span>Blog</span> : 블로그주소 입력 <br/>
+                                            <CheckOutlined /> <span>Programing Language</span> : Python <br/>
                                         </div>   
                                     </div>               
                                 </Affix>
@@ -286,24 +253,12 @@ export default function IntroTeam()
                                             Python기반 워드클라우드 코드 제작<br/>
                                             웹 디자인 : 소개페이지 틀 구축<br/>
                                             프론트앤드 : 주식 기초 페이지, 프로젝트 소개 & 팀원 소개 페이지, 워드크라우드 생성<br/>
-                                            백엔드 : 공부중🧡
-  
-                                          
-                                            </div>    
-
+                                            백엔드 : 공부중🧡  
+                                        </div>    
 
                                     <div id = 'profile_contents'>  
                                         <div id = 'profile_contents_title'>
-                                            프로그램 제작 과정 
-                                        </div>
-                                            내용을입력하세요. <br/>
-                                            내용을입력하세요. <br/>
-                                            내용을입력하세요. 
-                                    </div>    
-
-                                    <div id = 'profile_contents'>  
-                                        <div id = 'profile_contents_title'>
-                                            6. 프로그램 개발 경험
+                                            프로그램 개발 경험
                                         </div>
                                         A Correspondence published in The Lancet Infectious Diseases presents <br/>
                                         the first confirmed case of SARS-CoV-2 reinfection in South America. A 46-year-old male in <br/>

@@ -31,6 +31,11 @@
     padding: 10px 35px;
 }
 
+#point:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
 #wc_box{
     float: left;
     margin-left: 200px;  

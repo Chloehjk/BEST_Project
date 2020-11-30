@@ -52,7 +52,7 @@
     font-weight: 600;
 }
 
-tspan:nth-child(1){
+tspan:nth-child(1), #chart_description > span:nth-child(3){
     font-weight: 600;
     font-family: 'Noto Sans KR', sans-serif;
 }

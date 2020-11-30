@@ -73,12 +73,11 @@
     letter-spacing: 2px;
 }
 
-#company:hover, #company-select{
+#company:hover{
     font-weight: bold;
     font-size: 16px;
+    cursor: pointer;
 }
-
-
 
 #content_white3{
     width: 900px;
@@ -114,6 +113,10 @@
     background-color: white;
 }
 
+#button:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
 
 #show_contents{
     width:900px;
