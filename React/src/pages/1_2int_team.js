@@ -174,6 +174,7 @@ export default function IntroTeam()
                                         ✔ DB 구축, 크롤링 코드 개발 <br/>
                                         ✔ 웹 디자인 : 웹페이지 틀 구축 <br/>
                                         ✔ 프론트앤드 : Kospi50 그래프, Point 워드크라우드 페이지, 배너 슬라이딩 <br/>
+                                        ✔ 반응형 웹 제작<br/>
                                         ✔ 백앤드 : Django View 관리
 
                                     </div>    
@@ -238,6 +239,7 @@ export default function IntroTeam()
                                             ✔ Python기반 워드클라우드 코드 제작<br/>
                                             ✔ 웹 디자인 : 소개페이지 틀 구축<br/>
                                             ✔ 프론트앤드 : 주식 기초 페이지, 프로젝트 소개 & 팀원 소개 페이지, 워드크라우드 생성<br/>
+                                            ✔ 반응형 웹 제작<br/>
                                             ✔ 백엔드 : 공부중🧡  
                                         </div>    
 
