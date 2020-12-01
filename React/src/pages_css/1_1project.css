@@ -83,8 +83,14 @@ ul{
     font-weight: 600;   
 }
 
-#data p{
+#data > p{
     font-size : 15px;
+    margin-bottom: 20px;
+}
+
+#data > p:nth-child(8){    
+    font-size : 15px;
+    font-weight: 400;
     margin-bottom: 20px;
 }
 
@@ -158,8 +164,11 @@ ul{
         width: 100%;
         text-align: justify;
         font-size: 11px;
-        padding-right: 30%;
-        
+        padding-right: 30%;        
+    }
+    
+    #data > p:nth-child(8){
+        font-size: 13px;
     }
 
     #introduce_body p{

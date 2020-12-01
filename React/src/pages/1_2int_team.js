@@ -92,10 +92,10 @@ export default function IntroTeam()
                                         </div>      
 
                                         <div id = 'profile_detail'>  
-                                            <MailOutlined /> e-mail :  <br/>
-                                            <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
-                                            <LinkOutlined /> Blog : 블로그주소 입력 <br/>
-                                            <CheckOutlined /> programing language : Python <br/>
+                                            <MailOutlined /> E-mail : 1605hjk@gmaill.com <br/>
+                                            <GithubOutlined /> GitHub : https://github.com/Chloehjk <br/>
+                                            <LinkOutlined /> Blog : https://blog.naver.com/1605hjk <br/>
+                                            <CheckOutlined />Programing Language : Python, Javascript <br/>
                                         </div>   
                                     </div>               
 
@@ -122,14 +122,8 @@ export default function IntroTeam()
                                         <p>- 이력서 웹페이지</p>
                                         <p>- Best project</p>                                  
                                     </div>    
-
-
-                                 
                                 </div>
-
                             </div>
-
-
                         </div>
                     }
 
@@ -164,10 +158,9 @@ export default function IntroTeam()
                                         </div>      
 
                                         <div id = 'profile_detail'>  
-                                            <MailOutlined /> e-mail :  <br/>
-                                            <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
-                                            <LinkOutlined /> Blog : 블로그주소 입력 <br/>
-                                            <CheckOutlined /> programing language : Python <br/>
+                                            <MailOutlined /> E-mail : dlwlgus299@naver.com<br/>
+                                            <GithubOutlined /> GitHub : https://github.com/jyuny1003 <br/>
+                                            <CheckOutlined /> Programing Language : Python, Javascript, MySQL <br/>
                                         </div>   
                                     </div>               
 
@@ -179,9 +172,9 @@ export default function IntroTeam()
                                         </div>
 
                                         ✔ DB 구축, 크롤링 코드 개발 <br/>
-                                        웹 디자인 : 웹페이지 틀 구축 <br/>
-                                        프론트앤드 : Kospi50 그래프, Point 워드크라우드 페이지, 배너 슬라이딩 <br/>
-                                        백앤드 : Django View 관리
+                                        ✔ 웹 디자인 : 웹페이지 틀 구축 <br/>
+                                        ✔ 프론트앤드 : Kospi50 그래프, Point 워드크라우드 페이지, 배너 슬라이딩 <br/>
+                                        ✔ 백앤드 : Django View 관리
 
                                     </div>    
 
@@ -192,14 +185,9 @@ export default function IntroTeam()
                                         <p>- 나만의 페이지 만들기(Todo project)</p>
                                         <p>- 중고차 시세 예측 서비스(Show Me The Price)</p>
                                         <p>- 주식 초보자를 위한 지침서(Best project)</p> 
-                                  
-                                    </div>    
-                                 
+                                    </div>                                    
                                 </div>
-
                             </div>
-
-
                         </div>
                     }
 
@@ -218,9 +206,8 @@ export default function IntroTeam()
                                         </div>      
   
                                         <div id = 'profile_detail'>  
-                                            <MailOutlined /> <span>E-mail</span> :  <br/>
-                                            <GithubOutlined /> <span>GitHub</span> : 깃터브주소 입력 <br/>
-                                            <LinkOutlined /> <span>Blog</span> : 블로그주소 입력 <br/>
+                                            <MailOutlined /> <span>E-mail</span> : soi2524@hanmail.net <br/>
+                                            <GithubOutlined /> <span>GitHub</span> : https://github.com/suran95 <br/>
                                             <CheckOutlined /> <span>Programing Language</span> : Python <br/>
                                         </div>   
                                     </div>               
@@ -235,9 +222,9 @@ export default function IntroTeam()
                                         </div>      
 
                                         <div id = 'profile_detail'>  
-                                            <MailOutlined /> e-mail : soi2524@hanmail.net  <br/>
-                                            <GithubOutlined /> GitHub : 깃터브주소 입력 <br/>
-                                            <CheckOutlined /> programing language : Python <br/>
+                                            <MailOutlined /> E-mail : soi2524@hanmail.net  <br/>
+                                            <GithubOutlined /> GitHub : https://github.com/suran95 <br/>
+                                            <CheckOutlined />Programing Language : Python <br/>
                                         </div>   
                                     </div>             
 
@@ -248,10 +235,10 @@ export default function IntroTeam()
                                             Best 프로젝트 내 역할
                                         </div>
 
-                                            Python기반 워드클라우드 코드 제작<br/>
-                                            웹 디자인 : 소개페이지 틀 구축<br/>
-                                            프론트앤드 : 주식 기초 페이지, 프로젝트 소개 & 팀원 소개 페이지, 워드크라우드 생성<br/>
-                                            백엔드 : 공부중🧡  
+                                            ✔ Python기반 워드클라우드 코드 제작<br/>
+                                            ✔ 웹 디자인 : 소개페이지 틀 구축<br/>
+                                            ✔ 프론트앤드 : 주식 기초 페이지, 프로젝트 소개 & 팀원 소개 페이지, 워드크라우드 생성<br/>
+                                            ✔ 백엔드 : 공부중🧡  
                                         </div>    
 
                                     <div id = 'profile_contents'>  
