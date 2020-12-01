@@ -37,16 +37,16 @@ function App() {
           <li id='menu' class ='twoinone' key="2" >
             <a>주식 기초백과</a>
             <ul>
-              <li id='subone' key="2_1"><NavLink to="/2_1basic_stock">주식 기초 정보</NavLink></li>
+              <li id='subone' key="2_1"><NavLink to="/2_1basic_stock">주식 기초 정보     </NavLink></li>
               <li id='subtwo'key="2_2"><NavLink to="/2_2basic_invest">투자 방법 기초</NavLink></li>
             </ul>
           </li>
 
-          <li id='menu' key="3">
+          <li id='menu' class='bottommenu' key="3">
             <NavLink to="/3kospi50">KOSPI 50</NavLink>
             </li>
 
-          <li id='menu' key="4"><NavLink to="/4services">펀더멘탈 분석 서비스</NavLink></li>
+          <li id='menu' class='bottommenu' key="4"><NavLink to="/4services">펀더멘탈 분석 서비스</NavLink></li>
         </ul>
       </div>
 
