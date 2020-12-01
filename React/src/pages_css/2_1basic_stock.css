@@ -1,3 +1,11 @@
+#basic_gray{
+  height: 250px;
+  background-color: #ECE7E7;   
+  margin-top: 5px;
+}
+
+
+
 
 .box2_1{
   width: 1200px;
@@ -5,12 +13,6 @@
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
-}
-
-#basic_gray{
-  height: 250px;
-  background-color: #ECE7E7;   
-  margin-top: 5px;
 }
 
 #blog_container {
