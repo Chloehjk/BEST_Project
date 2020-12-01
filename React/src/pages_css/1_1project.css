@@ -34,16 +34,6 @@ body{
     line-height: 25px;
 }
 
-@media screen and (max-width: 767px) {
-    /* 스마트폰 */
-    #description {
-        width: 100%;
-          }
-    #description > a{
-        font-size: 9px;
-        }
-}
-
 #description > a {
     font-weight: 700;
     color: black;
@@ -131,11 +121,12 @@ ul{
    
     #content_top {
         width: 100%;
-        margin-top: 150px;
+        margin-top: 1px;
     }
 
     .box1_1 {
         width: 100%;
+        margin-top: 100px;
     }
 
     #introduce_container {
@@ -147,7 +138,7 @@ ul{
         width: 100%;
         text-align: center;
         padding-right:0px;
-        padding-bottom: 60px;      
+        padding-bottom: 35px;      
     }
 
     #introduce_body {
@@ -155,6 +146,18 @@ ul{
         text-align: center;
         margin-left: 10px;
         margin-right: 10px;
+        font-size: 13px;
     }
 
+    #introduce_body p{
+        font-size: 13px;
+    }
+
+    #description {
+        width: 100%;
+    }
+
+    #description > a{
+        font-size: 9px;
+    }
 }

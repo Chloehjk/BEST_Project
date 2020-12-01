@@ -3,6 +3,8 @@ import 'App.css';
 import'antd/dist/antd.css';
 import {Menu} from 'antd';
 import img1 from './images/logo1.png';
+import menuline from './images/menuline.png';
+
 import Login from 'account/Login'
 import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom'
 
@@ -60,13 +62,6 @@ function App() {
               <Route exact path="/4services" component = {Services}/>
             </Switch>
       </div>
-
-
-      {/* <div id='content'>
-        <div id='content_gray'></div>
-        <div id='content_white'></div>
-
-      </div> */}
 
     </div>
   );
