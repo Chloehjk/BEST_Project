@@ -10,7 +10,7 @@ body{
     height: 250px;
     background-color: #ECE7E7;   
     margin-top: 5px;
-  }
+}
 
 @media screen and (max-width: 767px) {
     /* 스마트폰 */
@@ -30,15 +30,6 @@ body{
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
-   
-}
-
-@media screen and (max-width: 767px) {
-    /* 스마트폰 */
-    .box2_2 {
-        width: 100%;
-          }
-
 }
 
 #theme{
@@ -80,14 +71,6 @@ ul{
     margin-bottom: 40px;
 }
 
-@media screen and (max-width: 767px) {
-    /* 스마트폰 */
-    #content_white>.title {
-        width: 100%;
-          }
-
-}
-
 #content_white>.idea{
     font-size:15px;
     list-style:none;
@@ -96,27 +79,12 @@ ul{
     margin-bottom: 13px;
 }
 
-
-@media screen and (max-width: 767px) {
-    /* 스마트폰 */
-    #content_white>.idea {
-        width: 100%;
-        margin-right: 15px;
-        margin-left: 15px;
-        width: calc(100% - 30px);
-        text-align: justify;
-        }
-
-}
-
 #content_white> div{
     font-size: 15px;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;;
 }
-
-
 
 #content_white > li:nth-child(3) > a{
     width: 100px;
@@ -134,9 +102,6 @@ ul{
     margin-bottom: 30px;
 }
 
-
-
-
 #sentimental > li{
     font-size:18px;
     text-align: center;
@@ -144,6 +109,7 @@ ul{
     list-style:none;
     margin-top: 50px;
 }
+
 #sentimental > li:nth-child(1) > a.click, #sentimental > li:nth-child(3) > a.click{
     font-size: 13px;
     color: gray;
@@ -154,8 +120,33 @@ ul{
     color: black;
     font-weight: 600;
 }
+
 #sentimental > span{
     list-style: none;
     text-align: center;
     font-size: 14px;
+}
+
+
+
+
+
+/* 스마트폰 */
+@media screen and (max-width: 767px) {
+    
+    .box2_2 {
+        width: 100%;
+    }
+
+    #content_white>.title {
+        width: 100%;
+    }
+
+    #content_white>.idea {
+        width: 100%;
+        margin-right: 15px;
+        margin-left: 15px;
+        width: calc(100% - 30px);
+        text-align: justify;
+    }
 }
