@@ -5,15 +5,6 @@
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  /* border: 1px solid black; */
-}
-
-@media screen and (max-width: 767px) {
-  /* 스마트폰 */
-  .box2_1 {
-      width: 100%;
-        }
-
 }
 
 #basic_gray{
@@ -23,70 +14,59 @@
 }
 
 #blog_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-   
-  }
-
-@media screen and (max-width: 767px) {
-    /* 스마트폰 */
-    #blog_container {
-        width: 100%;
-        flex-direction: column;
-    }
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #blog_step {
-    display: flex;
-    flex-direction: column;
-    margin-top:20px;
-    text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  margin-top:20px;
+  text-decoration: underline;
   }
 
 #blog1 {
-    width:400px;
-    height:450px;
-    padding: 20px;
+  width:400px;
+  height:450px;
+  padding: 20px;
 }
 
 #blog2 {
-    width:400px;
-    height:360px;
-    padding: 20px;
+  width:400px;
+  height:360px;
+  padding: 20px;
 }
 
 #blog3 {
-    width:400px;
-    height:350px;
-    padding: 20px;
+  width:400px;
+  height:350px;
+  padding: 20px;
 }
 
 #blog4 {
-    width:400px;
-    height:200px;
-    padding: 20px;
+  width:400px;
+  height:200px;
+  padding: 20px;
 }
 
 #youtube_container {
-    border: 20px
-   
+  border: 20px
   }
 
 
 #youtube1,#youtube2,#youtube9,#youtube10{
-    padding:20px;
-    width:300px;
-    height:200px;
+  padding:20px;
+  width:300px;
+  height:200px;
   }
 
 /* ---2.주식고를때 유의할점--- */
 
 #youtube3,#youtube4,#youtube5,#youtube6,#youtube7,#youtube8 {
-    padding:10px;
-    width:300px;
-    height:200px;
+  padding:10px;
+  width:300px;
+  height:200px;
 }
 
 /* ---3.주식차트분석--- */
@@ -97,3 +77,24 @@
 
 
 /* ---4.주식계좌 개설방법--- */
+
+
+
+
+
+
+
+
+ /* 스마트폰 */
+@media screen and (max-width: 767px) {
+ 
+  .box2_1 {
+    width: 100%;
+  }
+
+  #blog_container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+}

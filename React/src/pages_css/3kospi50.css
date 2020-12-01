@@ -6,27 +6,9 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 767px) {
-    /* 스마트폰 */
-    #content_gray3 {
-        width: 100%;
-        height: 150px;
-          }
-
-}
-
 .box3{
     padding:30px 150px;
 }
-
-@media screen and (max-width: 767px) {
-    /* 스마트폰 */
-    .box3 {
-        width: 100%;
-          }
-
-}
-
 
 #title{
     font-size:20px;
@@ -40,6 +22,7 @@
 #sub_title{
     font-size: 15px;
 }
+
 #sub_title p{
     margin-bottom: 20px;
 }
@@ -49,8 +32,7 @@
 }
 
 #sub_title p2{
-    font-size: 13px;
-    
+    font-size: 13px;  
 }
 
 #kospi50_list{
@@ -80,7 +62,6 @@
 
 #content_white3{
     width: 900px;
-    
     height: 100%;
     float: left;
     margin: 50px;
@@ -92,11 +73,8 @@
     width: 900px;
     height: 400px;
     text-align: center;
-    
     padding: 5px;
 }
-
-
 
 #buttons{
     width: 900px;
@@ -134,4 +112,23 @@ g .legend{
     font-weight: 700;
     text-align: center;
     text-decoration: underline;
+}
+
+
+
+
+
+
+/* 스마트폰 */
+@media screen and (max-width: 767px) {
+    
+    #content_gray3 {
+        width: 100%;
+        height: 150px;
+    }
+
+    .box3 {
+        width: 100%;
+    }
+
 }
