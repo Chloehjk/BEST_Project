@@ -258,14 +258,8 @@ export default function IntroTeam()
                                         <div id = 'profile_contents_title'>
                                             프로그램 개발 경험
                                         </div>
-                                        A Correspondence published in The Lancet Infectious Diseases presents <br/>
-                                        the first confirmed case of SARS-CoV-2 reinfection in South America. A 46-year-old male in <br/>
-                                        Ecuador initially tested positive for COVID-19 in May 2020 before receiving a negative result by June 3rd. <br/>
-                                        One month later, the patient once again presented symptoms suggestive of COVID-19, this time more severely, <br/>
-                                        and tested positive for COVID-19. Phylogenetic analysis <br/>
-                                        suggests the two infection variants resulted from distinct evolutionary trajectories. <br/>
-                                        Authors note surprise that the patient showed a more severe disease in the second infection and state that these 
-                                        findings add to the COVID-19 reinfection evidence.
+                                        <p>- Todo project</p>
+                                        <p>- Best project</p>       
                                   
                                     </div>    
 
