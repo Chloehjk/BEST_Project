@@ -96,7 +96,7 @@
 
     #menu {
         /* display:none; */
-        font-size: 10px;
+        font-size: 13px;
         width: 45%;
         margin-bottom: 10%;
         margin-top: 5%;
@@ -110,7 +110,7 @@
     }
 
     #subone, #subtwo{
-        font-size: 8px;
+        font-size: 11px;
         padding-left: 30%;
         margin: 0; 
         padding-bottom:0;

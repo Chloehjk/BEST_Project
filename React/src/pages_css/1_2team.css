@@ -147,6 +147,7 @@ ul{
     height: 450px;
     border-radius: 15px;
     border: 2.3px solid #e9e9ff;
+    display: none;
 }
 
 #profile {
@@ -226,18 +227,35 @@ ul{
    
     #content_gray2 {
         width: 100%;
-        height: 1000px;
-        margin-top: 130px;
+        height: 15%;
+        margin-top: 40%;
     }
 
     .team_box {
         width: 100%;
     }
 
+    #imgfix{
+        height: calc(100%-20px);
+    }
+
+    #imgfix > font{
+        padding-top: 10%;
+        font-size: 13px;
+    }
+
     #imgThree {
         width: 100%;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
+        padding-top: 0;
+    }
+
+    #profile_top1, #profile_top2, #profile_top3{
+        width: 100%;
+        height: 40%;
+        float: left;
+        padding: 0;
     }
 
     .members {
@@ -257,8 +275,11 @@ ul{
     }
 
     #left_phone {
-        display: none;
-        width: 100%;  
+        display: block;
+        width: 80%;
+        margin-left: 10%;   
+        margin-top: 0;
+          
     }
 
     #right {

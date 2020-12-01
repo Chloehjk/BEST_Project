@@ -12,18 +12,6 @@ body{
     margin-top: 5px;
 }
 
-@media screen and (max-width: 767px) {
-    /* 스마트폰 */
-    #basic_gray {
-
-        width: 100%;
-        height: 500px;
-        margin-top: 170px;
-          }
-
-}
-
-
 .box2_2{
     width: 1200px;
     margin: 0 auto;
@@ -134,19 +122,37 @@ ul{
 /* 스마트폰 */
 @media screen and (max-width: 767px) {
     
+    #basic_gray {
+        width: 100%;
+        height: 430px;
+        margin-top: 170px;
+    }
+
     .box2_2 {
         width: 100%;
     }
 
-    #content_white>.title {
-        width: 100%;
+    #description{
+        font-size: 12px;
     }
 
-    #content_white>.idea {
-        width: 100%;
-        margin-right: 15px;
-        margin-left: 15px;
-        width: calc(100% - 30px);
-        text-align: justify;
+    #description > a {
+        font-size: 13px;
     }
+
+    #content_white > li, #content_white > span{
+        margin-left: 5%;
+        margin-right: 5%;
+    } 
+
+    #sentimental{
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 450px;
+    } 
+    
 }
+
+
+
+

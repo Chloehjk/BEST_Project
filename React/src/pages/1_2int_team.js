@@ -37,24 +37,23 @@ export default function IntroTeam()
                         <ul id='theme'>✔ 팀원 프로필 소개</ul>
                         <ul id='description'>
                             BEST프로젝트의 팀원을 소개합니다. <br/>
-                            세명이서 제작기간동안 열심히 어쩌구<br/>
                             어떤 역할을 통해 BEST프로젝트를 선보일 수 있었는지 알아볼까요?😀
                         </ul>
 
                         <div id = 'imgThree'>
                             <div id = 'imgfix'>
                                 <img id='profile_top1' src={face1_img} alt='현진' value="1" onClick={()=>test(1)}/>
-                                <font size = '3'>KIM HYUN JIN ☝🏻</font>
+                                <font size = '3'>KIM HYUN JIN</font>
                             </div>
 
                             <div id = 'imgfix'>
                                 <img id='profile_top2' src={face2_img} alt='지현' value="2" onClick={()=>test(2)}/>
-                                <font size = '3'>LEE JI HYUN ☝🏻</font>
+                                <font size = '3'>LEE JI HYUN</font>
                             </div>
 
                             <div id = 'imgfix'>
                                 <img id='profile_top3' src={face3_img} alt='수란' value="3" onClick={()=>test(3)}/>
-                                <font size = '3'>HAN SURAN ☝🏻</font>
+                                <font size = '3'>HAN SURAN</font>
                             </div>
                         </div>                                                         
                     </div>
