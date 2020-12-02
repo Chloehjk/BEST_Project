@@ -104,7 +104,7 @@ export default function Kospi50()
 
                     <div id='buttons'>
                         <button id ='button' class='button_fs' value='1' onClick={()=>belowChart(1)}>재무제표 🔻</button>
-                        <button id ='button' class='button_wc' value='2' onClick={()=>belowChart(2)}>급락 급등 Point의 워드 크라우드🔻</button>
+                        <button id ='button' class='button_wc' value='2' onClick={()=>belowChart(2)}>급락 급등 Point의 워드 클라우드🔻</button>
                         <button id ='button' class='button_pn' value='3' onClick={()=>belowChart(3)}>긍정 or 부정 분석 결과 🔻</button>
                     </div> 
 
