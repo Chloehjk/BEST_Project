@@ -109,7 +109,8 @@ export default function IntroTeam()
                                         ✔ DB 구축, 크롤링 코드 개발<br/>
                                         ✔ 웹 디자인 : 배너 제작, 로고제작<br/>
                                         ✔ 프론트앤드 : 펀더멘탈, 재무제표, 뉴스 확률 분석, 투자 기초 페이지, 급등/급락 페이지<br/>
-                                        ✔ 백앤드 : Django Model 관리
+                                        ✔ 백앤드 : Django Model 관리<br/>
+                                        ✔ AWS 서버 관리
 
                                     </div>      
 
