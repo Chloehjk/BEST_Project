@@ -11,4 +11,4 @@ Long story short, we used a lots of info kind a news, sales, index etc.
 - Use Finance Statements evaluate the company's condition
 
 http://toohr.s3-website.ap-northeast-2.amazonaws.com/
-☝🏻This is our website come and enjoy:)
+👈🏻This is our website come and enjoy:)
