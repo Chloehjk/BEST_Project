@@ -28,7 +28,7 @@ function App() {
           <li id='menu' class = 'twoinone' key="1">
             <a>소개</a>
             <ul>
-              <li id='subone' key="1_1"><NavLink to="/1_1int_project">BEST프로젝트 설명</NavLink></li>
+              <li id='subone' key="1_1"><NavLink to="/1_1int_project">BEST란?</NavLink></li>
               <li id='subtwo'key="1_2"><NavLink to="/1_2int_team">Members</NavLink></li>
             </ul>
 
