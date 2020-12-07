@@ -12,13 +12,17 @@
 }
 
 #bottom{
+    font-size : 10px;
+}
+
+@media screen and (max-width: 767px) {
+    #bottom{
     text-align: center;
     font-size: 10px;
     position: bottom;  
     bottom: 10;
     right:47%;
     padding-top: 60px;
+    }
 }
-
-
 
